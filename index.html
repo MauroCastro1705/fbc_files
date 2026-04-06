@@ -1938,6 +1938,19 @@ function syncSidebar() {
     b.classList.toggle("active", b.dataset.id === activeCat));
 }
 
+// ── COLLAPSIBLE CATEGORIES ON MOBILE ────────────────────────────────
+function isMobile() {
+  return window.innerWidth <= 520;
+}
+
+document.querySelectorAll(".cat-section-title").forEach(title => {
+  title.addEventListener("click", () => {
+    if (isMobile()) {
+      title.closest(".cat-section").classList.toggle("expanded");
+    }
+  });
+});
+
 // ── SHOW ALL / CAT ─────────────────────────────────────────────────
 function showAll() {
   document.querySelectorAll(".cat-section").forEach(s => s.classList.remove("hidden"));

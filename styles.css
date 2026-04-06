@@ -37,6 +37,48 @@ html, body {
   height: 100%; 
 }
 
+/* expanded category */
+.cat-section.expanded .img-grid {
+  max-height: 10000px;
+}
+
+/* make titles clickable (nice UX) */
+.cat-section-title {
+  cursor: pointer;
+}
+
+/* Arrow for expand/collapse */
+.cat-section-title::after {
+  content: "▶";
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  color: var(--text2);
+}
+
+.cat-section.expanded .cat-section-title::after {
+  transform: rotate(90deg);
+}
+
+/* Animation for img-grid */
+.img-grid {
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+/* On mobile, hide grids by default */
+@media (max-width: 520px) {
+  .cat-section .img-grid {
+    max-height: 0;
+  }
+}
+
+/* On desktop, always expanded */
+@media (min-width: 521px) {
+  .cat-section .img-grid {
+    max-height: none;
+  }
+}
+
 body {
   background: var(--bg);
   color: var(--text);
