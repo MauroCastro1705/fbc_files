@@ -106,20 +106,13 @@ body {
 }
 
 .logo {
-  font-family: var(--font-mono); 
-  font-size: 15px; 
-  font-weight: 600;
-  color: var(--accent); 
-  letter-spacing: -.3px; 
-  white-space: nowrap;
-  display: flex; 
-  align-items: center; 
-  gap: 8px;
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo::before { 
-  content: "◈"; 
-  font-size: 18px; 
+  content: none; 
 }
 
 #search-wrap { 
@@ -280,6 +273,45 @@ body {
   overflow-y: auto; 
   padding: 28px 32px; 
   min-width: 0; 
+  position: relative;
+}
+
+#main::before {
+  content: '';
+  position: fixed;
+  background-image: url('fbc_logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Desktop watermark position */
+@media (min-width: 521px) {
+  #main::before {
+    top: 52px;
+    left: var(--sidebar-w);
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* Mobile watermark position */
+@media (max-width: 520px) {
+  #main::before {
+    top: 52px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 50%;
+  }
+}
+
+#main > * {
+  position: relative;
+  z-index: 1;
 }
 
 #main::-webkit-scrollbar { 
