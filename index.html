@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>FBC files</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="topbar">
+  <div class="logo">FBC files</div>
+  <div id="search-wrap">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input id="search" type="search" placeholder="buscar imagen..." autocomplete="off" spellcheck="false"/>
+  </div>
+  <div class="topbar-right">
+    <div class="stat-badge">cats: <span>10</span></div>
+    <div class="stat-badge">imgs: <span>286</span></div>
+  </div>
+</div>
+
+<div id="layout">
+  <nav id="sidebar">
+    <div class="sidebar-label">Categorías</div>
+    <button class="cat-btn active" data-id="__all__">
+      <span class="cat-name">Todas</span>
+      <span class="cat-count">286</span>
+    </button>
+    
+        <button class="cat-btn" data-id="astral_research">
+          <span class="cat-name">astral_research</span>
+          <span class="cat-count">3</span>
+        </button>
+        <button class="cat-btn" data-id="case_files_altered_items">
+          <span class="cat-name">case_files_altered_items</span>
+          <span class="cat-count">51</span>
+        </button>
+        <button class="cat-btn" data-id="case_files_altered_world_events">
+          <span class="cat-name">case_files_altered_world_events</span>
+          <span class="cat-count">24</span>
+        </button>
+        <button class="cat-btn" data-id="case_files_objects_of_power">
+          <span class="cat-name">case_files_objects_of_power</span>
+          <span class="cat-count">10</span>
+        </button>
+        <button class="cat-btn" data-id="dead_letters">
+          <span class="cat-name">dead_letters</span>
+          <span class="cat-count">17</span>
+        </button>
+        <button class="cat-btn" data-id="hiss_research">
+          <span class="cat-name">hiss_research</span>
+          <span class="cat-count">19</span>
+        </button>
+        <button class="cat-btn" data-id="non-official_correspondence">
+          <span class="cat-name">non-official_correspondence</span>
+          <span class="cat-count">34</span>
+        </button>
+        <button class="cat-btn" data-id="official_correspondence">
+          <span class="cat-name">official_correspondence</span>
+          <span class="cat-count">37</span>
+        </button>
+        <button class="cat-btn" data-id="reports">
+          <span class="cat-name">reports</span>
+          <span class="cat-count">43</span>
+        </button>
+        <button class="cat-btn" data-id="research">
+          <span class="cat-name">research</span>
+          <span class="cat-count">48</span>
+        </button>
+  </nav>
+
+  <main id="main">
+    <div id="search-info">
+      <span>Resultados para: <strong id="search-term"></strong></span>
+      <button class="clear-btn" id="clear-search">✕ limpiar</button>
+    </div>
+    <div id="no-results">
+      <div class="icon">⌀</div>
+      <span>Sin resultados</span>
+    </div>
+    <div id="all-view">
+      
+      <div class="cat-section" id="cat-astral_research">
+        <div class="cat-section-title" data-cat="astral_research">
+          <span class="cat-slug">//</span> astral_research
+          <span class="cat-section-count">3 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="astral_research" data-index="0" tabindex="0" role="button" aria-label="astral_copy">
+          <div class="img-thumb">
+            <img src="images/astral_research/astral_copy.png" loading="lazy" alt="astral_copy"/>
+          </div>
+          <div class="img-label">astral_copy</div>
+        </div>
+        <div class="img-card" data-cat="astral_research" data-index="1" tabindex="0" role="button" aria-label="astral_mimic">
+          <div class="img-thumb">
+            <img src="images/astral_research/astral_mimic.png" loading="lazy" alt="astral_mimic"/>
+          </div>
+          <div class="img-label">astral_mimic</div>
+        </div>
+        <div class="img-card" data-cat="astral_research" data-index="2" tabindex="0" role="button" aria-label="astral_spike">
+          <div class="img-thumb">
+            <img src="images/astral_research/astral_spike.png" loading="lazy" alt="astral_spike"/>
+          </div>
+          <div class="img-label">astral_spike</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cat-section" id="cat-case_files_altered_items">
+        <div class="cat-section-title" data-cat="case_files_altered_items">
+          <span class="cat-slug">//</span> case_files_altered_items
+          <span class="cat-section-count">51 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="case_files_altered_items" data-index="0" tabindex="0" role="button" aria-label="anchor_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/anchor_procedures.png" loading="lazy" alt="anchor_procedures"/>
+          </div>
+          <div class="img-label">anchor_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="1" tabindex="0" role="button" aria-label="anchor_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/anchor_supplement.png" loading="lazy" alt="anchor_supplement"/>
+          </div>
+          <div class="img-label">anchor_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="2" tabindex="0" role="button" aria-label="arcade_cabinets_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/arcade_cabinets_procedures.png" loading="lazy" alt="arcade_cabinets_procedures"/>
+          </div>
+          <div class="img-label">arcade_cabinets_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="3" tabindex="0" role="button" aria-label="arcade_cabinets_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/arcade_cabinets_supplement.png" loading="lazy" alt="arcade_cabinets_supplement"/>
+          </div>
+          <div class="img-label">arcade_cabinets_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="4" tabindex="0" role="button" aria-label="balloon_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/balloon_procedures.png" loading="lazy" alt="balloon_procedures"/>
+          </div>
+          <div class="img-label">balloon_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="5" tabindex="0" role="button" aria-label="balloon_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/balloon_supplement.png" loading="lazy" alt="balloon_supplement"/>
+          </div>
+          <div class="img-label">balloon_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="6" tabindex="0" role="button" aria-label="fan_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/fan_procedures.png" loading="lazy" alt="fan_procedures"/>
+          </div>
+          <div class="img-label">fan_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="7" tabindex="0" role="button" aria-label="fan_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/fan_supplement.png" loading="lazy" alt="fan_supplement"/>
+          </div>
+          <div class="img-label">fan_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="8" tabindex="0" role="button" aria-label="globe_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/globe_procedures.png" loading="lazy" alt="globe_procedures"/>
+          </div>
+          <div class="img-label">globe_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="9" tabindex="0" role="button" aria-label="globe_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/globe_supplement.png" loading="lazy" alt="globe_supplement"/>
+          </div>
+          <div class="img-label">globe_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="10" tabindex="0" role="button" aria-label="hammer_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/hammer_procedures.png" loading="lazy" alt="hammer_procedures"/>
+          </div>
+          <div class="img-label">hammer_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="11" tabindex="0" role="button" aria-label="hammer_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/hammer_supplement.png" loading="lazy" alt="hammer_supplement"/>
+          </div>
+          <div class="img-label">hammer_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="12" tabindex="0" role="button" aria-label="hand_chair_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/hand_chair_procedures.png" loading="lazy" alt="hand_chair_procedures"/>
+          </div>
+          <div class="img-label">hand_chair_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="13" tabindex="0" role="button" aria-label="letters_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/letters_procedures.png" loading="lazy" alt="letters_procedures"/>
+          </div>
+          <div class="img-label">letters_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="14" tabindex="0" role="button" aria-label="maneki-neko_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/maneki-neko_procedures.png" loading="lazy" alt="maneki-neko_procedures"/>
+          </div>
+          <div class="img-label">maneki-neko_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="15" tabindex="0" role="button" aria-label="mannequin_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/mannequin_procedures.png" loading="lazy" alt="mannequin_procedures"/>
+          </div>
+          <div class="img-label">mannequin_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="16" tabindex="0" role="button" aria-label="mannequin_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/mannequin_supplement.png" loading="lazy" alt="mannequin_supplement"/>
+          </div>
+          <div class="img-label">mannequin_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="17" tabindex="0" role="button" aria-label="mirror_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/mirror_procedures.png" loading="lazy" alt="mirror_procedures"/>
+          </div>
+          <div class="img-label">mirror_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="18" tabindex="0" role="button" aria-label="mirror_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/mirror_supplement.png" loading="lazy" alt="mirror_supplement"/>
+          </div>
+          <div class="img-label">mirror_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="19" tabindex="0" role="button" aria-label="movie_camera_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/movie_camera_procedures.png" loading="lazy" alt="movie_camera_procedures"/>
+          </div>
+          <div class="img-label">movie_camera_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="20" tabindex="0" role="button" aria-label="movie_camera_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/movie_camera_supplement.png" loading="lazy" alt="movie_camera_supplement"/>
+          </div>
+          <div class="img-label">movie_camera_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="21" tabindex="0" role="button" aria-label="paper_lantern_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/paper_lantern_procedures.png" loading="lazy" alt="paper_lantern_procedures"/>
+          </div>
+          <div class="img-label">paper_lantern_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="22" tabindex="0" role="button" aria-label="paper_lantern_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/paper_lantern_supplement.png" loading="lazy" alt="paper_lantern_supplement"/>
+          </div>
+          <div class="img-label">paper_lantern_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="23" tabindex="0" role="button" aria-label="picnic_basket_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/picnic_basket_procedures.png" loading="lazy" alt="picnic_basket_procedures"/>
+          </div>
+          <div class="img-label">picnic_basket_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="24" tabindex="0" role="button" aria-label="picnic_basket_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/picnic_basket_supplement.png" loading="lazy" alt="picnic_basket_supplement"/>
+          </div>
+          <div class="img-label">picnic_basket_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="25" tabindex="0" role="button" aria-label="pink_flamingo_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/pink_flamingo_procedures.png" loading="lazy" alt="pink_flamingo_procedures"/>
+          </div>
+          <div class="img-label">pink_flamingo_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="26" tabindex="0" role="button" aria-label="pink_flamingo_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/pink_flamingo_supplement.png" loading="lazy" alt="pink_flamingo_supplement"/>
+          </div>
+          <div class="img-label">pink_flamingo_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="27" tabindex="0" role="button" aria-label="plastic_tree_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/plastic_tree_procedures.png" loading="lazy" alt="plastic_tree_procedures"/>
+          </div>
+          <div class="img-label">plastic_tree_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="28" tabindex="0" role="button" aria-label="plastic_tree_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/plastic_tree_supplement.png" loading="lazy" alt="plastic_tree_supplement"/>
+          </div>
+          <div class="img-label">plastic_tree_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="29" tabindex="0" role="button" aria-label="post_box_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/post_box_procedures.png" loading="lazy" alt="post_box_procedures"/>
+          </div>
+          <div class="img-label">post_box_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="30" tabindex="0" role="button" aria-label="post_box_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/post_box_supplement.png" loading="lazy" alt="post_box_supplement"/>
+          </div>
+          <div class="img-label">post_box_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="31" tabindex="0" role="button" aria-label="pram_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/pram_procedures.png" loading="lazy" alt="pram_procedures"/>
+          </div>
+          <div class="img-label">pram_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="32" tabindex="0" role="button" aria-label="pram_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/pram_supplement.png" loading="lazy" alt="pram_supplement"/>
+          </div>
+          <div class="img-label">pram_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="33" tabindex="0" role="button" aria-label="refrigerator_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/refrigerator_procedures.png" loading="lazy" alt="refrigerator_procedures"/>
+          </div>
+          <div class="img-label">refrigerator_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="34" tabindex="0" role="button" aria-label="refrigerator_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/refrigerator_supplement.png" loading="lazy" alt="refrigerator_supplement"/>
+          </div>
+          <div class="img-label">refrigerator_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="35" tabindex="0" role="button" aria-label="rubber_duck_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/rubber_duck_procedures.png" loading="lazy" alt="rubber_duck_procedures"/>
+          </div>
+          <div class="img-label">rubber_duck_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="36" tabindex="0" role="button" aria-label="rubber_duck_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/rubber_duck_supplement.png" loading="lazy" alt="rubber_duck_supplement"/>
+          </div>
+          <div class="img-label">rubber_duck_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="37" tabindex="0" role="button" aria-label="surfboard_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/surfboard_procedures.png" loading="lazy" alt="surfboard_procedures"/>
+          </div>
+          <div class="img-label">surfboard_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="38" tabindex="0" role="button" aria-label="surfboard_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/surfboard_supplement.png" loading="lazy" alt="surfboard_supplement"/>
+          </div>
+          <div class="img-label">surfboard_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="39" tabindex="0" role="button" aria-label="swan_boat_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/swan_boat_procedures.png" loading="lazy" alt="swan_boat_procedures"/>
+          </div>
+          <div class="img-label">swan_boat_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="40" tabindex="0" role="button" aria-label="thermos_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/thermos_procedures.png" loading="lazy" alt="thermos_procedures"/>
+          </div>
+          <div class="img-label">thermos_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="41" tabindex="0" role="button" aria-label="tractor_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/tractor_procedures.png" loading="lazy" alt="tractor_procedures"/>
+          </div>
+          <div class="img-label">tractor_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="42" tabindex="0" role="button" aria-label="tractor_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/tractor_supplement.png" loading="lazy" alt="tractor_supplement"/>
+          </div>
+          <div class="img-label">tractor_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="43" tabindex="0" role="button" aria-label="traffic_light_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/traffic_light_procedures.png" loading="lazy" alt="traffic_light_procedures"/>
+          </div>
+          <div class="img-label">traffic_light_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="44" tabindex="0" role="button" aria-label="train_car_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/train_car_procedures.png" loading="lazy" alt="train_car_procedures"/>
+          </div>
+          <div class="img-label">train_car_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="45" tabindex="0" role="button" aria-label="typewritten_page_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/typewritten_page_procedures.png" loading="lazy" alt="typewritten_page_procedures"/>
+          </div>
+          <div class="img-label">typewritten_page_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="46" tabindex="0" role="button" aria-label="typewritten_page_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/typewritten_page_supplement.png" loading="lazy" alt="typewritten_page_supplement"/>
+          </div>
+          <div class="img-label">typewritten_page_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="47" tabindex="0" role="button" aria-label="vending_machine_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/vending_machine_procedures.png" loading="lazy" alt="vending_machine_procedures"/>
+          </div>
+          <div class="img-label">vending_machine_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="48" tabindex="0" role="button" aria-label="vhs_tape_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/vhs_tape_procedures.png" loading="lazy" alt="vhs_tape_procedures"/>
+          </div>
+          <div class="img-label">vhs_tape_procedures</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="49" tabindex="0" role="button" aria-label="vhs_tape_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/vhs_tape_supplement.png" loading="lazy" alt="vhs_tape_supplement"/>
+          </div>
+          <div class="img-label">vhs_tape_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_items" data-index="50" tabindex="0" role="button" aria-label="water_cooler_procedures">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_items/water_cooler_procedures.png" loading="lazy" alt="water_cooler_procedures"/>
+          </div>
+          <div class="img-label">water_cooler_procedures</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cat-section" id="cat-case_files_altered_world_events">
+        <div class="cat-section-title" data-cat="case_files_altered_world_events">
+          <span class="cat-slug">//</span> case_files_altered_world_events
+          <span class="cat-section-count">24 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="0" tabindex="0" role="button" aria-label="albany_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/albany_summary.png" loading="lazy" alt="albany_summary"/>
+          </div>
+          <div class="img-label">albany_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="1" tabindex="0" role="button" aria-label="albany_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/albany_supplement.png" loading="lazy" alt="albany_supplement"/>
+          </div>
+          <div class="img-label">albany_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="2" tabindex="0" role="button" aria-label="bright_falls_1976_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/bright_falls_1976_summary.png" loading="lazy" alt="bright_falls_1976_summary"/>
+          </div>
+          <div class="img-label">bright_falls_1976_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="3" tabindex="0" role="button" aria-label="bright_falls_1976_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/bright_falls_1976_supplement.png" loading="lazy" alt="bright_falls_1976_supplement"/>
+          </div>
+          <div class="img-label">bright_falls_1976_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="4" tabindex="0" role="button" aria-label="bright_falls_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/bright_falls_summary.png" loading="lazy" alt="bright_falls_summary"/>
+          </div>
+          <div class="img-label">bright_falls_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="5" tabindex="0" role="button" aria-label="bright_falls_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/bright_falls_supplement.png" loading="lazy" alt="bright_falls_supplement"/>
+          </div>
+          <div class="img-label">bright_falls_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="6" tabindex="0" role="button" aria-label="butte_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/butte_summary.png" loading="lazy" alt="butte_summary"/>
+          </div>
+          <div class="img-label">butte_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="7" tabindex="0" role="button" aria-label="butte_suplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/butte_suplement.png" loading="lazy" alt="butte_suplement"/>
+          </div>
+          <div class="img-label">butte_suplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="8" tabindex="0" role="button" aria-label="eagle_limited_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/eagle_limited_summary.png" loading="lazy" alt="eagle_limited_summary"/>
+          </div>
+          <div class="img-label">eagle_limited_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="9" tabindex="0" role="button" aria-label="eagle_limited_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/eagle_limited_supplement.png" loading="lazy" alt="eagle_limited_supplement"/>
+          </div>
+          <div class="img-label">eagle_limited_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="10" tabindex="0" role="button" aria-label="emergency_call_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/emergency_call_summary.png" loading="lazy" alt="emergency_call_summary"/>
+          </div>
+          <div class="img-label">emergency_call_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="11" tabindex="0" role="button" aria-label="emergency_call_suplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/emergency_call_suplement.png" loading="lazy" alt="emergency_call_suplement"/>
+          </div>
+          <div class="img-label">emergency_call_suplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="12" tabindex="0" role="button" aria-label="fra_mauro_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/fra_mauro_summary.png" loading="lazy" alt="fra_mauro_summary"/>
+          </div>
+          <div class="img-label">fra_mauro_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="13" tabindex="0" role="button" aria-label="fra_mauro_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/fra_mauro_supplement.png" loading="lazy" alt="fra_mauro_supplement"/>
+          </div>
+          <div class="img-label">fra_mauro_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="14" tabindex="0" role="button" aria-label="havana_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/havana_summary.png" loading="lazy" alt="havana_summary"/>
+          </div>
+          <div class="img-label">havana_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="15" tabindex="0" role="button" aria-label="havana_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/havana_supplement.png" loading="lazy" alt="havana_supplement"/>
+          </div>
+          <div class="img-label">havana_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="16" tabindex="0" role="button" aria-label="kyiv_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/kyiv_summary.png" loading="lazy" alt="kyiv_summary"/>
+          </div>
+          <div class="img-label">kyiv_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="17" tabindex="0" role="button" aria-label="kyiv_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/kyiv_supplement.png" loading="lazy" alt="kyiv_supplement"/>
+          </div>
+          <div class="img-label">kyiv_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="18" tabindex="0" role="button" aria-label="meteor_hill_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/meteor_hill_summary.png" loading="lazy" alt="meteor_hill_summary"/>
+          </div>
+          <div class="img-label">meteor_hill_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="19" tabindex="0" role="button" aria-label="meteor_hill_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/meteor_hill_supplement.png" loading="lazy" alt="meteor_hill_supplement"/>
+          </div>
+          <div class="img-label">meteor_hill_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="20" tabindex="0" role="button" aria-label="ordinary_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/ordinary_summary.png" loading="lazy" alt="ordinary_summary"/>
+          </div>
+          <div class="img-label">ordinary_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="21" tabindex="0" role="button" aria-label="ordinary_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/ordinary_supplement.png" loading="lazy" alt="ordinary_supplement"/>
+          </div>
+          <div class="img-label">ordinary_supplement</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="22" tabindex="0" role="button" aria-label="sterling_summary">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/sterling_summary.png" loading="lazy" alt="sterling_summary"/>
+          </div>
+          <div class="img-label">sterling_summary</div>
+        </div>
+        <div class="img-card" data-cat="case_files_altered_world_events" data-index="23" tabindex="0" role="button" aria-label="sterling_supplement">
+          <div class="img-thumb">
+            <img src="images/case_files_altered_world_events/sterling_supplement.png" loading="lazy" alt="sterling_supplement"/>
+          </div>
+          <div class="img-label">sterling_supplement</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cat-section" id="cat-case_files_objects_of_power">
+        <div class="cat-section-title" data-cat="case_files_objects_of_power">
+          <span class="cat-slug">//</span> case_files_objects_of_power
+          <span class="cat-section-count">10 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="0" tabindex="0" role="button" aria-label="ashtray_and_cigarette">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/ashtray_and_cigarette.png" loading="lazy" alt="ashtray_and_cigarette"/>
+          </div>
+          <div class="img-label">ashtray_and_cigarette</div>
+        </div>
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="1" tabindex="0" role="button" aria-label="benicoff_tv">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/benicoff_tv.png" loading="lazy" alt="benicoff_tv"/>
+          </div>
+          <div class="img-label">benicoff_tv</div>
+        </div>
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="2" tabindex="0" role="button" aria-label="floppy_disk">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/floppy_disk.png" loading="lazy" alt="floppy_disk"/>
+          </div>
+          <div class="img-label">floppy_disk</div>
+        </div>
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="3" tabindex="0" role="button" aria-label="home_safe">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/home_safe.png" loading="lazy" alt="home_safe"/>
+          </div>
+          <div class="img-label">home_safe</div>
+        </div>
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="4" tabindex="0" role="button" aria-label="hotline">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/hotline.png" loading="lazy" alt="hotline"/>
+          </div>
+          <div class="img-label">hotline</div>
+        </div>
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="5" tabindex="0" role="button" aria-label="jukebox">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/jukebox.png" loading="lazy" alt="jukebox"/>
+          </div>
+          <div class="img-label">jukebox</div>
+        </div>
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="6" tabindex="0" role="button" aria-label="merry-go-round_horse">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/merry-go-round_horse.png" loading="lazy" alt="merry-go-round_horse"/>
+          </div>
+          <div class="img-label">merry-go-round_horse</div>
+        </div>
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="7" tabindex="0" role="button" aria-label="service_weapon">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/service_weapon.png" loading="lazy" alt="service_weapon"/>
+          </div>
+          <div class="img-label">service_weapon</div>
+        </div>
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="8" tabindex="0" role="button" aria-label="slide_projector">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/slide_projector.png" loading="lazy" alt="slide_projector"/>
+          </div>
+          <div class="img-label">slide_projector</div>
+        </div>
+        <div class="img-card" data-cat="case_files_objects_of_power" data-index="9" tabindex="0" role="button" aria-label="x-ray_light_box">
+          <div class="img-thumb">
+            <img src="images/case_files_objects_of_power/x-ray_light_box.png" loading="lazy" alt="x-ray_light_box"/>
+          </div>
+          <div class="img-label">x-ray_light_box</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cat-section" id="cat-dead_letters">
+        <div class="cat-section-title" data-cat="dead_letters">
+          <span class="cat-slug">//</span> dead_letters
+          <span class="cat-section-count">17 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="dead_letters" data-index="0" tabindex="0" role="button" aria-label="actor_for_hire">
+          <div class="img-thumb">
+            <img src="images/dead_letters/actor_for_hire.png" loading="lazy" alt="actor_for_hire"/>
+          </div>
+          <div class="img-label">actor_for_hire</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="1" tabindex="0" role="button" aria-label="brain_missing">
+          <div class="img-thumb">
+            <img src="images/dead_letters/brain_missing.png" loading="lazy" alt="brain_missing"/>
+          </div>
+          <div class="img-label">brain_missing</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="2" tabindex="0" role="button" aria-label="cat_clock">
+          <div class="img-thumb">
+            <img src="images/dead_letters/cat_clock.png" loading="lazy" alt="cat_clock"/>
+          </div>
+          <div class="img-label">cat_clock</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="3" tabindex="0" role="button" aria-label="computer_program">
+          <div class="img-thumb">
+            <img src="images/dead_letters/computer_program.png" loading="lazy" alt="computer_program"/>
+          </div>
+          <div class="img-label">computer_program</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="4" tabindex="0" role="button" aria-label="dead_presidents">
+          <div class="img-thumb">
+            <img src="images/dead_letters/dead_presidents.png" loading="lazy" alt="dead_presidents"/>
+          </div>
+          <div class="img-label">dead_presidents</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="5" tabindex="0" role="button" aria-label="fake_planes">
+          <div class="img-thumb">
+            <img src="images/dead_letters/fake_planes.png" loading="lazy" alt="fake_planes"/>
+          </div>
+          <div class="img-label">fake_planes</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="6" tabindex="0" role="button" aria-label="foot_gossip">
+          <div class="img-thumb">
+            <img src="images/dead_letters/foot_gossip.png" loading="lazy" alt="foot_gossip"/>
+          </div>
+          <div class="img-label">foot_gossip</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="7" tabindex="0" role="button" aria-label="green">
+          <div class="img-thumb">
+            <img src="images/dead_letters/green.png" loading="lazy" alt="green"/>
+          </div>
+          <div class="img-label">green</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="8" tabindex="0" role="button" aria-label="machine_god">
+          <div class="img-thumb">
+            <img src="images/dead_letters/machine_god.png" loading="lazy" alt="machine_god"/>
+          </div>
+          <div class="img-label">machine_god</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="9" tabindex="0" role="button" aria-label="new_language">
+          <div class="img-thumb">
+            <img src="images/dead_letters/new_language.png" loading="lazy" alt="new_language"/>
+          </div>
+          <div class="img-label">new_language</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="10" tabindex="0" role="button" aria-label="our_whereabouts">
+          <div class="img-thumb">
+            <img src="images/dead_letters/our_whereabouts.png" loading="lazy" alt="our_whereabouts"/>
+          </div>
+          <div class="img-label">our_whereabouts</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="11" tabindex="0" role="button" aria-label="pinstripe_world">
+          <div class="img-thumb">
+            <img src="images/dead_letters/pinstripe_world.png" loading="lazy" alt="pinstripe_world"/>
+          </div>
+          <div class="img-label">pinstripe_world</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="12" tabindex="0" role="button" aria-label="singing_fish">
+          <div class="img-thumb">
+            <img src="images/dead_letters/singing_fish.png" loading="lazy" alt="singing_fish"/>
+          </div>
+          <div class="img-label">singing_fish</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="13" tabindex="0" role="button" aria-label="smoking_ban">
+          <div class="img-thumb">
+            <img src="images/dead_letters/smoking_ban.png" loading="lazy" alt="smoking_ban"/>
+          </div>
+          <div class="img-label">smoking_ban</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="14" tabindex="0" role="button" aria-label="vivid_dreams">
+          <div class="img-thumb">
+            <img src="images/dead_letters/vivid_dreams.png" loading="lazy" alt="vivid_dreams"/>
+          </div>
+          <div class="img-label">vivid_dreams</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="15" tabindex="0" role="button" aria-label="were-everything">
+          <div class="img-thumb">
+            <img src="images/dead_letters/were-everything.png" loading="lazy" alt="were-everything"/>
+          </div>
+          <div class="img-label">were-everything</div>
+        </div>
+        <div class="img-card" data-cat="dead_letters" data-index="16" tabindex="0" role="button" aria-label="white_kitchen">
+          <div class="img-thumb">
+            <img src="images/dead_letters/white_kitchen.png" loading="lazy" alt="white_kitchen"/>
+          </div>
+          <div class="img-label">white_kitchen</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cat-section" id="cat-hiss_research">
+        <div class="cat-section-title" data-cat="hiss_research">
+          <span class="cat-slug">//</span> hiss_research
+          <span class="cat-section-count">19 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="hiss_research" data-index="0" tabindex="0" role="button" aria-label="hiss_agent">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_agent.png" loading="lazy" alt="hiss_agent"/>
+          </div>
+          <div class="img-label">hiss_agent</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="1" tabindex="0" role="button" aria-label="hiss_barrier">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_barrier.png" loading="lazy" alt="hiss_barrier"/>
+          </div>
+          <div class="img-label">hiss_barrier</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="2" tabindex="0" role="button" aria-label="hiss_charged">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_charged.png" loading="lazy" alt="hiss_charged"/>
+          </div>
+          <div class="img-label">hiss_charged</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="3" tabindex="0" role="button" aria-label="hiss_cluster">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_cluster.png" loading="lazy" alt="hiss_cluster"/>
+          </div>
+          <div class="img-label">hiss_cluster</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="4" tabindex="0" role="button" aria-label="hiss_demolition_expert">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_demolition_expert.png" loading="lazy" alt="hiss_demolition_expert"/>
+          </div>
+          <div class="img-label">hiss_demolition_expert</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="5" tabindex="0" role="button" aria-label="hiss_distorted">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_distorted.png" loading="lazy" alt="hiss_distorted"/>
+          </div>
+          <div class="img-label">hiss_distorted</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="6" tabindex="0" role="button" aria-label="hiss_elevated">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_elevated.png" loading="lazy" alt="hiss_elevated"/>
+          </div>
+          <div class="img-label">hiss_elevated</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="7" tabindex="0" role="button" aria-label="hiss_guard">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_guard.png" loading="lazy" alt="hiss_guard"/>
+          </div>
+          <div class="img-label">hiss_guard</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="8" tabindex="0" role="button" aria-label="hiss_ranger">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_ranger.png" loading="lazy" alt="hiss_ranger"/>
+          </div>
+          <div class="img-label">hiss_ranger</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="9" tabindex="0" role="button" aria-label="hiss_ranger_airborne">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_ranger_airborne.png" loading="lazy" alt="hiss_ranger_airborne"/>
+          </div>
+          <div class="img-label">hiss_ranger_airborne</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="10" tabindex="0" role="button" aria-label="hiss_sharpened">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_sharpened.png" loading="lazy" alt="hiss_sharpened"/>
+          </div>
+          <div class="img-label">hiss_sharpened</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="11" tabindex="0" role="button" aria-label="hiss_sniper">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_sniper.png" loading="lazy" alt="hiss_sniper"/>
+          </div>
+          <div class="img-label">hiss_sniper</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="12" tabindex="0" role="button" aria-label="hiss_trooper">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_trooper.png" loading="lazy" alt="hiss_trooper"/>
+          </div>
+          <div class="img-label">hiss_trooper</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="13" tabindex="0" role="button" aria-label="hiss_warped">
+          <div class="img-thumb">
+            <img src="images/hiss_research/hiss_warped.png" loading="lazy" alt="hiss_warped"/>
+          </div>
+          <div class="img-label">hiss_warped</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="14" tabindex="0" role="button" aria-label="initial_impressions">
+          <div class="img-thumb">
+            <img src="images/hiss_research/initial_impressions.png" loading="lazy" alt="initial_impressions"/>
+          </div>
+          <div class="img-label">initial_impressions</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="15" tabindex="0" role="button" aria-label="linguistic_ability">
+          <div class="img-thumb">
+            <img src="images/hiss_research/linguistic_ability.png" loading="lazy" alt="linguistic_ability"/>
+          </div>
+          <div class="img-label">linguistic_ability</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="16" tabindex="0" role="button" aria-label="speech_analysis">
+          <div class="img-thumb">
+            <img src="images/hiss_research/speech_analysis.png" loading="lazy" alt="speech_analysis"/>
+          </div>
+          <div class="img-label">speech_analysis</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="17" tabindex="0" role="button" aria-label="timeline_of_events">
+          <div class="img-thumb">
+            <img src="images/hiss_research/timeline_of_events.png" loading="lazy" alt="timeline_of_events"/>
+          </div>
+          <div class="img-label">timeline_of_events</div>
+        </div>
+        <div class="img-card" data-cat="hiss_research" data-index="18" tabindex="0" role="button" aria-label="variance_in_alterations">
+          <div class="img-thumb">
+            <img src="images/hiss_research/variance_in_alterations.png" loading="lazy" alt="variance_in_alterations"/>
+          </div>
+          <div class="img-label">variance_in_alterations</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cat-section" id="cat-non-official_correspondence">
+        <div class="cat-section-title" data-cat="non-official_correspondence">
+          <span class="cat-slug">//</span> non-official_correspondence
+          <span class="cat-section-count">34 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="non-official_correspondence" data-index="0" tabindex="0" role="button" aria-label="adventure_accepted">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/adventure_accepted.png" loading="lazy" alt="adventure_accepted"/>
+          </div>
+          <div class="img-label">adventure_accepted</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="1" tabindex="0" role="button" aria-label="book_club_lopez">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/book_club_lopez.png" loading="lazy" alt="book_club_lopez"/>
+          </div>
+          <div class="img-label">book_club_lopez</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="2" tabindex="0" role="button" aria-label="book_club_penny">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/book_club_penny.png" loading="lazy" alt="book_club_penny"/>
+          </div>
+          <div class="img-label">book_club_penny</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="3" tabindex="0" role="button" aria-label="book_club_philip">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/book_club_philip.png" loading="lazy" alt="book_club_philip"/>
+          </div>
+          <div class="img-label">book_club_philip</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="4" tabindex="0" role="button" aria-label="book_club_samson">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/book_club_samson.png" loading="lazy" alt="book_club_samson"/>
+          </div>
+          <div class="img-label">book_club_samson</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="5" tabindex="0" role="button" aria-label="chain_letter">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/chain_letter.png" loading="lazy" alt="chain_letter"/>
+          </div>
+          <div class="img-label">chain_letter</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="6" tabindex="0" role="button" aria-label="clog_complaint">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/clog_complaint.png" loading="lazy" alt="clog_complaint"/>
+          </div>
+          <div class="img-label">clog_complaint</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="7" tabindex="0" role="button" aria-label="darling_dimensional_staffing">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/darling_dimensional_staffing.png" loading="lazy" alt="darling_dimensional_staffing"/>
+          </div>
+          <div class="img-label">darling_dimensional_staffing</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="8" tabindex="0" role="button" aria-label="dinner_reservations">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/dinner_reservations.png" loading="lazy" alt="dinner_reservations"/>
+          </div>
+          <div class="img-label">dinner_reservations</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="9" tabindex="0" role="button" aria-label="furnace_complaint">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/furnace_complaint.png" loading="lazy" alt="furnace_complaint"/>
+          </div>
+          <div class="img-label">furnace_complaint</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="10" tabindex="0" role="button" aria-label="interrogation_complaint">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/interrogation_complaint.png" loading="lazy" alt="interrogation_complaint"/>
+          </div>
+          <div class="img-label">interrogation_complaint</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="11" tabindex="0" role="button" aria-label="janitor_complaint">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/janitor_complaint.png" loading="lazy" alt="janitor_complaint"/>
+          </div>
+          <div class="img-label">janitor_complaint</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="12" tabindex="0" role="button" aria-label="keystone_inspection">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/keystone_inspection.png" loading="lazy" alt="keystone_inspection"/>
+          </div>
+          <div class="img-label">keystone_inspection</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="13" tabindex="0" role="button" aria-label="mail_tube_complaint">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/mail_tube_complaint.png" loading="lazy" alt="mail_tube_complaint"/>
+          </div>
+          <div class="img-label">mail_tube_complaint</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="14" tabindex="0" role="button" aria-label="motel_complaint">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/motel_complaint.png" loading="lazy" alt="motel_complaint"/>
+          </div>
+          <div class="img-label">motel_complaint</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="15" tabindex="0" role="button" aria-label="plant_complaint">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/plant_complaint.png" loading="lazy" alt="plant_complaint"/>
+          </div>
+          <div class="img-label">plant_complaint</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="16" tabindex="0" role="button" aria-label="quarry_equipment_order">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/quarry_equipment_order.png" loading="lazy" alt="quarry_equipment_order"/>
+          </div>
+          <div class="img-label">quarry_equipment_order</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="17" tabindex="0" role="button" aria-label="quarry_worker_incident">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/quarry_worker_incident.png" loading="lazy" alt="quarry_worker_incident"/>
+          </div>
+          <div class="img-label">quarry_worker_incident</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="18" tabindex="0" role="button" aria-label="relocation_order">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/relocation_order.png" loading="lazy" alt="relocation_order"/>
+          </div>
+          <div class="img-label">relocation_order</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="19" tabindex="0" role="button" aria-label="sand_memo">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/sand_memo.png" loading="lazy" alt="sand_memo"/>
+          </div>
+          <div class="img-label">sand_memo</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="20" tabindex="0" role="button" aria-label="shift_account_pt.1">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/shift_account_pt.1.png" loading="lazy" alt="shift_account_pt.1"/>
+          </div>
+          <div class="img-label">shift_account_pt.1</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="21" tabindex="0" role="button" aria-label="shift_account_pt.2">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/shift_account_pt.2.png" loading="lazy" alt="shift_account_pt.2"/>
+          </div>
+          <div class="img-label">shift_account_pt.2</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="22" tabindex="0" role="button" aria-label="shift_account_pt.3">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/shift_account_pt.3.png" loading="lazy" alt="shift_account_pt.3"/>
+          </div>
+          <div class="img-label">shift_account_pt.3</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="23" tabindex="0" role="button" aria-label="shifted_bathroom_complaint">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/shifted_bathroom_complaint.png" loading="lazy" alt="shifted_bathroom_complaint"/>
+          </div>
+          <div class="img-label">shifted_bathroom_complaint</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="24" tabindex="0" role="button" aria-label="staffing_issue">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/staffing_issue.png" loading="lazy" alt="staffing_issue"/>
+          </div>
+          <div class="img-label">staffing_issue</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="25" tabindex="0" role="button" aria-label="sticky_note_complaint">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/sticky_note_complaint.png" loading="lazy" alt="sticky_note_complaint"/>
+          </div>
+          <div class="img-label">sticky_note_complaint</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="26" tabindex="0" role="button" aria-label="tee_time">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/tee_time.png" loading="lazy" alt="tee_time"/>
+          </div>
+          <div class="img-label">tee_time</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="27" tabindex="0" role="button" aria-label="tennyson_report_warning">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/tennyson_report_warning.png" loading="lazy" alt="tennyson_report_warning"/>
+          </div>
+          <div class="img-label">tennyson_report_warning</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="28" tabindex="0" role="button" aria-label="trench_do_not_disturb">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/trench_do_not_disturb.png" loading="lazy" alt="trench_do_not_disturb"/>
+          </div>
+          <div class="img-label">trench_do_not_disturb</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="29" tabindex="0" role="button" aria-label="underhill_checking_in">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/underhill_checking_in.png" loading="lazy" alt="underhill_checking_in"/>
+          </div>
+          <div class="img-label">underhill_checking_in</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="30" tabindex="0" role="button" aria-label="upcoming_game_reminder">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/upcoming_game_reminder.png" loading="lazy" alt="upcoming_game_reminder"/>
+          </div>
+          <div class="img-label">upcoming_game_reminder</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="31" tabindex="0" role="button" aria-label="work_chat_dead_dog">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/work_chat_dead_dog.png" loading="lazy" alt="work_chat_dead_dog"/>
+          </div>
+          <div class="img-label">work_chat_dead_dog</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="32" tabindex="0" role="button" aria-label="work_chat_plane_parts">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/work_chat_plane_parts.png" loading="lazy" alt="work_chat_plane_parts"/>
+          </div>
+          <div class="img-label">work_chat_plane_parts</div>
+        </div>
+        <div class="img-card" data-cat="non-official_correspondence" data-index="33" tabindex="0" role="button" aria-label="work_chat_teeth">
+          <div class="img-thumb">
+            <img src="images/non-official_correspondence/work_chat_teeth.png" loading="lazy" alt="work_chat_teeth"/>
+          </div>
+          <div class="img-label">work_chat_teeth</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cat-section" id="cat-official_correspondence">
+        <div class="cat-section-title" data-cat="official_correspondence">
+          <span class="cat-slug">//</span> official_correspondence
+          <span class="cat-section-count">37 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="official_correspondence" data-index="0" tabindex="0" role="button" aria-label="agent_death_notification">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/agent_death_notification.png" loading="lazy" alt="agent_death_notification"/>
+          </div>
+          <div class="img-label">agent_death_notification</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="1" tabindex="0" role="button" aria-label="approved_terminology_reminder">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/approved_terminology_reminder.png" loading="lazy" alt="approved_terminology_reminder"/>
+          </div>
+          <div class="img-label">approved_terminology_reminder</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="2" tabindex="0" role="button" aria-label="arish_escaped_oop">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/arish_escaped_oop.png" loading="lazy" alt="arish_escaped_oop"/>
+          </div>
+          <div class="img-label">arish_escaped_oop</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="3" tabindex="0" role="button" aria-label="arish_security_matters">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/arish_security_matters.png" loading="lazy" alt="arish_security_matters"/>
+          </div>
+          <div class="img-label">arish_security_matters</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="4" tabindex="0" role="button" aria-label="ash_request_denied">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/ash_request_denied.png" loading="lazy" alt="ash_request_denied"/>
+          </div>
+          <div class="img-label">ash_request_denied</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="5" tabindex="0" role="button" aria-label="cafeteria_concerns">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/cafeteria_concerns.png" loading="lazy" alt="cafeteria_concerns"/>
+          </div>
+          <div class="img-label">cafeteria_concerns</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="6" tabindex="0" role="button" aria-label="carla_file_received">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/carla_file_received.png" loading="lazy" alt="carla_file_received"/>
+          </div>
+          <div class="img-label">carla_file_received</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="7" tabindex="0" role="button" aria-label="casey_inquiry">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/casey_inquiry.png" loading="lazy" alt="casey_inquiry"/>
+          </div>
+          <div class="img-label">casey_inquiry</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="8" tabindex="0" role="button" aria-label="cauldron_lake_update">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/cauldron_lake_update.png" loading="lazy" alt="cauldron_lake_update"/>
+          </div>
+          <div class="img-label">cauldron_lake_update</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="9" tabindex="0" role="button" aria-label="darling_budget_request">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/darling_budget_request.png" loading="lazy" alt="darling_budget_request"/>
+          </div>
+          <div class="img-label">darling_budget_request</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="10" tabindex="0" role="button" aria-label="darling_underhill_disagreement">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/darling_underhill_disagreement.png" loading="lazy" alt="darling_underhill_disagreement"/>
+          </div>
+          <div class="img-label">darling_underhill_disagreement</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="11" tabindex="0" role="button" aria-label="dump_cessation_of_work_order">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/dump_cessation_of_work_order.png" loading="lazy" alt="dump_cessation_of_work_order"/>
+          </div>
+          <div class="img-label">dump_cessation_of_work_order</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="12" tabindex="0" role="button" aria-label="executive_meeting_minutes">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/executive_meeting_minutes.png" loading="lazy" alt="executive_meeting_minutes"/>
+          </div>
+          <div class="img-label">executive_meeting_minutes</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="13" tabindex="0" role="button" aria-label="field_training_actor_complaint">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/field_training_actor_complaint.png" loading="lazy" alt="field_training_actor_complaint"/>
+          </div>
+          <div class="img-label">field_training_actor_complaint</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="14" tabindex="0" role="button" aria-label="foundation_accident">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/foundation_accident.png" loading="lazy" alt="foundation_accident"/>
+          </div>
+          <div class="img-label">foundation_accident</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="15" tabindex="0" role="button" aria-label="hubert_black_rock_analysis">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/hubert_black_rock_analysis.png" loading="lazy" alt="hubert_black_rock_analysis"/>
+          </div>
+          <div class="img-label">hubert_black_rock_analysis</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="16" tabindex="0" role="button" aria-label="marshall_awe_investigations">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/marshall_awe_investigations.png" loading="lazy" alt="marshall_awe_investigations"/>
+          </div>
+          <div class="img-label">marshall_awe_investigations</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="17" tabindex="0" role="button" aria-label="marshall_lockdown_distinctions">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/marshall_lockdown_distinctions.png" loading="lazy" alt="marshall_lockdown_distinctions"/>
+          </div>
+          <div class="img-label">marshall_lockdown_distinctions</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="18" tabindex="0" role="button" aria-label="marshall_trench’s_behavior">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/marshall_trench’s_behavior.png" loading="lazy" alt="marshall_trench’s_behavior"/>
+          </div>
+          <div class="img-label">marshall_trench’s_behavior</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="19" tabindex="0" role="button" aria-label="missing_agents">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/missing_agents.png" loading="lazy" alt="missing_agents"/>
+          </div>
+          <div class="img-label">missing_agents</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="20" tabindex="0" role="button" aria-label="no_smoking_reminder">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/no_smoking_reminder.png" loading="lazy" alt="no_smoking_reminder"/>
+          </div>
+          <div class="img-label">no_smoking_reminder</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="21" tabindex="0" role="button" aria-label="northmoor_final_warning">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/northmoor_final_warning.png" loading="lazy" alt="northmoor_final_warning"/>
+          </div>
+          <div class="img-label">northmoor_final_warning</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="22" tabindex="0" role="button" aria-label="northmoor_medical_results">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/northmoor_medical_results.png" loading="lazy" alt="northmoor_medical_results"/>
+          </div>
+          <div class="img-label">northmoor_medical_results</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="23" tabindex="0" role="button" aria-label="precognitive_powers">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/precognitive_powers.png" loading="lazy" alt="precognitive_powers"/>
+          </div>
+          <div class="img-label">precognitive_powers</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="24" tabindex="0" role="button" aria-label="prohibited_items_reminder">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/prohibited_items_reminder.png" loading="lazy" alt="prohibited_items_reminder"/>
+          </div>
+          <div class="img-label">prohibited_items_reminder</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="25" tabindex="0" role="button" aria-label="r4_reports_reminder">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/r4_reports_reminder.png" loading="lazy" alt="r4_reports_reminder"/>
+          </div>
+          <div class="img-label">r4_reports_reminder</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="26" tabindex="0" role="button" aria-label="resignation_letter">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/resignation_letter.png" loading="lazy" alt="resignation_letter"/>
+          </div>
+          <div class="img-label">resignation_letter</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="27" tabindex="0" role="button" aria-label="security_order">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/security_order.png" loading="lazy" alt="security_order"/>
+          </div>
+          <div class="img-label">security_order</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="28" tabindex="0" role="button" aria-label="sensory_tank_purpose">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/sensory_tank_purpose.png" loading="lazy" alt="sensory_tank_purpose"/>
+          </div>
+          <div class="img-label">sensory_tank_purpose</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="29" tabindex="0" role="button" aria-label="tommasi_willow_awe_outcome">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/tommasi_willow_awe_outcome.png" loading="lazy" alt="tommasi_willow_awe_outcome"/>
+          </div>
+          <div class="img-label">tommasi_willow_awe_outcome</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="30" tabindex="0" role="button" aria-label="travel_costs">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/travel_costs.png" loading="lazy" alt="travel_costs"/>
+          </div>
+          <div class="img-label">travel_costs</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="31" tabindex="0" role="button" aria-label="trench_bureau_funding">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/trench_bureau_funding.png" loading="lazy" alt="trench_bureau_funding"/>
+          </div>
+          <div class="img-label">trench_bureau_funding</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="32" tabindex="0" role="button" aria-label="trench_dead_letter_approval">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/trench_dead_letter_approval.png" loading="lazy" alt="trench_dead_letter_approval"/>
+          </div>
+          <div class="img-label">trench_dead_letter_approval</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="33" tabindex="0" role="button" aria-label="trench_official_warning">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/trench_official_warning.png" loading="lazy" alt="trench_official_warning"/>
+          </div>
+          <div class="img-label">trench_official_warning</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="34" tabindex="0" role="button" aria-label="unacceptable_behavior_memo">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/unacceptable_behavior_memo.png" loading="lazy" alt="unacceptable_behavior_memo"/>
+          </div>
+          <div class="img-label">unacceptable_behavior_memo</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="35" tabindex="0" role="button" aria-label="unstable_area_notice">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/unstable_area_notice.png" loading="lazy" alt="unstable_area_notice"/>
+          </div>
+          <div class="img-label">unstable_area_notice</div>
+        </div>
+        <div class="img-card" data-cat="official_correspondence" data-index="36" tabindex="0" role="button" aria-label="visitor_evaluations">
+          <div class="img-thumb">
+            <img src="images/official_correspondence/visitor_evaluations.png" loading="lazy" alt="visitor_evaluations"/>
+          </div>
+          <div class="img-label">visitor_evaluations</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cat-section" id="cat-reports">
+        <div class="cat-section-title" data-cat="reports">
+          <span class="cat-slug">//</span> reports
+          <span class="cat-section-count">43 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="reports" data-index="0" tabindex="0" role="button" aria-label="airplane_evaluation_order">
+          <div class="img-thumb">
+            <img src="images/reports/airplane_evaluation_order.png" loading="lazy" alt="airplane_evaluation_order"/>
+          </div>
+          <div class="img-label">airplane_evaluation_order</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="1" tabindex="0" role="button" aria-label="alice_wake_interview">
+          <div class="img-thumb">
+            <img src="images/reports/alice_wake_interview.png" loading="lazy" alt="alice_wake_interview"/>
+          </div>
+          <div class="img-label">alice_wake_interview</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="2" tabindex="0" role="button" aria-label="altered_item_behavior_changes">
+          <div class="img-thumb">
+            <img src="images/reports/altered_item_behavior_changes.png" loading="lazy" alt="altered_item_behavior_changes"/>
+          </div>
+          <div class="img-label">altered_item_behavior_changes</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="3" tabindex="0" role="button" aria-label="america_overnight_fatality">
+          <div class="img-thumb">
+            <img src="images/reports/america_overnight_fatality.png" loading="lazy" alt="america_overnight_fatality"/>
+          </div>
+          <div class="img-label">america_overnight_fatality</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="4" tabindex="0" role="button" aria-label="america_overnight_results">
+          <div class="img-thumb">
+            <img src="images/reports/america_overnight_results.png" loading="lazy" alt="america_overnight_results"/>
+          </div>
+          <div class="img-label">america_overnight_results</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="5" tabindex="0" role="button" aria-label="astralnauts_information">
+          <div class="img-thumb">
+            <img src="images/reports/astralnauts_information.png" loading="lazy" alt="astralnauts_information"/>
+          </div>
+          <div class="img-label">astralnauts_information</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="6" tabindex="0" role="button" aria-label="awe_rising_frequency">
+          <div class="img-thumb">
+            <img src="images/reports/awe_rising_frequency.png" loading="lazy" alt="awe_rising_frequency"/>
+          </div>
+          <div class="img-label">awe_rising_frequency</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="7" tabindex="0" role="button" aria-label="black_market">
+          <div class="img-thumb">
+            <img src="images/reports/black_market.png" loading="lazy" alt="black_market"/>
+          </div>
+          <div class="img-label">black_market</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="8" tabindex="0" role="button" aria-label="blessed_organization">
+          <div class="img-thumb">
+            <img src="images/reports/blessed_organization.png" loading="lazy" alt="blessed_organization"/>
+          </div>
+          <div class="img-label">blessed_organization</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="9" tabindex="0" role="button" aria-label="bureau_expenditures">
+          <div class="img-thumb">
+            <img src="images/reports/bureau_expenditures.png" loading="lazy" alt="bureau_expenditures"/>
+          </div>
+          <div class="img-label">bureau_expenditures</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="10" tabindex="0" role="button" aria-label="darling_investigation">
+          <div class="img-thumb">
+            <img src="images/reports/darling_investigation.png" loading="lazy" alt="darling_investigation"/>
+          </div>
+          <div class="img-label">darling_investigation</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="11" tabindex="0" role="button" aria-label="data_breach">
+          <div class="img-thumb">
+            <img src="images/reports/data_breach.png" loading="lazy" alt="data_breach"/>
+          </div>
+          <div class="img-label">data_breach</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="12" tabindex="0" role="button" aria-label="director_investigation">
+          <div class="img-thumb">
+            <img src="images/reports/director_investigation.png" loading="lazy" alt="director_investigation"/>
+          </div>
+          <div class="img-label">director_investigation</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="13" tabindex="0" role="button" aria-label="door_appearance">
+          <div class="img-thumb">
+            <img src="images/reports/door_appearance.png" loading="lazy" alt="door_appearance"/>
+          </div>
+          <div class="img-label">door_appearance</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="14" tabindex="0" role="button" aria-label="dr._tokui_investigation">
+          <div class="img-thumb">
+            <img src="images/reports/dr._tokui_investigation.png" loading="lazy" alt="dr._tokui_investigation"/>
+          </div>
+          <div class="img-label">dr._tokui_investigation</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="15" tabindex="0" role="button" aria-label="dylan_faden_observation">
+          <div class="img-thumb">
+            <img src="images/reports/dylan_faden_observation.png" loading="lazy" alt="dylan_faden_observation"/>
+          </div>
+          <div class="img-label">dylan_faden_observation</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="16" tabindex="0" role="button" aria-label="dylan_faden_transcript">
+          <div class="img-thumb">
+            <img src="images/reports/dylan_faden_transcript.png" loading="lazy" alt="dylan_faden_transcript"/>
+          </div>
+          <div class="img-label">dylan_faden_transcript</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="17" tabindex="0" role="button" aria-label="employee_incident">
+          <div class="img-thumb">
+            <img src="images/reports/employee_incident.png" loading="lazy" alt="employee_incident"/>
+          </div>
+          <div class="img-label">employee_incident</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="18" tabindex="0" role="button" aria-label="employee_misdemeanor">
+          <div class="img-thumb">
+            <img src="images/reports/employee_misdemeanor.png" loading="lazy" alt="employee_misdemeanor"/>
+          </div>
+          <div class="img-label">employee_misdemeanor</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="19" tabindex="0" role="button" aria-label="ethics_investigation">
+          <div class="img-thumb">
+            <img src="images/reports/ethics_investigation.png" loading="lazy" alt="ethics_investigation"/>
+          </div>
+          <div class="img-label">ethics_investigation</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="20" tabindex="0" role="button" aria-label="hartman_arrest">
+          <div class="img-thumb">
+            <img src="images/reports/hartman_arrest.png" loading="lazy" alt="hartman_arrest"/>
+          </div>
+          <div class="img-label">hartman_arrest</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="21" tabindex="0" role="button" aria-label="hartman_background">
+          <div class="img-thumb">
+            <img src="images/reports/hartman_background.png" loading="lazy" alt="hartman_background"/>
+          </div>
+          <div class="img-label">hartman_background</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="22" tabindex="0" role="button" aria-label="hotline_security_log">
+          <div class="img-thumb">
+            <img src="images/reports/hotline_security_log.png" loading="lazy" alt="hotline_security_log"/>
+          </div>
+          <div class="img-label">hotline_security_log</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="23" tabindex="0" role="button" aria-label="investigation_order">
+          <div class="img-thumb">
+            <img src="images/reports/investigation_order.png" loading="lazy" alt="investigation_order"/>
+          </div>
+          <div class="img-label">investigation_order</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="24" tabindex="0" role="button" aria-label="jesse_faden_movement_tracking">
+          <div class="img-thumb">
+            <img src="images/reports/jesse_faden_movement_tracking.png" loading="lazy" alt="jesse_faden_movement_tracking"/>
+          </div>
+          <div class="img-label">jesse_faden_movement_tracking</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="25" tabindex="0" role="button" aria-label="mold_autopsy">
+          <div class="img-thumb">
+            <img src="images/reports/mold_autopsy.png" loading="lazy" alt="mold_autopsy"/>
+          </div>
+          <div class="img-label">mold_autopsy</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="26" tabindex="0" role="button" aria-label="nasa_cooperation_review">
+          <div class="img-thumb">
+            <img src="images/reports/nasa_cooperation_review.png" loading="lazy" alt="nasa_cooperation_review"/>
+          </div>
+          <div class="img-label">nasa_cooperation_review</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="27" tabindex="0" role="button" aria-label="p6_victim_autopsy">
+          <div class="img-thumb">
+            <img src="images/reports/p6_victim_autopsy.png" loading="lazy" alt="p6_victim_autopsy"/>
+          </div>
+          <div class="img-label">p6_victim_autopsy</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="28" tabindex="0" role="button" aria-label="panopticon_methods_proposal">
+          <div class="img-thumb">
+            <img src="images/reports/panopticon_methods_proposal.png" loading="lazy" alt="panopticon_methods_proposal"/>
+          </div>
+          <div class="img-label">panopticon_methods_proposal</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="29" tabindex="0" role="button" aria-label="pope’s_promotion">
+          <div class="img-thumb">
+            <img src="images/reports/pope’s_promotion.png" loading="lazy" alt="pope’s_promotion"/>
+          </div>
+          <div class="img-label">pope’s_promotion</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="30" tabindex="0" role="button" aria-label="power_cores">
+          <div class="img-thumb">
+            <img src="images/reports/power_cores.png" loading="lazy" alt="power_cores"/>
+          </div>
+          <div class="img-label">power_cores</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="31" tabindex="0" role="button" aria-label="quarry_incident">
+          <div class="img-thumb">
+            <img src="images/reports/quarry_incident.png" loading="lazy" alt="quarry_incident"/>
+          </div>
+          <div class="img-label">quarry_incident</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="32" tabindex="0" role="button" aria-label="recording_chair_procedures">
+          <div class="img-thumb">
+            <img src="images/reports/recording_chair_procedures.png" loading="lazy" alt="recording_chair_procedures"/>
+          </div>
+          <div class="img-label">recording_chair_procedures</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="33" tabindex="0" role="button" aria-label="sealed_threshold_account">
+          <div class="img-thumb">
+            <img src="images/reports/sealed_threshold_account.png" loading="lazy" alt="sealed_threshold_account"/>
+          </div>
+          <div class="img-label">sealed_threshold_account</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="34" tabindex="0" role="button" aria-label="shaded_specimen_captured">
+          <div class="img-thumb">
+            <img src="images/reports/shaded_specimen_captured.png" loading="lazy" alt="shaded_specimen_captured"/>
+          </div>
+          <div class="img-label">shaded_specimen_captured</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="35" tabindex="0" role="button" aria-label="specimen_escape_assessment">
+          <div class="img-thumb">
+            <img src="images/reports/specimen_escape_assessment.png" loading="lazy" alt="specimen_escape_assessment"/>
+          </div>
+          <div class="img-label">specimen_escape_assessment</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="36" tabindex="0" role="button" aria-label="talented_janitor">
+          <div class="img-thumb">
+            <img src="images/reports/talented_janitor.png" loading="lazy" alt="talented_janitor"/>
+          </div>
+          <div class="img-label">talented_janitor</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="37" tabindex="0" role="button" aria-label="television_proposal">
+          <div class="img-thumb">
+            <img src="images/reports/television_proposal.png" loading="lazy" alt="television_proposal"/>
+          </div>
+          <div class="img-label">television_proposal</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="38" tabindex="0" role="button" aria-label="tennyson_report">
+          <div class="img-thumb">
+            <img src="images/reports/tennyson_report.png" loading="lazy" alt="tennyson_report"/>
+          </div>
+          <div class="img-label">tennyson_report</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="39" tabindex="0" role="button" aria-label="threshold_kids_proposal">
+          <div class="img-thumb">
+            <img src="images/reports/threshold_kids_proposal.png" loading="lazy" alt="threshold_kids_proposal"/>
+          </div>
+          <div class="img-label">threshold_kids_proposal</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="40" tabindex="0" role="button" aria-label="underhill_background">
+          <div class="img-thumb">
+            <img src="images/reports/underhill_background.png" loading="lazy" alt="underhill_background"/>
+          </div>
+          <div class="img-label">underhill_background</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="41" tabindex="0" role="button" aria-label="wake_evidence">
+          <div class="img-thumb">
+            <img src="images/reports/wake_evidence.png" loading="lazy" alt="wake_evidence"/>
+          </div>
+          <div class="img-label">wake_evidence</div>
+        </div>
+        <div class="img-card" data-cat="reports" data-index="42" tabindex="0" role="button" aria-label="willow_awe_shipping_manifest">
+          <div class="img-thumb">
+            <img src="images/reports/willow_awe_shipping_manifest.png" loading="lazy" alt="willow_awe_shipping_manifest"/>
+          </div>
+          <div class="img-label">willow_awe_shipping_manifest</div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cat-section" id="cat-research">
+        <div class="cat-section-title" data-cat="research">
+          <span class="cat-slug">//</span> research
+          <span class="cat-section-count">48 imagenes</span>
+        </div>
+        <div class="img-grid">
+        <div class="img-card" data-cat="research" data-index="0" tabindex="0" role="button" aria-label="astral_exhibition">
+          <div class="img-thumb">
+            <img src="images/research/astral_exhibition.png" loading="lazy" alt="astral_exhibition"/>
+          </div>
+          <div class="img-label">astral_exhibition</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="1" tabindex="0" role="button" aria-label="astral_plane">
+          <div class="img-thumb">
+            <img src="images/research/astral_plane.png" loading="lazy" alt="astral_plane"/>
+          </div>
+          <div class="img-label">astral_plane</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="2" tabindex="0" role="button" aria-label="astral_plane_counteressay">
+          <div class="img-thumb">
+            <img src="images/research/astral_plane_counteressay.png" loading="lazy" alt="astral_plane_counteressay"/>
+          </div>
+          <div class="img-label">astral_plane_counteressay</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="3" tabindex="0" role="button" aria-label="atlas_theory">
+          <div class="img-thumb">
+            <img src="images/research/atlas_theory.png" loading="lazy" alt="atlas_theory"/>
+          </div>
+          <div class="img-label">atlas_theory</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="4" tabindex="0" role="button" aria-label="black_rock">
+          <div class="img-thumb">
+            <img src="images/research/black_rock.png" loading="lazy" alt="black_rock"/>
+          </div>
+          <div class="img-label">black_rock</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="5" tabindex="0" role="button" aria-label="black_rock_prisms">
+          <div class="img-thumb">
+            <img src="images/research/black_rock_prisms.png" loading="lazy" alt="black_rock_prisms"/>
+          </div>
+          <div class="img-label">black_rock_prisms</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="6" tabindex="0" role="button" aria-label="cave_paintings">
+          <div class="img-thumb">
+            <img src="images/research/cave_paintings.png" loading="lazy" alt="cave_paintings"/>
+          </div>
+          <div class="img-label">cave_paintings</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="7" tabindex="0" role="button" aria-label="collective_unconscious">
+          <div class="img-thumb">
+            <img src="images/research/collective_unconscious.png" loading="lazy" alt="collective_unconscious"/>
+          </div>
+          <div class="img-label">collective_unconscious</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="8" tabindex="0" role="button" aria-label="control_points">
+          <div class="img-thumb">
+            <img src="images/research/control_points.png" loading="lazy" alt="control_points"/>
+          </div>
+          <div class="img-label">control_points</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="9" tabindex="0" role="button" aria-label="foundation_etchings">
+          <div class="img-thumb">
+            <img src="images/research/foundation_etchings.png" loading="lazy" alt="foundation_etchings"/>
+          </div>
+          <div class="img-label">foundation_etchings</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="10" tabindex="0" role="button" aria-label="foundation_pillar">
+          <div class="img-thumb">
+            <img src="images/research/foundation_pillar.png" loading="lazy" alt="foundation_pillar"/>
+          </div>
+          <div class="img-label">foundation_pillar</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="11" tabindex="0" role="button" aria-label="groupthink">
+          <div class="img-thumb">
+            <img src="images/research/groupthink.png" loading="lazy" alt="groupthink"/>
+          </div>
+          <div class="img-label">groupthink</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="12" tabindex="0" role="button" aria-label="hedron_containment">
+          <div class="img-thumb">
+            <img src="images/research/hedron_containment.png" loading="lazy" alt="hedron_containment"/>
+          </div>
+          <div class="img-label">hedron_containment</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="13" tabindex="0" role="button" aria-label="history_of_the_oldest_house">
+          <div class="img-thumb">
+            <img src="images/research/history_of_the_oldest_house.png" loading="lazy" alt="history_of_the_oldest_house"/>
+          </div>
+          <div class="img-label">history_of_the_oldest_house</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="14" tabindex="0" role="button" aria-label="home_safe_tests">
+          <div class="img-thumb">
+            <img src="images/research/home_safe_tests.png" loading="lazy" alt="home_safe_tests"/>
+          </div>
+          <div class="img-label">home_safe_tests</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="15" tabindex="0" role="button" aria-label="leylines">
+          <div class="img-thumb">
+            <img src="images/research/leylines.png" loading="lazy" alt="leylines"/>
+          </div>
+          <div class="img-label">leylines</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="16" tabindex="0" role="button" aria-label="lucky_item_manifest">
+          <div class="img-thumb">
+            <img src="images/research/lucky_item_manifest.png" loading="lazy" alt="lucky_item_manifest"/>
+          </div>
+          <div class="img-label">lucky_item_manifest</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="17" tabindex="0" role="button" aria-label="mirror_altered_item">
+          <div class="img-thumb">
+            <img src="images/research/mirror_altered_item.png" loading="lazy" alt="mirror_altered_item"/>
+          </div>
+          <div class="img-label">mirror_altered_item</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="18" tabindex="0" role="button" aria-label="mirror_containment">
+          <div class="img-thumb">
+            <img src="images/research/mirror_containment.png" loading="lazy" alt="mirror_containment"/>
+          </div>
+          <div class="img-label">mirror_containment</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="19" tabindex="0" role="button" aria-label="mold_threshold">
+          <div class="img-thumb">
+            <img src="images/research/mold_threshold.png" loading="lazy" alt="mold_threshold"/>
+          </div>
+          <div class="img-label">mold_threshold</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="20" tabindex="0" role="button" aria-label="night_springs_screenplay_pg.1">
+          <div class="img-thumb">
+            <img src="images/research/night_springs_screenplay_pg.1.png" loading="lazy" alt="night_springs_screenplay_pg.1"/>
+          </div>
+          <div class="img-label">night_springs_screenplay_pg.1</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="21" tabindex="0" role="button" aria-label="night_springs_screenplay_pg.2">
+          <div class="img-thumb">
+            <img src="images/research/night_springs_screenplay_pg.2.png" loading="lazy" alt="night_springs_screenplay_pg.2"/>
+          </div>
+          <div class="img-label">night_springs_screenplay_pg.2</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="22" tabindex="0" role="button" aria-label="night_springs_screenplay_pg.3">
+          <div class="img-thumb">
+            <img src="images/research/night_springs_screenplay_pg.3.png" loading="lazy" alt="night_springs_screenplay_pg.3"/>
+          </div>
+          <div class="img-label">night_springs_screenplay_pg.3</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="23" tabindex="0" role="button" aria-label="night_springs_screenplay_pg.4">
+          <div class="img-thumb">
+            <img src="images/research/night_springs_screenplay_pg.4.png" loading="lazy" alt="night_springs_screenplay_pg.4"/>
+          </div>
+          <div class="img-label">night_springs_screenplay_pg.4</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="24" tabindex="0" role="button" aria-label="nsc">
+          <div class="img-thumb">
+            <img src="images/research/nsc.png" loading="lazy" alt="nsc"/>
+          </div>
+          <div class="img-label">nsc</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="25" tabindex="0" role="button" aria-label="object_and_item_distinctions">
+          <div class="img-thumb">
+            <img src="images/research/object_and_item_distinctions.png" loading="lazy" alt="object_and_item_distinctions"/>
+          </div>
+          <div class="img-label">object_and_item_distinctions</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="26" tabindex="0" role="button" aria-label="ordinary_awe_stage_1.a">
+          <div class="img-thumb">
+            <img src="images/research/ordinary_awe_stage_1.a.png" loading="lazy" alt="ordinary_awe_stage_1.a"/>
+          </div>
+          <div class="img-label">ordinary_awe_stage_1.a</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="27" tabindex="0" role="button" aria-label="ordinary_awe_stage_1.b">
+          <div class="img-thumb">
+            <img src="images/research/ordinary_awe_stage_1.b.png" loading="lazy" alt="ordinary_awe_stage_1.b"/>
+          </div>
+          <div class="img-label">ordinary_awe_stage_1.b</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="28" tabindex="0" role="button" aria-label="ordinary_awe_stage_2">
+          <div class="img-thumb">
+            <img src="images/research/ordinary_awe_stage_2.png" loading="lazy" alt="ordinary_awe_stage_2"/>
+          </div>
+          <div class="img-label">ordinary_awe_stage_2</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="29" tabindex="0" role="button" aria-label="ordinary_awe_stage_3">
+          <div class="img-thumb">
+            <img src="images/research/ordinary_awe_stage_3.png" loading="lazy" alt="ordinary_awe_stage_3"/>
+          </div>
+          <div class="img-label">ordinary_awe_stage_3</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="30" tabindex="0" role="button" aria-label="ordinary_awe_stage_4.a">
+          <div class="img-thumb">
+            <img src="images/research/ordinary_awe_stage_4.a.png" loading="lazy" alt="ordinary_awe_stage_4.a"/>
+          </div>
+          <div class="img-label">ordinary_awe_stage_4.a</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="31" tabindex="0" role="button" aria-label="ordinary_awe_stage_4.b">
+          <div class="img-thumb">
+            <img src="images/research/ordinary_awe_stage_4.b.png" loading="lazy" alt="ordinary_awe_stage_4.b"/>
+          </div>
+          <div class="img-label">ordinary_awe_stage_4.b</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="32" tabindex="0" role="button" aria-label="parautility">
+          <div class="img-thumb">
+            <img src="images/research/parautility.png" loading="lazy" alt="parautility"/>
+          </div>
+          <div class="img-label">parautility</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="33" tabindex="0" role="button" aria-label="pyramidic_geometry">
+          <div class="img-thumb">
+            <img src="images/research/pyramidic_geometry.png" loading="lazy" alt="pyramidic_geometry"/>
+          </div>
+          <div class="img-label">pyramidic_geometry</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="34" tabindex="0" role="button" aria-label="resonance_theory">
+          <div class="img-thumb">
+            <img src="images/research/resonance_theory.png" loading="lazy" alt="resonance_theory"/>
+          </div>
+          <div class="img-label">resonance_theory</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="35" tabindex="0" role="button" aria-label="rituals">
+          <div class="img-thumb">
+            <img src="images/research/rituals.png" loading="lazy" alt="rituals"/>
+          </div>
+          <div class="img-label">rituals</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="36" tabindex="0" role="button" aria-label="shaded_hartman">
+          <div class="img-thumb">
+            <img src="images/research/shaded_hartman.png" loading="lazy" alt="shaded_hartman"/>
+          </div>
+          <div class="img-label">shaded_hartman</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="37" tabindex="0" role="button" aria-label="slide_projector_tests">
+          <div class="img-thumb">
+            <img src="images/research/slide_projector_tests.png" loading="lazy" alt="slide_projector_tests"/>
+          </div>
+          <div class="img-label">slide_projector_tests</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="38" tabindex="0" role="button" aria-label="song_questionnaire">
+          <div class="img-thumb">
+            <img src="images/research/song_questionnaire.png" loading="lazy" alt="song_questionnaire"/>
+          </div>
+          <div class="img-label">song_questionnaire</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="39" tabindex="0" role="button" aria-label="synchronicity">
+          <div class="img-thumb">
+            <img src="images/research/synchronicity.png" loading="lazy" alt="synchronicity"/>
+          </div>
+          <div class="img-label">synchronicity</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="40" tabindex="0" role="button" aria-label="synchronicity_experiment">
+          <div class="img-thumb">
+            <img src="images/research/synchronicity_experiment.png" loading="lazy" alt="synchronicity_experiment"/>
+          </div>
+          <div class="img-label">synchronicity_experiment</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="41" tabindex="0" role="button" aria-label="technological_restrictions">
+          <div class="img-thumb">
+            <img src="images/research/technological_restrictions.png" loading="lazy" alt="technological_restrictions"/>
+          </div>
+          <div class="img-label">technological_restrictions</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="42" tabindex="0" role="button" aria-label="the_formation">
+          <div class="img-thumb">
+            <img src="images/research/the_formation.png" loading="lazy" alt="the_formation"/>
+          </div>
+          <div class="img-label">the_formation</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="43" tabindex="0" role="button" aria-label="the_shadow">
+          <div class="img-thumb">
+            <img src="images/research/the_shadow.png" loading="lazy" alt="the_shadow"/>
+          </div>
+          <div class="img-label">the_shadow</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="44" tabindex="0" role="button" aria-label="threshold_utility">
+          <div class="img-thumb">
+            <img src="images/research/threshold_utility.png" loading="lazy" alt="threshold_utility"/>
+          </div>
+          <div class="img-label">threshold_utility</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="45" tabindex="0" role="button" aria-label="threshold_utility_counteressay">
+          <div class="img-thumb">
+            <img src="images/research/threshold_utility_counteressay.png" loading="lazy" alt="threshold_utility_counteressay"/>
+          </div>
+          <div class="img-label">threshold_utility_counteressay</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="46" tabindex="0" role="button" aria-label="thresholds">
+          <div class="img-thumb">
+            <img src="images/research/thresholds.png" loading="lazy" alt="thresholds"/>
+          </div>
+          <div class="img-label">thresholds</div>
+        </div>
+        <div class="img-card" data-cat="research" data-index="47" tabindex="0" role="button" aria-label="urban_legends">
+          <div class="img-thumb">
+            <img src="images/research/urban_legends.png" loading="lazy" alt="urban_legends"/>
+          </div>
+          <div class="img-label">urban_legends</div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <div id="lb-toolbar">
+    <div id="lb-info">
+      <div id="lb-name">—</div>
+      <div id="lb-cat">—</div>
+    </div>
+    <div id="lb-counter">0 / 0</div>
+    <button id="lb-close" title="Cerrar (Esc)">✕</button>
+  </div>
+  <div id="lb-body">
+    <button class="lb-nav" id="lb-prev">‹</button>
+    <img id="lb-img" src="" alt=""/>
+    <button class="lb-nav" id="lb-next">›</button>
+  </div>
+  <div id="lb-strip"></div>
+</div>
+
+<script>
+// ── DATA (embebida) ────────────────────────────────────────────────
+const DATA = {"generated":"2026-04-06T12:20:53.476Z","totalImages":286,"categories":[{"id":"astral_research","name":"astral_research","count":3,"images":[{"name":"astral_copy","file":"astral_copy.png","path":"images/astral_research/astral_copy.png"},{"name":"astral_mimic","file":"astral_mimic.png","path":"images/astral_research/astral_mimic.png"},{"name":"astral_spike","file":"astral_spike.png","path":"images/astral_research/astral_spike.png"}]},{"id":"case_files_altered_items","name":"case_files_altered_items","count":51,"images":[{"name":"anchor_procedures","file":"anchor_procedures.png","path":"images/case_files_altered_items/anchor_procedures.png"},{"name":"anchor_supplement","file":"anchor_supplement.png","path":"images/case_files_altered_items/anchor_supplement.png"},{"name":"arcade_cabinets_procedures","file":"arcade_cabinets_procedures.png","path":"images/case_files_altered_items/arcade_cabinets_procedures.png"},{"name":"arcade_cabinets_supplement","file":"arcade_cabinets_supplement.png","path":"images/case_files_altered_items/arcade_cabinets_supplement.png"},{"name":"balloon_procedures","file":"balloon_procedures.png","path":"images/case_files_altered_items/balloon_procedures.png"},{"name":"balloon_supplement","file":"balloon_supplement.png","path":"images/case_files_altered_items/balloon_supplement.png"},{"name":"fan_procedures","file":"fan_procedures.png","path":"images/case_files_altered_items/fan_procedures.png"},{"name":"fan_supplement","file":"fan_supplement.png","path":"images/case_files_altered_items/fan_supplement.png"},{"name":"globe_procedures","file":"globe_procedures.png","path":"images/case_files_altered_items/globe_procedures.png"},{"name":"globe_supplement","file":"globe_supplement.png","path":"images/case_files_altered_items/globe_supplement.png"},{"name":"hammer_procedures","file":"hammer_procedures.png","path":"images/case_files_altered_items/hammer_procedures.png"},{"name":"hammer_supplement","file":"hammer_supplement.png","path":"images/case_files_altered_items/hammer_supplement.png"},{"name":"hand_chair_procedures","file":"hand_chair_procedures.png","path":"images/case_files_altered_items/hand_chair_procedures.png"},{"name":"letters_procedures","file":"letters_procedures.png","path":"images/case_files_altered_items/letters_procedures.png"},{"name":"maneki-neko_procedures","file":"maneki-neko_procedures.png","path":"images/case_files_altered_items/maneki-neko_procedures.png"},{"name":"mannequin_procedures","file":"mannequin_procedures.png","path":"images/case_files_altered_items/mannequin_procedures.png"},{"name":"mannequin_supplement","file":"mannequin_supplement.png","path":"images/case_files_altered_items/mannequin_supplement.png"},{"name":"mirror_procedures","file":"mirror_procedures.png","path":"images/case_files_altered_items/mirror_procedures.png"},{"name":"mirror_supplement","file":"mirror_supplement.png","path":"images/case_files_altered_items/mirror_supplement.png"},{"name":"movie_camera_procedures","file":"movie_camera_procedures.png","path":"images/case_files_altered_items/movie_camera_procedures.png"},{"name":"movie_camera_supplement","file":"movie_camera_supplement.png","path":"images/case_files_altered_items/movie_camera_supplement.png"},{"name":"paper_lantern_procedures","file":"paper_lantern_procedures.png","path":"images/case_files_altered_items/paper_lantern_procedures.png"},{"name":"paper_lantern_supplement","file":"paper_lantern_supplement.png","path":"images/case_files_altered_items/paper_lantern_supplement.png"},{"name":"picnic_basket_procedures","file":"picnic_basket_procedures.png","path":"images/case_files_altered_items/picnic_basket_procedures.png"},{"name":"picnic_basket_supplement","file":"picnic_basket_supplement.png","path":"images/case_files_altered_items/picnic_basket_supplement.png"},{"name":"pink_flamingo_procedures","file":"pink_flamingo_procedures.png","path":"images/case_files_altered_items/pink_flamingo_procedures.png"},{"name":"pink_flamingo_supplement","file":"pink_flamingo_supplement.png","path":"images/case_files_altered_items/pink_flamingo_supplement.png"},{"name":"plastic_tree_procedures","file":"plastic_tree_procedures.png","path":"images/case_files_altered_items/plastic_tree_procedures.png"},{"name":"plastic_tree_supplement","file":"plastic_tree_supplement.png","path":"images/case_files_altered_items/plastic_tree_supplement.png"},{"name":"post_box_procedures","file":"post_box_procedures.png","path":"images/case_files_altered_items/post_box_procedures.png"},{"name":"post_box_supplement","file":"post_box_supplement.png","path":"images/case_files_altered_items/post_box_supplement.png"},{"name":"pram_procedures","file":"pram_procedures.png","path":"images/case_files_altered_items/pram_procedures.png"},{"name":"pram_supplement","file":"pram_supplement.png","path":"images/case_files_altered_items/pram_supplement.png"},{"name":"refrigerator_procedures","file":"refrigerator_procedures.png","path":"images/case_files_altered_items/refrigerator_procedures.png"},{"name":"refrigerator_supplement","file":"refrigerator_supplement.png","path":"images/case_files_altered_items/refrigerator_supplement.png"},{"name":"rubber_duck_procedures","file":"rubber_duck_procedures.png","path":"images/case_files_altered_items/rubber_duck_procedures.png"},{"name":"rubber_duck_supplement","file":"rubber_duck_supplement.png","path":"images/case_files_altered_items/rubber_duck_supplement.png"},{"name":"surfboard_procedures","file":"surfboard_procedures.png","path":"images/case_files_altered_items/surfboard_procedures.png"},{"name":"surfboard_supplement","file":"surfboard_supplement.png","path":"images/case_files_altered_items/surfboard_supplement.png"},{"name":"swan_boat_procedures","file":"swan_boat_procedures.png","path":"images/case_files_altered_items/swan_boat_procedures.png"},{"name":"thermos_procedures","file":"thermos_procedures.png","path":"images/case_files_altered_items/thermos_procedures.png"},{"name":"tractor_procedures","file":"tractor_procedures.png","path":"images/case_files_altered_items/tractor_procedures.png"},{"name":"tractor_supplement","file":"tractor_supplement.png","path":"images/case_files_altered_items/tractor_supplement.png"},{"name":"traffic_light_procedures","file":"traffic_light_procedures.png","path":"images/case_files_altered_items/traffic_light_procedures.png"},{"name":"train_car_procedures","file":"train_car_procedures.png","path":"images/case_files_altered_items/train_car_procedures.png"},{"name":"typewritten_page_procedures","file":"typewritten_page_procedures.png","path":"images/case_files_altered_items/typewritten_page_procedures.png"},{"name":"typewritten_page_supplement","file":"typewritten_page_supplement.png","path":"images/case_files_altered_items/typewritten_page_supplement.png"},{"name":"vending_machine_procedures","file":"vending_machine_procedures.png","path":"images/case_files_altered_items/vending_machine_procedures.png"},{"name":"vhs_tape_procedures","file":"vhs_tape_procedures.png","path":"images/case_files_altered_items/vhs_tape_procedures.png"},{"name":"vhs_tape_supplement","file":"vhs_tape_supplement.png","path":"images/case_files_altered_items/vhs_tape_supplement.png"},{"name":"water_cooler_procedures","file":"water_cooler_procedures.png","path":"images/case_files_altered_items/water_cooler_procedures.png"}]},{"id":"case_files_altered_world_events","name":"case_files_altered_world_events","count":24,"images":[{"name":"albany_summary","file":"albany_summary.png","path":"images/case_files_altered_world_events/albany_summary.png"},{"name":"albany_supplement","file":"albany_supplement.png","path":"images/case_files_altered_world_events/albany_supplement.png"},{"name":"bright_falls_1976_summary","file":"bright_falls_1976_summary.png","path":"images/case_files_altered_world_events/bright_falls_1976_summary.png"},{"name":"bright_falls_1976_supplement","file":"bright_falls_1976_supplement.png","path":"images/case_files_altered_world_events/bright_falls_1976_supplement.png"},{"name":"bright_falls_summary","file":"bright_falls_summary.png","path":"images/case_files_altered_world_events/bright_falls_summary.png"},{"name":"bright_falls_supplement","file":"bright_falls_supplement.png","path":"images/case_files_altered_world_events/bright_falls_supplement.png"},{"name":"butte_summary","file":"butte_summary.png","path":"images/case_files_altered_world_events/butte_summary.png"},{"name":"butte_suplement","file":"butte_suplement.png","path":"images/case_files_altered_world_events/butte_suplement.png"},{"name":"eagle_limited_summary","file":"eagle_limited_summary.png","path":"images/case_files_altered_world_events/eagle_limited_summary.png"},{"name":"eagle_limited_supplement","file":"eagle_limited_supplement.png","path":"images/case_files_altered_world_events/eagle_limited_supplement.png"},{"name":"emergency_call_summary","file":"emergency_call_summary.png","path":"images/case_files_altered_world_events/emergency_call_summary.png"},{"name":"emergency_call_suplement","file":"emergency_call_suplement.png","path":"images/case_files_altered_world_events/emergency_call_suplement.png"},{"name":"fra_mauro_summary","file":"fra_mauro_summary.png","path":"images/case_files_altered_world_events/fra_mauro_summary.png"},{"name":"fra_mauro_supplement","file":"fra_mauro_supplement.png","path":"images/case_files_altered_world_events/fra_mauro_supplement.png"},{"name":"havana_summary","file":"havana_summary.png","path":"images/case_files_altered_world_events/havana_summary.png"},{"name":"havana_supplement","file":"havana_supplement.png","path":"images/case_files_altered_world_events/havana_supplement.png"},{"name":"kyiv_summary","file":"kyiv_summary.png","path":"images/case_files_altered_world_events/kyiv_summary.png"},{"name":"kyiv_supplement","file":"kyiv_supplement.png","path":"images/case_files_altered_world_events/kyiv_supplement.png"},{"name":"meteor_hill_summary","file":"meteor_hill_summary.png","path":"images/case_files_altered_world_events/meteor_hill_summary.png"},{"name":"meteor_hill_supplement","file":"meteor_hill_supplement.png","path":"images/case_files_altered_world_events/meteor_hill_supplement.png"},{"name":"ordinary_summary","file":"ordinary_summary.png","path":"images/case_files_altered_world_events/ordinary_summary.png"},{"name":"ordinary_supplement","file":"ordinary_supplement.png","path":"images/case_files_altered_world_events/ordinary_supplement.png"},{"name":"sterling_summary","file":"sterling_summary.png","path":"images/case_files_altered_world_events/sterling_summary.png"},{"name":"sterling_supplement","file":"sterling_supplement.png","path":"images/case_files_altered_world_events/sterling_supplement.png"}]},{"id":"case_files_objects_of_power","name":"case_files_objects_of_power","count":10,"images":[{"name":"ashtray_and_cigarette","file":"ashtray_and_cigarette.png","path":"images/case_files_objects_of_power/ashtray_and_cigarette.png"},{"name":"benicoff_tv","file":"benicoff_tv.png","path":"images/case_files_objects_of_power/benicoff_tv.png"},{"name":"floppy_disk","file":"floppy_disk.png","path":"images/case_files_objects_of_power/floppy_disk.png"},{"name":"home_safe","file":"home_safe.png","path":"images/case_files_objects_of_power/home_safe.png"},{"name":"hotline","file":"hotline.png","path":"images/case_files_objects_of_power/hotline.png"},{"name":"jukebox","file":"jukebox.png","path":"images/case_files_objects_of_power/jukebox.png"},{"name":"merry-go-round_horse","file":"merry-go-round_horse.png","path":"images/case_files_objects_of_power/merry-go-round_horse.png"},{"name":"service_weapon","file":"service_weapon.png","path":"images/case_files_objects_of_power/service_weapon.png"},{"name":"slide_projector","file":"slide_projector.png","path":"images/case_files_objects_of_power/slide_projector.png"},{"name":"x-ray_light_box","file":"x-ray_light_box.png","path":"images/case_files_objects_of_power/x-ray_light_box.png"}]},{"id":"dead_letters","name":"dead_letters","count":17,"images":[{"name":"actor_for_hire","file":"actor_for_hire.png","path":"images/dead_letters/actor_for_hire.png"},{"name":"brain_missing","file":"brain_missing.png","path":"images/dead_letters/brain_missing.png"},{"name":"cat_clock","file":"cat_clock.png","path":"images/dead_letters/cat_clock.png"},{"name":"computer_program","file":"computer_program.png","path":"images/dead_letters/computer_program.png"},{"name":"dead_presidents","file":"dead_presidents.png","path":"images/dead_letters/dead_presidents.png"},{"name":"fake_planes","file":"fake_planes.png","path":"images/dead_letters/fake_planes.png"},{"name":"foot_gossip","file":"foot_gossip.png","path":"images/dead_letters/foot_gossip.png"},{"name":"green","file":"green.png","path":"images/dead_letters/green.png"},{"name":"machine_god","file":"machine_god.png","path":"images/dead_letters/machine_god.png"},{"name":"new_language","file":"new_language.png","path":"images/dead_letters/new_language.png"},{"name":"our_whereabouts","file":"our_whereabouts.png","path":"images/dead_letters/our_whereabouts.png"},{"name":"pinstripe_world","file":"pinstripe_world.png","path":"images/dead_letters/pinstripe_world.png"},{"name":"singing_fish","file":"singing_fish.png","path":"images/dead_letters/singing_fish.png"},{"name":"smoking_ban","file":"smoking_ban.png","path":"images/dead_letters/smoking_ban.png"},{"name":"vivid_dreams","file":"vivid_dreams.png","path":"images/dead_letters/vivid_dreams.png"},{"name":"were-everything","file":"were-everything.png","path":"images/dead_letters/were-everything.png"},{"name":"white_kitchen","file":"white_kitchen.png","path":"images/dead_letters/white_kitchen.png"}]},{"id":"hiss_research","name":"hiss_research","count":19,"images":[{"name":"hiss_agent","file":"hiss_agent.png","path":"images/hiss_research/hiss_agent.png"},{"name":"hiss_barrier","file":"hiss_barrier.png","path":"images/hiss_research/hiss_barrier.png"},{"name":"hiss_charged","file":"hiss_charged.png","path":"images/hiss_research/hiss_charged.png"},{"name":"hiss_cluster","file":"hiss_cluster.png","path":"images/hiss_research/hiss_cluster.png"},{"name":"hiss_demolition_expert","file":"hiss_demolition_expert.png","path":"images/hiss_research/hiss_demolition_expert.png"},{"name":"hiss_distorted","file":"hiss_distorted.png","path":"images/hiss_research/hiss_distorted.png"},{"name":"hiss_elevated","file":"hiss_elevated.png","path":"images/hiss_research/hiss_elevated.png"},{"name":"hiss_guard","file":"hiss_guard.png","path":"images/hiss_research/hiss_guard.png"},{"name":"hiss_ranger","file":"hiss_ranger.png","path":"images/hiss_research/hiss_ranger.png"},{"name":"hiss_ranger_airborne","file":"hiss_ranger_airborne.png","path":"images/hiss_research/hiss_ranger_airborne.png"},{"name":"hiss_sharpened","file":"hiss_sharpened.png","path":"images/hiss_research/hiss_sharpened.png"},{"name":"hiss_sniper","file":"hiss_sniper.png","path":"images/hiss_research/hiss_sniper.png"},{"name":"hiss_trooper","file":"hiss_trooper.png","path":"images/hiss_research/hiss_trooper.png"},{"name":"hiss_warped","file":"hiss_warped.png","path":"images/hiss_research/hiss_warped.png"},{"name":"initial_impressions","file":"initial_impressions.png","path":"images/hiss_research/initial_impressions.png"},{"name":"linguistic_ability","file":"linguistic_ability.png","path":"images/hiss_research/linguistic_ability.png"},{"name":"speech_analysis","file":"speech_analysis.png","path":"images/hiss_research/speech_analysis.png"},{"name":"timeline_of_events","file":"timeline_of_events.png","path":"images/hiss_research/timeline_of_events.png"},{"name":"variance_in_alterations","file":"variance_in_alterations.png","path":"images/hiss_research/variance_in_alterations.png"}]},{"id":"non-official_correspondence","name":"non-official_correspondence","count":34,"images":[{"name":"adventure_accepted","file":"adventure_accepted.png","path":"images/non-official_correspondence/adventure_accepted.png"},{"name":"book_club_lopez","file":"book_club_lopez.png","path":"images/non-official_correspondence/book_club_lopez.png"},{"name":"book_club_penny","file":"book_club_penny.png","path":"images/non-official_correspondence/book_club_penny.png"},{"name":"book_club_philip","file":"book_club_philip.png","path":"images/non-official_correspondence/book_club_philip.png"},{"name":"book_club_samson","file":"book_club_samson.png","path":"images/non-official_correspondence/book_club_samson.png"},{"name":"chain_letter","file":"chain_letter.png","path":"images/non-official_correspondence/chain_letter.png"},{"name":"clog_complaint","file":"clog_complaint.png","path":"images/non-official_correspondence/clog_complaint.png"},{"name":"darling_dimensional_staffing","file":"darling_dimensional_staffing.png","path":"images/non-official_correspondence/darling_dimensional_staffing.png"},{"name":"dinner_reservations","file":"dinner_reservations.png","path":"images/non-official_correspondence/dinner_reservations.png"},{"name":"furnace_complaint","file":"furnace_complaint.png","path":"images/non-official_correspondence/furnace_complaint.png"},{"name":"interrogation_complaint","file":"interrogation_complaint.png","path":"images/non-official_correspondence/interrogation_complaint.png"},{"name":"janitor_complaint","file":"janitor_complaint.png","path":"images/non-official_correspondence/janitor_complaint.png"},{"name":"keystone_inspection","file":"keystone_inspection.png","path":"images/non-official_correspondence/keystone_inspection.png"},{"name":"mail_tube_complaint","file":"mail_tube_complaint.png","path":"images/non-official_correspondence/mail_tube_complaint.png"},{"name":"motel_complaint","file":"motel_complaint.png","path":"images/non-official_correspondence/motel_complaint.png"},{"name":"plant_complaint","file":"plant_complaint.png","path":"images/non-official_correspondence/plant_complaint.png"},{"name":"quarry_equipment_order","file":"quarry_equipment_order.png","path":"images/non-official_correspondence/quarry_equipment_order.png"},{"name":"quarry_worker_incident","file":"quarry_worker_incident.png","path":"images/non-official_correspondence/quarry_worker_incident.png"},{"name":"relocation_order","file":"relocation_order.png","path":"images/non-official_correspondence/relocation_order.png"},{"name":"sand_memo","file":"sand_memo.png","path":"images/non-official_correspondence/sand_memo.png"},{"name":"shift_account_pt.1","file":"shift_account_pt.1.png","path":"images/non-official_correspondence/shift_account_pt.1.png"},{"name":"shift_account_pt.2","file":"shift_account_pt.2.png","path":"images/non-official_correspondence/shift_account_pt.2.png"},{"name":"shift_account_pt.3","file":"shift_account_pt.3.png","path":"images/non-official_correspondence/shift_account_pt.3.png"},{"name":"shifted_bathroom_complaint","file":"shifted_bathroom_complaint.png","path":"images/non-official_correspondence/shifted_bathroom_complaint.png"},{"name":"staffing_issue","file":"staffing_issue.png","path":"images/non-official_correspondence/staffing_issue.png"},{"name":"sticky_note_complaint","file":"sticky_note_complaint.png","path":"images/non-official_correspondence/sticky_note_complaint.png"},{"name":"tee_time","file":"tee_time.png","path":"images/non-official_correspondence/tee_time.png"},{"name":"tennyson_report_warning","file":"tennyson_report_warning.png","path":"images/non-official_correspondence/tennyson_report_warning.png"},{"name":"trench_do_not_disturb","file":"trench_do_not_disturb.png","path":"images/non-official_correspondence/trench_do_not_disturb.png"},{"name":"underhill_checking_in","file":"underhill_checking_in.png","path":"images/non-official_correspondence/underhill_checking_in.png"},{"name":"upcoming_game_reminder","file":"upcoming_game_reminder.png","path":"images/non-official_correspondence/upcoming_game_reminder.png"},{"name":"work_chat_dead_dog","file":"work_chat_dead_dog.png","path":"images/non-official_correspondence/work_chat_dead_dog.png"},{"name":"work_chat_plane_parts","file":"work_chat_plane_parts.png","path":"images/non-official_correspondence/work_chat_plane_parts.png"},{"name":"work_chat_teeth","file":"work_chat_teeth.png","path":"images/non-official_correspondence/work_chat_teeth.png"}]},{"id":"official_correspondence","name":"official_correspondence","count":37,"images":[{"name":"agent_death_notification","file":"agent_death_notification.png","path":"images/official_correspondence/agent_death_notification.png"},{"name":"approved_terminology_reminder","file":"approved_terminology_reminder.png","path":"images/official_correspondence/approved_terminology_reminder.png"},{"name":"arish_escaped_oop","file":"arish_escaped_oop.png","path":"images/official_correspondence/arish_escaped_oop.png"},{"name":"arish_security_matters","file":"arish_security_matters.png","path":"images/official_correspondence/arish_security_matters.png"},{"name":"ash_request_denied","file":"ash_request_denied.png","path":"images/official_correspondence/ash_request_denied.png"},{"name":"cafeteria_concerns","file":"cafeteria_concerns.png","path":"images/official_correspondence/cafeteria_concerns.png"},{"name":"carla_file_received","file":"carla_file_received.png","path":"images/official_correspondence/carla_file_received.png"},{"name":"casey_inquiry","file":"casey_inquiry.png","path":"images/official_correspondence/casey_inquiry.png"},{"name":"cauldron_lake_update","file":"cauldron_lake_update.png","path":"images/official_correspondence/cauldron_lake_update.png"},{"name":"darling_budget_request","file":"darling_budget_request.png","path":"images/official_correspondence/darling_budget_request.png"},{"name":"darling_underhill_disagreement","file":"darling_underhill_disagreement.png","path":"images/official_correspondence/darling_underhill_disagreement.png"},{"name":"dump_cessation_of_work_order","file":"dump_cessation_of_work_order.png","path":"images/official_correspondence/dump_cessation_of_work_order.png"},{"name":"executive_meeting_minutes","file":"executive_meeting_minutes.png","path":"images/official_correspondence/executive_meeting_minutes.png"},{"name":"field_training_actor_complaint","file":"field_training_actor_complaint.png","path":"images/official_correspondence/field_training_actor_complaint.png"},{"name":"foundation_accident","file":"foundation_accident.png","path":"images/official_correspondence/foundation_accident.png"},{"name":"hubert_black_rock_analysis","file":"hubert_black_rock_analysis.png","path":"images/official_correspondence/hubert_black_rock_analysis.png"},{"name":"marshall_awe_investigations","file":"marshall_awe_investigations.png","path":"images/official_correspondence/marshall_awe_investigations.png"},{"name":"marshall_lockdown_distinctions","file":"marshall_lockdown_distinctions.png","path":"images/official_correspondence/marshall_lockdown_distinctions.png"},{"name":"marshall_trench’s_behavior","file":"marshall_trench’s_behavior.png","path":"images/official_correspondence/marshall_trench’s_behavior.png"},{"name":"missing_agents","file":"missing_agents.png","path":"images/official_correspondence/missing_agents.png"},{"name":"no_smoking_reminder","file":"no_smoking_reminder.png","path":"images/official_correspondence/no_smoking_reminder.png"},{"name":"northmoor_final_warning","file":"northmoor_final_warning.png","path":"images/official_correspondence/northmoor_final_warning.png"},{"name":"northmoor_medical_results","file":"northmoor_medical_results.png","path":"images/official_correspondence/northmoor_medical_results.png"},{"name":"precognitive_powers","file":"precognitive_powers.png","path":"images/official_correspondence/precognitive_powers.png"},{"name":"prohibited_items_reminder","file":"prohibited_items_reminder.png","path":"images/official_correspondence/prohibited_items_reminder.png"},{"name":"r4_reports_reminder","file":"r4_reports_reminder.png","path":"images/official_correspondence/r4_reports_reminder.png"},{"name":"resignation_letter","file":"resignation_letter.png","path":"images/official_correspondence/resignation_letter.png"},{"name":"security_order","file":"security_order.png","path":"images/official_correspondence/security_order.png"},{"name":"sensory_tank_purpose","file":"sensory_tank_purpose.png","path":"images/official_correspondence/sensory_tank_purpose.png"},{"name":"tommasi_willow_awe_outcome","file":"tommasi_willow_awe_outcome.png","path":"images/official_correspondence/tommasi_willow_awe_outcome.png"},{"name":"travel_costs","file":"travel_costs.png","path":"images/official_correspondence/travel_costs.png"},{"name":"trench_bureau_funding","file":"trench_bureau_funding.png","path":"images/official_correspondence/trench_bureau_funding.png"},{"name":"trench_dead_letter_approval","file":"trench_dead_letter_approval.png","path":"images/official_correspondence/trench_dead_letter_approval.png"},{"name":"trench_official_warning","file":"trench_official_warning.png","path":"images/official_correspondence/trench_official_warning.png"},{"name":"unacceptable_behavior_memo","file":"unacceptable_behavior_memo.png","path":"images/official_correspondence/unacceptable_behavior_memo.png"},{"name":"unstable_area_notice","file":"unstable_area_notice.png","path":"images/official_correspondence/unstable_area_notice.png"},{"name":"visitor_evaluations","file":"visitor_evaluations.png","path":"images/official_correspondence/visitor_evaluations.png"}]},{"id":"reports","name":"reports","count":43,"images":[{"name":"airplane_evaluation_order","file":"airplane_evaluation_order.png","path":"images/reports/airplane_evaluation_order.png"},{"name":"alice_wake_interview","file":"alice_wake_interview.png","path":"images/reports/alice_wake_interview.png"},{"name":"altered_item_behavior_changes","file":"altered_item_behavior_changes.png","path":"images/reports/altered_item_behavior_changes.png"},{"name":"america_overnight_fatality","file":"america_overnight_fatality.png","path":"images/reports/america_overnight_fatality.png"},{"name":"america_overnight_results","file":"america_overnight_results.png","path":"images/reports/america_overnight_results.png"},{"name":"astralnauts_information","file":"astralnauts_information.png","path":"images/reports/astralnauts_information.png"},{"name":"awe_rising_frequency","file":"awe_rising_frequency.png","path":"images/reports/awe_rising_frequency.png"},{"name":"black_market","file":"black_market.png","path":"images/reports/black_market.png"},{"name":"blessed_organization","file":"blessed_organization.png","path":"images/reports/blessed_organization.png"},{"name":"bureau_expenditures","file":"bureau_expenditures.png","path":"images/reports/bureau_expenditures.png"},{"name":"darling_investigation","file":"darling_investigation.png","path":"images/reports/darling_investigation.png"},{"name":"data_breach","file":"data_breach.png","path":"images/reports/data_breach.png"},{"name":"director_investigation","file":"director_investigation.png","path":"images/reports/director_investigation.png"},{"name":"door_appearance","file":"door_appearance.png","path":"images/reports/door_appearance.png"},{"name":"dr._tokui_investigation","file":"dr._tokui_investigation.png","path":"images/reports/dr._tokui_investigation.png"},{"name":"dylan_faden_observation","file":"dylan_faden_observation.png","path":"images/reports/dylan_faden_observation.png"},{"name":"dylan_faden_transcript","file":"dylan_faden_transcript.png","path":"images/reports/dylan_faden_transcript.png"},{"name":"employee_incident","file":"employee_incident.png","path":"images/reports/employee_incident.png"},{"name":"employee_misdemeanor","file":"employee_misdemeanor.png","path":"images/reports/employee_misdemeanor.png"},{"name":"ethics_investigation","file":"ethics_investigation.png","path":"images/reports/ethics_investigation.png"},{"name":"hartman_arrest","file":"hartman_arrest.png","path":"images/reports/hartman_arrest.png"},{"name":"hartman_background","file":"hartman_background.png","path":"images/reports/hartman_background.png"},{"name":"hotline_security_log","file":"hotline_security_log.png","path":"images/reports/hotline_security_log.png"},{"name":"investigation_order","file":"investigation_order.png","path":"images/reports/investigation_order.png"},{"name":"jesse_faden_movement_tracking","file":"jesse_faden_movement_tracking.png","path":"images/reports/jesse_faden_movement_tracking.png"},{"name":"mold_autopsy","file":"mold_autopsy.png","path":"images/reports/mold_autopsy.png"},{"name":"nasa_cooperation_review","file":"nasa_cooperation_review.png","path":"images/reports/nasa_cooperation_review.png"},{"name":"p6_victim_autopsy","file":"p6_victim_autopsy.png","path":"images/reports/p6_victim_autopsy.png"},{"name":"panopticon_methods_proposal","file":"panopticon_methods_proposal.png","path":"images/reports/panopticon_methods_proposal.png"},{"name":"pope’s_promotion","file":"pope’s_promotion.png","path":"images/reports/pope’s_promotion.png"},{"name":"power_cores","file":"power_cores.png","path":"images/reports/power_cores.png"},{"name":"quarry_incident","file":"quarry_incident.png","path":"images/reports/quarry_incident.png"},{"name":"recording_chair_procedures","file":"recording_chair_procedures.png","path":"images/reports/recording_chair_procedures.png"},{"name":"sealed_threshold_account","file":"sealed_threshold_account.png","path":"images/reports/sealed_threshold_account.png"},{"name":"shaded_specimen_captured","file":"shaded_specimen_captured.png","path":"images/reports/shaded_specimen_captured.png"},{"name":"specimen_escape_assessment","file":"specimen_escape_assessment.png","path":"images/reports/specimen_escape_assessment.png"},{"name":"talented_janitor","file":"talented_janitor.png","path":"images/reports/talented_janitor.png"},{"name":"television_proposal","file":"television_proposal.png","path":"images/reports/television_proposal.png"},{"name":"tennyson_report","file":"tennyson_report.png","path":"images/reports/tennyson_report.png"},{"name":"threshold_kids_proposal","file":"threshold_kids_proposal.png","path":"images/reports/threshold_kids_proposal.png"},{"name":"underhill_background","file":"underhill_background.png","path":"images/reports/underhill_background.png"},{"name":"wake_evidence","file":"wake_evidence.png","path":"images/reports/wake_evidence.png"},{"name":"willow_awe_shipping_manifest","file":"willow_awe_shipping_manifest.png","path":"images/reports/willow_awe_shipping_manifest.png"}]},{"id":"research","name":"research","count":48,"images":[{"name":"astral_exhibition","file":"astral_exhibition.png","path":"images/research/astral_exhibition.png"},{"name":"astral_plane","file":"astral_plane.png","path":"images/research/astral_plane.png"},{"name":"astral_plane_counteressay","file":"astral_plane_counteressay.png","path":"images/research/astral_plane_counteressay.png"},{"name":"atlas_theory","file":"atlas_theory.png","path":"images/research/atlas_theory.png"},{"name":"black_rock","file":"black_rock.png","path":"images/research/black_rock.png"},{"name":"black_rock_prisms","file":"black_rock_prisms.png","path":"images/research/black_rock_prisms.png"},{"name":"cave_paintings","file":"cave_paintings.png","path":"images/research/cave_paintings.png"},{"name":"collective_unconscious","file":"collective_unconscious.png","path":"images/research/collective_unconscious.png"},{"name":"control_points","file":"control_points.png","path":"images/research/control_points.png"},{"name":"foundation_etchings","file":"foundation_etchings.png","path":"images/research/foundation_etchings.png"},{"name":"foundation_pillar","file":"foundation_pillar.png","path":"images/research/foundation_pillar.png"},{"name":"groupthink","file":"groupthink.png","path":"images/research/groupthink.png"},{"name":"hedron_containment","file":"hedron_containment.png","path":"images/research/hedron_containment.png"},{"name":"history_of_the_oldest_house","file":"history_of_the_oldest_house.png","path":"images/research/history_of_the_oldest_house.png"},{"name":"home_safe_tests","file":"home_safe_tests.png","path":"images/research/home_safe_tests.png"},{"name":"leylines","file":"leylines.png","path":"images/research/leylines.png"},{"name":"lucky_item_manifest","file":"lucky_item_manifest.png","path":"images/research/lucky_item_manifest.png"},{"name":"mirror_altered_item","file":"mirror_altered_item.png","path":"images/research/mirror_altered_item.png"},{"name":"mirror_containment","file":"mirror_containment.png","path":"images/research/mirror_containment.png"},{"name":"mold_threshold","file":"mold_threshold.png","path":"images/research/mold_threshold.png"},{"name":"night_springs_screenplay_pg.1","file":"night_springs_screenplay_pg.1.png","path":"images/research/night_springs_screenplay_pg.1.png"},{"name":"night_springs_screenplay_pg.2","file":"night_springs_screenplay_pg.2.png","path":"images/research/night_springs_screenplay_pg.2.png"},{"name":"night_springs_screenplay_pg.3","file":"night_springs_screenplay_pg.3.png","path":"images/research/night_springs_screenplay_pg.3.png"},{"name":"night_springs_screenplay_pg.4","file":"night_springs_screenplay_pg.4.png","path":"images/research/night_springs_screenplay_pg.4.png"},{"name":"nsc","file":"nsc.png","path":"images/research/nsc.png"},{"name":"object_and_item_distinctions","file":"object_and_item_distinctions.png","path":"images/research/object_and_item_distinctions.png"},{"name":"ordinary_awe_stage_1.a","file":"ordinary_awe_stage_1.a.png","path":"images/research/ordinary_awe_stage_1.a.png"},{"name":"ordinary_awe_stage_1.b","file":"ordinary_awe_stage_1.b.png","path":"images/research/ordinary_awe_stage_1.b.png"},{"name":"ordinary_awe_stage_2","file":"ordinary_awe_stage_2.png","path":"images/research/ordinary_awe_stage_2.png"},{"name":"ordinary_awe_stage_3","file":"ordinary_awe_stage_3.png","path":"images/research/ordinary_awe_stage_3.png"},{"name":"ordinary_awe_stage_4.a","file":"ordinary_awe_stage_4.a.png","path":"images/research/ordinary_awe_stage_4.a.png"},{"name":"ordinary_awe_stage_4.b","file":"ordinary_awe_stage_4.b.png","path":"images/research/ordinary_awe_stage_4.b.png"},{"name":"parautility","file":"parautility.png","path":"images/research/parautility.png"},{"name":"pyramidic_geometry","file":"pyramidic_geometry.png","path":"images/research/pyramidic_geometry.png"},{"name":"resonance_theory","file":"resonance_theory.png","path":"images/research/resonance_theory.png"},{"name":"rituals","file":"rituals.png","path":"images/research/rituals.png"},{"name":"shaded_hartman","file":"shaded_hartman.png","path":"images/research/shaded_hartman.png"},{"name":"slide_projector_tests","file":"slide_projector_tests.png","path":"images/research/slide_projector_tests.png"},{"name":"song_questionnaire","file":"song_questionnaire.png","path":"images/research/song_questionnaire.png"},{"name":"synchronicity","file":"synchronicity.png","path":"images/research/synchronicity.png"},{"name":"synchronicity_experiment","file":"synchronicity_experiment.png","path":"images/research/synchronicity_experiment.png"},{"name":"technological_restrictions","file":"technological_restrictions.png","path":"images/research/technological_restrictions.png"},{"name":"the_formation","file":"the_formation.png","path":"images/research/the_formation.png"},{"name":"the_shadow","file":"the_shadow.png","path":"images/research/the_shadow.png"},{"name":"threshold_utility","file":"threshold_utility.png","path":"images/research/threshold_utility.png"},{"name":"threshold_utility_counteressay","file":"threshold_utility_counteressay.png","path":"images/research/threshold_utility_counteressay.png"},{"name":"thresholds","file":"thresholds.png","path":"images/research/thresholds.png"},{"name":"urban_legends","file":"urban_legends.png","path":"images/research/urban_legends.png"}]}]};
+
+// ── STATE ──────────────────────────────────────────────────────────
+let activeCat = "__all__";
+let lbImages  = [];
+let lbIndex   = 0;
+
+// ── SIDEBAR ────────────────────────────────────────────────────────
+document.querySelectorAll(".cat-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const id = btn.dataset.id;
+    activeCat = id;
+    syncSidebar();
+    clearSearch();
+    if (id === "__all__") showAll();
+    else showCat(id);
+  });
+});
+
+function syncSidebar() {
+  document.querySelectorAll(".cat-btn").forEach(b =>
+    b.classList.toggle("active", b.dataset.id === activeCat));
+}
+
+// ── SHOW ALL / CAT ─────────────────────────────────────────────────
+function showAll() {
+  document.querySelectorAll(".cat-section").forEach(s => s.classList.remove("hidden"));
+  document.querySelectorAll(".img-card").forEach(c => c.classList.remove("hidden"));
+  showNoResults(false);
+}
+
+function showCat(id) {
+  document.querySelectorAll(".cat-section").forEach(s => {
+    s.classList.toggle("hidden", s.id !== "cat-" + id);
+  });
+  showNoResults(false);
+}
+
+// ── SEARCH ─────────────────────────────────────────────────────────
+let searchTimer = null;
+const searchEl  = document.getElementById("search");
+const searchInfo = document.getElementById("search-info");
+const searchTerm = document.getElementById("search-term");
+const noResults  = document.getElementById("no-results");
+
+searchEl.addEventListener("input", () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(doSearch, 180);
+});
+
+document.getElementById("clear-search").addEventListener("click", () => {
+  searchEl.value = "";
+  clearSearch();
+  if (activeCat === "__all__") showAll();
+  else showCat(activeCat);
+});
+
+function doSearch() {
+  const q = searchEl.value.trim().toLowerCase();
+  if (!q) {
+    clearSearch();
+    if (activeCat === "__all__") showAll();
+    else showCat(activeCat);
+    return;
+  }
+
+  searchInfo.classList.add("visible");
+  searchTerm.textContent = searchEl.value.trim();
+
+  let total = 0;
+  document.querySelectorAll(".cat-section").forEach(section => {
+    const catId   = section.dataset ? section.querySelector(".cat-section-title")?.dataset?.cat : null;
+    const catName = section.querySelector(".cat-section-title")?.textContent?.toLowerCase() ?? "";
+    let catVisible = false;
+
+    section.querySelectorAll(".img-card").forEach(card => {
+      const label = card.querySelector(".img-label")?.textContent?.toLowerCase() ?? "";
+      const match = label.includes(q) || catName.includes(q);
+      card.classList.toggle("hidden", !match);
+      if (match) { catVisible = true; total++; }
+    });
+
+    section.classList.toggle("hidden", !catVisible);
+  });
+
+  showNoResults(total === 0);
+}
+
+function clearSearch() {
+  searchInfo.classList.remove("visible");
+  showNoResults(false);
+}
+
+function showNoResults(show) {
+  noResults.classList.toggle("visible", show);
+}
+
+// ── LIGHTBOX ───────────────────────────────────────────────────────
+document.querySelectorAll(".img-card").forEach(card => {
+  const open = () => {
+    const catId = card.dataset.cat;
+    const idx   = parseInt(card.dataset.index, 10);
+    const cat   = DATA.categories.find(c => c.id === catId);
+    if (cat) openLightbox(cat.images, idx, cat.name);
+  };
+  card.addEventListener("click", open);
+  card.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") open(); });
+});
+
+function openLightbox(images, index, catName) {
+  lbImages = images;
+  lbIndex  = index;
+
+  // construir tira de thumbs
+  const strip = document.getElementById("lb-strip");
+  strip.innerHTML = images.map((img, i) =>
+    `<img class="lb-thumb" src="${img.path}" data-i="${i}" alt="${img.name}" loading="lazy"/>`
+  ).join("");
+  strip.querySelectorAll(".lb-thumb").forEach(th =>
+    th.addEventListener("click", () => { lbIndex = +th.dataset.i; showLbImg(); })
+  );
+
+  document.getElementById("lb-cat").textContent = catName;
+  document.getElementById("lightbox").classList.add("open");
+  document.body.style.overflow = "hidden";
+  showLbImg();
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+function showLbImg() {
+  const img = lbImages[lbIndex];
+  document.getElementById("lb-img").src = img.path;
+  document.getElementById("lb-img").alt = img.name;
+  document.getElementById("lb-name").textContent    = img.name;
+  document.getElementById("lb-counter").textContent = `${lbIndex + 1} / ${lbImages.length}`;
+  document.querySelectorAll(".lb-thumb").forEach((th, i) =>
+    th.classList.toggle("active", i === lbIndex));
+  document.querySelector(".lb-thumb.active")
+    ?.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+}
+
+function lbMove(d) {
+  lbIndex = (lbIndex + d + lbImages.length) % lbImages.length;
+  showLbImg();
+}
+
+document.getElementById("lb-close").addEventListener("click", closeLightbox);
+document.getElementById("lb-prev").addEventListener("click", () => lbMove(-1));
+document.getElementById("lb-next").addEventListener("click", () => lbMove(+1));
+document.getElementById("lightbox").addEventListener("click", e => {
+  if (e.target === document.getElementById("lightbox")) closeLightbox();
+});
+document.addEventListener("keydown", e => {
+  if (!document.getElementById("lightbox").classList.contains("open")) return;
+  if (e.key === "Escape")     closeLightbox();
+  if (e.key === "ArrowLeft")  lbMove(-1);
+  if (e.key === "ArrowRight") lbMove(+1);
+});
+</script>
+</body>
+</html>

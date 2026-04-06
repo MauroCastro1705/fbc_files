@@ -1,0 +1,1506 @@
+{
+  "generated": "2026-04-06T12:20:53.476Z",
+  "totalImages": 286,
+  "categories": [
+    {
+      "id": "astral_research",
+      "name": "astral_research",
+      "count": 3,
+      "images": [
+        {
+          "name": "astral_copy",
+          "file": "astral_copy.png",
+          "path": "images/astral_research/astral_copy.png"
+        },
+        {
+          "name": "astral_mimic",
+          "file": "astral_mimic.png",
+          "path": "images/astral_research/astral_mimic.png"
+        },
+        {
+          "name": "astral_spike",
+          "file": "astral_spike.png",
+          "path": "images/astral_research/astral_spike.png"
+        }
+      ]
+    },
+    {
+      "id": "case_files_altered_items",
+      "name": "case_files_altered_items",
+      "count": 51,
+      "images": [
+        {
+          "name": "anchor_procedures",
+          "file": "anchor_procedures.png",
+          "path": "images/case_files_altered_items/anchor_procedures.png"
+        },
+        {
+          "name": "anchor_supplement",
+          "file": "anchor_supplement.png",
+          "path": "images/case_files_altered_items/anchor_supplement.png"
+        },
+        {
+          "name": "arcade_cabinets_procedures",
+          "file": "arcade_cabinets_procedures.png",
+          "path": "images/case_files_altered_items/arcade_cabinets_procedures.png"
+        },
+        {
+          "name": "arcade_cabinets_supplement",
+          "file": "arcade_cabinets_supplement.png",
+          "path": "images/case_files_altered_items/arcade_cabinets_supplement.png"
+        },
+        {
+          "name": "balloon_procedures",
+          "file": "balloon_procedures.png",
+          "path": "images/case_files_altered_items/balloon_procedures.png"
+        },
+        {
+          "name": "balloon_supplement",
+          "file": "balloon_supplement.png",
+          "path": "images/case_files_altered_items/balloon_supplement.png"
+        },
+        {
+          "name": "fan_procedures",
+          "file": "fan_procedures.png",
+          "path": "images/case_files_altered_items/fan_procedures.png"
+        },
+        {
+          "name": "fan_supplement",
+          "file": "fan_supplement.png",
+          "path": "images/case_files_altered_items/fan_supplement.png"
+        },
+        {
+          "name": "globe_procedures",
+          "file": "globe_procedures.png",
+          "path": "images/case_files_altered_items/globe_procedures.png"
+        },
+        {
+          "name": "globe_supplement",
+          "file": "globe_supplement.png",
+          "path": "images/case_files_altered_items/globe_supplement.png"
+        },
+        {
+          "name": "hammer_procedures",
+          "file": "hammer_procedures.png",
+          "path": "images/case_files_altered_items/hammer_procedures.png"
+        },
+        {
+          "name": "hammer_supplement",
+          "file": "hammer_supplement.png",
+          "path": "images/case_files_altered_items/hammer_supplement.png"
+        },
+        {
+          "name": "hand_chair_procedures",
+          "file": "hand_chair_procedures.png",
+          "path": "images/case_files_altered_items/hand_chair_procedures.png"
+        },
+        {
+          "name": "letters_procedures",
+          "file": "letters_procedures.png",
+          "path": "images/case_files_altered_items/letters_procedures.png"
+        },
+        {
+          "name": "maneki-neko_procedures",
+          "file": "maneki-neko_procedures.png",
+          "path": "images/case_files_altered_items/maneki-neko_procedures.png"
+        },
+        {
+          "name": "mannequin_procedures",
+          "file": "mannequin_procedures.png",
+          "path": "images/case_files_altered_items/mannequin_procedures.png"
+        },
+        {
+          "name": "mannequin_supplement",
+          "file": "mannequin_supplement.png",
+          "path": "images/case_files_altered_items/mannequin_supplement.png"
+        },
+        {
+          "name": "mirror_procedures",
+          "file": "mirror_procedures.png",
+          "path": "images/case_files_altered_items/mirror_procedures.png"
+        },
+        {
+          "name": "mirror_supplement",
+          "file": "mirror_supplement.png",
+          "path": "images/case_files_altered_items/mirror_supplement.png"
+        },
+        {
+          "name": "movie_camera_procedures",
+          "file": "movie_camera_procedures.png",
+          "path": "images/case_files_altered_items/movie_camera_procedures.png"
+        },
+        {
+          "name": "movie_camera_supplement",
+          "file": "movie_camera_supplement.png",
+          "path": "images/case_files_altered_items/movie_camera_supplement.png"
+        },
+        {
+          "name": "paper_lantern_procedures",
+          "file": "paper_lantern_procedures.png",
+          "path": "images/case_files_altered_items/paper_lantern_procedures.png"
+        },
+        {
+          "name": "paper_lantern_supplement",
+          "file": "paper_lantern_supplement.png",
+          "path": "images/case_files_altered_items/paper_lantern_supplement.png"
+        },
+        {
+          "name": "picnic_basket_procedures",
+          "file": "picnic_basket_procedures.png",
+          "path": "images/case_files_altered_items/picnic_basket_procedures.png"
+        },
+        {
+          "name": "picnic_basket_supplement",
+          "file": "picnic_basket_supplement.png",
+          "path": "images/case_files_altered_items/picnic_basket_supplement.png"
+        },
+        {
+          "name": "pink_flamingo_procedures",
+          "file": "pink_flamingo_procedures.png",
+          "path": "images/case_files_altered_items/pink_flamingo_procedures.png"
+        },
+        {
+          "name": "pink_flamingo_supplement",
+          "file": "pink_flamingo_supplement.png",
+          "path": "images/case_files_altered_items/pink_flamingo_supplement.png"
+        },
+        {
+          "name": "plastic_tree_procedures",
+          "file": "plastic_tree_procedures.png",
+          "path": "images/case_files_altered_items/plastic_tree_procedures.png"
+        },
+        {
+          "name": "plastic_tree_supplement",
+          "file": "plastic_tree_supplement.png",
+          "path": "images/case_files_altered_items/plastic_tree_supplement.png"
+        },
+        {
+          "name": "post_box_procedures",
+          "file": "post_box_procedures.png",
+          "path": "images/case_files_altered_items/post_box_procedures.png"
+        },
+        {
+          "name": "post_box_supplement",
+          "file": "post_box_supplement.png",
+          "path": "images/case_files_altered_items/post_box_supplement.png"
+        },
+        {
+          "name": "pram_procedures",
+          "file": "pram_procedures.png",
+          "path": "images/case_files_altered_items/pram_procedures.png"
+        },
+        {
+          "name": "pram_supplement",
+          "file": "pram_supplement.png",
+          "path": "images/case_files_altered_items/pram_supplement.png"
+        },
+        {
+          "name": "refrigerator_procedures",
+          "file": "refrigerator_procedures.png",
+          "path": "images/case_files_altered_items/refrigerator_procedures.png"
+        },
+        {
+          "name": "refrigerator_supplement",
+          "file": "refrigerator_supplement.png",
+          "path": "images/case_files_altered_items/refrigerator_supplement.png"
+        },
+        {
+          "name": "rubber_duck_procedures",
+          "file": "rubber_duck_procedures.png",
+          "path": "images/case_files_altered_items/rubber_duck_procedures.png"
+        },
+        {
+          "name": "rubber_duck_supplement",
+          "file": "rubber_duck_supplement.png",
+          "path": "images/case_files_altered_items/rubber_duck_supplement.png"
+        },
+        {
+          "name": "surfboard_procedures",
+          "file": "surfboard_procedures.png",
+          "path": "images/case_files_altered_items/surfboard_procedures.png"
+        },
+        {
+          "name": "surfboard_supplement",
+          "file": "surfboard_supplement.png",
+          "path": "images/case_files_altered_items/surfboard_supplement.png"
+        },
+        {
+          "name": "swan_boat_procedures",
+          "file": "swan_boat_procedures.png",
+          "path": "images/case_files_altered_items/swan_boat_procedures.png"
+        },
+        {
+          "name": "thermos_procedures",
+          "file": "thermos_procedures.png",
+          "path": "images/case_files_altered_items/thermos_procedures.png"
+        },
+        {
+          "name": "tractor_procedures",
+          "file": "tractor_procedures.png",
+          "path": "images/case_files_altered_items/tractor_procedures.png"
+        },
+        {
+          "name": "tractor_supplement",
+          "file": "tractor_supplement.png",
+          "path": "images/case_files_altered_items/tractor_supplement.png"
+        },
+        {
+          "name": "traffic_light_procedures",
+          "file": "traffic_light_procedures.png",
+          "path": "images/case_files_altered_items/traffic_light_procedures.png"
+        },
+        {
+          "name": "train_car_procedures",
+          "file": "train_car_procedures.png",
+          "path": "images/case_files_altered_items/train_car_procedures.png"
+        },
+        {
+          "name": "typewritten_page_procedures",
+          "file": "typewritten_page_procedures.png",
+          "path": "images/case_files_altered_items/typewritten_page_procedures.png"
+        },
+        {
+          "name": "typewritten_page_supplement",
+          "file": "typewritten_page_supplement.png",
+          "path": "images/case_files_altered_items/typewritten_page_supplement.png"
+        },
+        {
+          "name": "vending_machine_procedures",
+          "file": "vending_machine_procedures.png",
+          "path": "images/case_files_altered_items/vending_machine_procedures.png"
+        },
+        {
+          "name": "vhs_tape_procedures",
+          "file": "vhs_tape_procedures.png",
+          "path": "images/case_files_altered_items/vhs_tape_procedures.png"
+        },
+        {
+          "name": "vhs_tape_supplement",
+          "file": "vhs_tape_supplement.png",
+          "path": "images/case_files_altered_items/vhs_tape_supplement.png"
+        },
+        {
+          "name": "water_cooler_procedures",
+          "file": "water_cooler_procedures.png",
+          "path": "images/case_files_altered_items/water_cooler_procedures.png"
+        }
+      ]
+    },
+    {
+      "id": "case_files_altered_world_events",
+      "name": "case_files_altered_world_events",
+      "count": 24,
+      "images": [
+        {
+          "name": "albany_summary",
+          "file": "albany_summary.png",
+          "path": "images/case_files_altered_world_events/albany_summary.png"
+        },
+        {
+          "name": "albany_supplement",
+          "file": "albany_supplement.png",
+          "path": "images/case_files_altered_world_events/albany_supplement.png"
+        },
+        {
+          "name": "bright_falls_1976_summary",
+          "file": "bright_falls_1976_summary.png",
+          "path": "images/case_files_altered_world_events/bright_falls_1976_summary.png"
+        },
+        {
+          "name": "bright_falls_1976_supplement",
+          "file": "bright_falls_1976_supplement.png",
+          "path": "images/case_files_altered_world_events/bright_falls_1976_supplement.png"
+        },
+        {
+          "name": "bright_falls_summary",
+          "file": "bright_falls_summary.png",
+          "path": "images/case_files_altered_world_events/bright_falls_summary.png"
+        },
+        {
+          "name": "bright_falls_supplement",
+          "file": "bright_falls_supplement.png",
+          "path": "images/case_files_altered_world_events/bright_falls_supplement.png"
+        },
+        {
+          "name": "butte_summary",
+          "file": "butte_summary.png",
+          "path": "images/case_files_altered_world_events/butte_summary.png"
+        },
+        {
+          "name": "butte_suplement",
+          "file": "butte_suplement.png",
+          "path": "images/case_files_altered_world_events/butte_suplement.png"
+        },
+        {
+          "name": "eagle_limited_summary",
+          "file": "eagle_limited_summary.png",
+          "path": "images/case_files_altered_world_events/eagle_limited_summary.png"
+        },
+        {
+          "name": "eagle_limited_supplement",
+          "file": "eagle_limited_supplement.png",
+          "path": "images/case_files_altered_world_events/eagle_limited_supplement.png"
+        },
+        {
+          "name": "emergency_call_summary",
+          "file": "emergency_call_summary.png",
+          "path": "images/case_files_altered_world_events/emergency_call_summary.png"
+        },
+        {
+          "name": "emergency_call_suplement",
+          "file": "emergency_call_suplement.png",
+          "path": "images/case_files_altered_world_events/emergency_call_suplement.png"
+        },
+        {
+          "name": "fra_mauro_summary",
+          "file": "fra_mauro_summary.png",
+          "path": "images/case_files_altered_world_events/fra_mauro_summary.png"
+        },
+        {
+          "name": "fra_mauro_supplement",
+          "file": "fra_mauro_supplement.png",
+          "path": "images/case_files_altered_world_events/fra_mauro_supplement.png"
+        },
+        {
+          "name": "havana_summary",
+          "file": "havana_summary.png",
+          "path": "images/case_files_altered_world_events/havana_summary.png"
+        },
+        {
+          "name": "havana_supplement",
+          "file": "havana_supplement.png",
+          "path": "images/case_files_altered_world_events/havana_supplement.png"
+        },
+        {
+          "name": "kyiv_summary",
+          "file": "kyiv_summary.png",
+          "path": "images/case_files_altered_world_events/kyiv_summary.png"
+        },
+        {
+          "name": "kyiv_supplement",
+          "file": "kyiv_supplement.png",
+          "path": "images/case_files_altered_world_events/kyiv_supplement.png"
+        },
+        {
+          "name": "meteor_hill_summary",
+          "file": "meteor_hill_summary.png",
+          "path": "images/case_files_altered_world_events/meteor_hill_summary.png"
+        },
+        {
+          "name": "meteor_hill_supplement",
+          "file": "meteor_hill_supplement.png",
+          "path": "images/case_files_altered_world_events/meteor_hill_supplement.png"
+        },
+        {
+          "name": "ordinary_summary",
+          "file": "ordinary_summary.png",
+          "path": "images/case_files_altered_world_events/ordinary_summary.png"
+        },
+        {
+          "name": "ordinary_supplement",
+          "file": "ordinary_supplement.png",
+          "path": "images/case_files_altered_world_events/ordinary_supplement.png"
+        },
+        {
+          "name": "sterling_summary",
+          "file": "sterling_summary.png",
+          "path": "images/case_files_altered_world_events/sterling_summary.png"
+        },
+        {
+          "name": "sterling_supplement",
+          "file": "sterling_supplement.png",
+          "path": "images/case_files_altered_world_events/sterling_supplement.png"
+        }
+      ]
+    },
+    {
+      "id": "case_files_objects_of_power",
+      "name": "case_files_objects_of_power",
+      "count": 10,
+      "images": [
+        {
+          "name": "ashtray_and_cigarette",
+          "file": "ashtray_and_cigarette.png",
+          "path": "images/case_files_objects_of_power/ashtray_and_cigarette.png"
+        },
+        {
+          "name": "benicoff_tv",
+          "file": "benicoff_tv.png",
+          "path": "images/case_files_objects_of_power/benicoff_tv.png"
+        },
+        {
+          "name": "floppy_disk",
+          "file": "floppy_disk.png",
+          "path": "images/case_files_objects_of_power/floppy_disk.png"
+        },
+        {
+          "name": "home_safe",
+          "file": "home_safe.png",
+          "path": "images/case_files_objects_of_power/home_safe.png"
+        },
+        {
+          "name": "hotline",
+          "file": "hotline.png",
+          "path": "images/case_files_objects_of_power/hotline.png"
+        },
+        {
+          "name": "jukebox",
+          "file": "jukebox.png",
+          "path": "images/case_files_objects_of_power/jukebox.png"
+        },
+        {
+          "name": "merry-go-round_horse",
+          "file": "merry-go-round_horse.png",
+          "path": "images/case_files_objects_of_power/merry-go-round_horse.png"
+        },
+        {
+          "name": "service_weapon",
+          "file": "service_weapon.png",
+          "path": "images/case_files_objects_of_power/service_weapon.png"
+        },
+        {
+          "name": "slide_projector",
+          "file": "slide_projector.png",
+          "path": "images/case_files_objects_of_power/slide_projector.png"
+        },
+        {
+          "name": "x-ray_light_box",
+          "file": "x-ray_light_box.png",
+          "path": "images/case_files_objects_of_power/x-ray_light_box.png"
+        }
+      ]
+    },
+    {
+      "id": "dead_letters",
+      "name": "dead_letters",
+      "count": 17,
+      "images": [
+        {
+          "name": "actor_for_hire",
+          "file": "actor_for_hire.png",
+          "path": "images/dead_letters/actor_for_hire.png"
+        },
+        {
+          "name": "brain_missing",
+          "file": "brain_missing.png",
+          "path": "images/dead_letters/brain_missing.png"
+        },
+        {
+          "name": "cat_clock",
+          "file": "cat_clock.png",
+          "path": "images/dead_letters/cat_clock.png"
+        },
+        {
+          "name": "computer_program",
+          "file": "computer_program.png",
+          "path": "images/dead_letters/computer_program.png"
+        },
+        {
+          "name": "dead_presidents",
+          "file": "dead_presidents.png",
+          "path": "images/dead_letters/dead_presidents.png"
+        },
+        {
+          "name": "fake_planes",
+          "file": "fake_planes.png",
+          "path": "images/dead_letters/fake_planes.png"
+        },
+        {
+          "name": "foot_gossip",
+          "file": "foot_gossip.png",
+          "path": "images/dead_letters/foot_gossip.png"
+        },
+        {
+          "name": "green",
+          "file": "green.png",
+          "path": "images/dead_letters/green.png"
+        },
+        {
+          "name": "machine_god",
+          "file": "machine_god.png",
+          "path": "images/dead_letters/machine_god.png"
+        },
+        {
+          "name": "new_language",
+          "file": "new_language.png",
+          "path": "images/dead_letters/new_language.png"
+        },
+        {
+          "name": "our_whereabouts",
+          "file": "our_whereabouts.png",
+          "path": "images/dead_letters/our_whereabouts.png"
+        },
+        {
+          "name": "pinstripe_world",
+          "file": "pinstripe_world.png",
+          "path": "images/dead_letters/pinstripe_world.png"
+        },
+        {
+          "name": "singing_fish",
+          "file": "singing_fish.png",
+          "path": "images/dead_letters/singing_fish.png"
+        },
+        {
+          "name": "smoking_ban",
+          "file": "smoking_ban.png",
+          "path": "images/dead_letters/smoking_ban.png"
+        },
+        {
+          "name": "vivid_dreams",
+          "file": "vivid_dreams.png",
+          "path": "images/dead_letters/vivid_dreams.png"
+        },
+        {
+          "name": "were-everything",
+          "file": "were-everything.png",
+          "path": "images/dead_letters/were-everything.png"
+        },
+        {
+          "name": "white_kitchen",
+          "file": "white_kitchen.png",
+          "path": "images/dead_letters/white_kitchen.png"
+        }
+      ]
+    },
+    {
+      "id": "hiss_research",
+      "name": "hiss_research",
+      "count": 19,
+      "images": [
+        {
+          "name": "hiss_agent",
+          "file": "hiss_agent.png",
+          "path": "images/hiss_research/hiss_agent.png"
+        },
+        {
+          "name": "hiss_barrier",
+          "file": "hiss_barrier.png",
+          "path": "images/hiss_research/hiss_barrier.png"
+        },
+        {
+          "name": "hiss_charged",
+          "file": "hiss_charged.png",
+          "path": "images/hiss_research/hiss_charged.png"
+        },
+        {
+          "name": "hiss_cluster",
+          "file": "hiss_cluster.png",
+          "path": "images/hiss_research/hiss_cluster.png"
+        },
+        {
+          "name": "hiss_demolition_expert",
+          "file": "hiss_demolition_expert.png",
+          "path": "images/hiss_research/hiss_demolition_expert.png"
+        },
+        {
+          "name": "hiss_distorted",
+          "file": "hiss_distorted.png",
+          "path": "images/hiss_research/hiss_distorted.png"
+        },
+        {
+          "name": "hiss_elevated",
+          "file": "hiss_elevated.png",
+          "path": "images/hiss_research/hiss_elevated.png"
+        },
+        {
+          "name": "hiss_guard",
+          "file": "hiss_guard.png",
+          "path": "images/hiss_research/hiss_guard.png"
+        },
+        {
+          "name": "hiss_ranger",
+          "file": "hiss_ranger.png",
+          "path": "images/hiss_research/hiss_ranger.png"
+        },
+        {
+          "name": "hiss_ranger_airborne",
+          "file": "hiss_ranger_airborne.png",
+          "path": "images/hiss_research/hiss_ranger_airborne.png"
+        },
+        {
+          "name": "hiss_sharpened",
+          "file": "hiss_sharpened.png",
+          "path": "images/hiss_research/hiss_sharpened.png"
+        },
+        {
+          "name": "hiss_sniper",
+          "file": "hiss_sniper.png",
+          "path": "images/hiss_research/hiss_sniper.png"
+        },
+        {
+          "name": "hiss_trooper",
+          "file": "hiss_trooper.png",
+          "path": "images/hiss_research/hiss_trooper.png"
+        },
+        {
+          "name": "hiss_warped",
+          "file": "hiss_warped.png",
+          "path": "images/hiss_research/hiss_warped.png"
+        },
+        {
+          "name": "initial_impressions",
+          "file": "initial_impressions.png",
+          "path": "images/hiss_research/initial_impressions.png"
+        },
+        {
+          "name": "linguistic_ability",
+          "file": "linguistic_ability.png",
+          "path": "images/hiss_research/linguistic_ability.png"
+        },
+        {
+          "name": "speech_analysis",
+          "file": "speech_analysis.png",
+          "path": "images/hiss_research/speech_analysis.png"
+        },
+        {
+          "name": "timeline_of_events",
+          "file": "timeline_of_events.png",
+          "path": "images/hiss_research/timeline_of_events.png"
+        },
+        {
+          "name": "variance_in_alterations",
+          "file": "variance_in_alterations.png",
+          "path": "images/hiss_research/variance_in_alterations.png"
+        }
+      ]
+    },
+    {
+      "id": "non-official_correspondence",
+      "name": "non-official_correspondence",
+      "count": 34,
+      "images": [
+        {
+          "name": "adventure_accepted",
+          "file": "adventure_accepted.png",
+          "path": "images/non-official_correspondence/adventure_accepted.png"
+        },
+        {
+          "name": "book_club_lopez",
+          "file": "book_club_lopez.png",
+          "path": "images/non-official_correspondence/book_club_lopez.png"
+        },
+        {
+          "name": "book_club_penny",
+          "file": "book_club_penny.png",
+          "path": "images/non-official_correspondence/book_club_penny.png"
+        },
+        {
+          "name": "book_club_philip",
+          "file": "book_club_philip.png",
+          "path": "images/non-official_correspondence/book_club_philip.png"
+        },
+        {
+          "name": "book_club_samson",
+          "file": "book_club_samson.png",
+          "path": "images/non-official_correspondence/book_club_samson.png"
+        },
+        {
+          "name": "chain_letter",
+          "file": "chain_letter.png",
+          "path": "images/non-official_correspondence/chain_letter.png"
+        },
+        {
+          "name": "clog_complaint",
+          "file": "clog_complaint.png",
+          "path": "images/non-official_correspondence/clog_complaint.png"
+        },
+        {
+          "name": "darling_dimensional_staffing",
+          "file": "darling_dimensional_staffing.png",
+          "path": "images/non-official_correspondence/darling_dimensional_staffing.png"
+        },
+        {
+          "name": "dinner_reservations",
+          "file": "dinner_reservations.png",
+          "path": "images/non-official_correspondence/dinner_reservations.png"
+        },
+        {
+          "name": "furnace_complaint",
+          "file": "furnace_complaint.png",
+          "path": "images/non-official_correspondence/furnace_complaint.png"
+        },
+        {
+          "name": "interrogation_complaint",
+          "file": "interrogation_complaint.png",
+          "path": "images/non-official_correspondence/interrogation_complaint.png"
+        },
+        {
+          "name": "janitor_complaint",
+          "file": "janitor_complaint.png",
+          "path": "images/non-official_correspondence/janitor_complaint.png"
+        },
+        {
+          "name": "keystone_inspection",
+          "file": "keystone_inspection.png",
+          "path": "images/non-official_correspondence/keystone_inspection.png"
+        },
+        {
+          "name": "mail_tube_complaint",
+          "file": "mail_tube_complaint.png",
+          "path": "images/non-official_correspondence/mail_tube_complaint.png"
+        },
+        {
+          "name": "motel_complaint",
+          "file": "motel_complaint.png",
+          "path": "images/non-official_correspondence/motel_complaint.png"
+        },
+        {
+          "name": "plant_complaint",
+          "file": "plant_complaint.png",
+          "path": "images/non-official_correspondence/plant_complaint.png"
+        },
+        {
+          "name": "quarry_equipment_order",
+          "file": "quarry_equipment_order.png",
+          "path": "images/non-official_correspondence/quarry_equipment_order.png"
+        },
+        {
+          "name": "quarry_worker_incident",
+          "file": "quarry_worker_incident.png",
+          "path": "images/non-official_correspondence/quarry_worker_incident.png"
+        },
+        {
+          "name": "relocation_order",
+          "file": "relocation_order.png",
+          "path": "images/non-official_correspondence/relocation_order.png"
+        },
+        {
+          "name": "sand_memo",
+          "file": "sand_memo.png",
+          "path": "images/non-official_correspondence/sand_memo.png"
+        },
+        {
+          "name": "shift_account_pt.1",
+          "file": "shift_account_pt.1.png",
+          "path": "images/non-official_correspondence/shift_account_pt.1.png"
+        },
+        {
+          "name": "shift_account_pt.2",
+          "file": "shift_account_pt.2.png",
+          "path": "images/non-official_correspondence/shift_account_pt.2.png"
+        },
+        {
+          "name": "shift_account_pt.3",
+          "file": "shift_account_pt.3.png",
+          "path": "images/non-official_correspondence/shift_account_pt.3.png"
+        },
+        {
+          "name": "shifted_bathroom_complaint",
+          "file": "shifted_bathroom_complaint.png",
+          "path": "images/non-official_correspondence/shifted_bathroom_complaint.png"
+        },
+        {
+          "name": "staffing_issue",
+          "file": "staffing_issue.png",
+          "path": "images/non-official_correspondence/staffing_issue.png"
+        },
+        {
+          "name": "sticky_note_complaint",
+          "file": "sticky_note_complaint.png",
+          "path": "images/non-official_correspondence/sticky_note_complaint.png"
+        },
+        {
+          "name": "tee_time",
+          "file": "tee_time.png",
+          "path": "images/non-official_correspondence/tee_time.png"
+        },
+        {
+          "name": "tennyson_report_warning",
+          "file": "tennyson_report_warning.png",
+          "path": "images/non-official_correspondence/tennyson_report_warning.png"
+        },
+        {
+          "name": "trench_do_not_disturb",
+          "file": "trench_do_not_disturb.png",
+          "path": "images/non-official_correspondence/trench_do_not_disturb.png"
+        },
+        {
+          "name": "underhill_checking_in",
+          "file": "underhill_checking_in.png",
+          "path": "images/non-official_correspondence/underhill_checking_in.png"
+        },
+        {
+          "name": "upcoming_game_reminder",
+          "file": "upcoming_game_reminder.png",
+          "path": "images/non-official_correspondence/upcoming_game_reminder.png"
+        },
+        {
+          "name": "work_chat_dead_dog",
+          "file": "work_chat_dead_dog.png",
+          "path": "images/non-official_correspondence/work_chat_dead_dog.png"
+        },
+        {
+          "name": "work_chat_plane_parts",
+          "file": "work_chat_plane_parts.png",
+          "path": "images/non-official_correspondence/work_chat_plane_parts.png"
+        },
+        {
+          "name": "work_chat_teeth",
+          "file": "work_chat_teeth.png",
+          "path": "images/non-official_correspondence/work_chat_teeth.png"
+        }
+      ]
+    },
+    {
+      "id": "official_correspondence",
+      "name": "official_correspondence",
+      "count": 37,
+      "images": [
+        {
+          "name": "agent_death_notification",
+          "file": "agent_death_notification.png",
+          "path": "images/official_correspondence/agent_death_notification.png"
+        },
+        {
+          "name": "approved_terminology_reminder",
+          "file": "approved_terminology_reminder.png",
+          "path": "images/official_correspondence/approved_terminology_reminder.png"
+        },
+        {
+          "name": "arish_escaped_oop",
+          "file": "arish_escaped_oop.png",
+          "path": "images/official_correspondence/arish_escaped_oop.png"
+        },
+        {
+          "name": "arish_security_matters",
+          "file": "arish_security_matters.png",
+          "path": "images/official_correspondence/arish_security_matters.png"
+        },
+        {
+          "name": "ash_request_denied",
+          "file": "ash_request_denied.png",
+          "path": "images/official_correspondence/ash_request_denied.png"
+        },
+        {
+          "name": "cafeteria_concerns",
+          "file": "cafeteria_concerns.png",
+          "path": "images/official_correspondence/cafeteria_concerns.png"
+        },
+        {
+          "name": "carla_file_received",
+          "file": "carla_file_received.png",
+          "path": "images/official_correspondence/carla_file_received.png"
+        },
+        {
+          "name": "casey_inquiry",
+          "file": "casey_inquiry.png",
+          "path": "images/official_correspondence/casey_inquiry.png"
+        },
+        {
+          "name": "cauldron_lake_update",
+          "file": "cauldron_lake_update.png",
+          "path": "images/official_correspondence/cauldron_lake_update.png"
+        },
+        {
+          "name": "darling_budget_request",
+          "file": "darling_budget_request.png",
+          "path": "images/official_correspondence/darling_budget_request.png"
+        },
+        {
+          "name": "darling_underhill_disagreement",
+          "file": "darling_underhill_disagreement.png",
+          "path": "images/official_correspondence/darling_underhill_disagreement.png"
+        },
+        {
+          "name": "dump_cessation_of_work_order",
+          "file": "dump_cessation_of_work_order.png",
+          "path": "images/official_correspondence/dump_cessation_of_work_order.png"
+        },
+        {
+          "name": "executive_meeting_minutes",
+          "file": "executive_meeting_minutes.png",
+          "path": "images/official_correspondence/executive_meeting_minutes.png"
+        },
+        {
+          "name": "field_training_actor_complaint",
+          "file": "field_training_actor_complaint.png",
+          "path": "images/official_correspondence/field_training_actor_complaint.png"
+        },
+        {
+          "name": "foundation_accident",
+          "file": "foundation_accident.png",
+          "path": "images/official_correspondence/foundation_accident.png"
+        },
+        {
+          "name": "hubert_black_rock_analysis",
+          "file": "hubert_black_rock_analysis.png",
+          "path": "images/official_correspondence/hubert_black_rock_analysis.png"
+        },
+        {
+          "name": "marshall_awe_investigations",
+          "file": "marshall_awe_investigations.png",
+          "path": "images/official_correspondence/marshall_awe_investigations.png"
+        },
+        {
+          "name": "marshall_lockdown_distinctions",
+          "file": "marshall_lockdown_distinctions.png",
+          "path": "images/official_correspondence/marshall_lockdown_distinctions.png"
+        },
+        {
+          "name": "marshall_trench’s_behavior",
+          "file": "marshall_trench’s_behavior.png",
+          "path": "images/official_correspondence/marshall_trench’s_behavior.png"
+        },
+        {
+          "name": "missing_agents",
+          "file": "missing_agents.png",
+          "path": "images/official_correspondence/missing_agents.png"
+        },
+        {
+          "name": "no_smoking_reminder",
+          "file": "no_smoking_reminder.png",
+          "path": "images/official_correspondence/no_smoking_reminder.png"
+        },
+        {
+          "name": "northmoor_final_warning",
+          "file": "northmoor_final_warning.png",
+          "path": "images/official_correspondence/northmoor_final_warning.png"
+        },
+        {
+          "name": "northmoor_medical_results",
+          "file": "northmoor_medical_results.png",
+          "path": "images/official_correspondence/northmoor_medical_results.png"
+        },
+        {
+          "name": "precognitive_powers",
+          "file": "precognitive_powers.png",
+          "path": "images/official_correspondence/precognitive_powers.png"
+        },
+        {
+          "name": "prohibited_items_reminder",
+          "file": "prohibited_items_reminder.png",
+          "path": "images/official_correspondence/prohibited_items_reminder.png"
+        },
+        {
+          "name": "r4_reports_reminder",
+          "file": "r4_reports_reminder.png",
+          "path": "images/official_correspondence/r4_reports_reminder.png"
+        },
+        {
+          "name": "resignation_letter",
+          "file": "resignation_letter.png",
+          "path": "images/official_correspondence/resignation_letter.png"
+        },
+        {
+          "name": "security_order",
+          "file": "security_order.png",
+          "path": "images/official_correspondence/security_order.png"
+        },
+        {
+          "name": "sensory_tank_purpose",
+          "file": "sensory_tank_purpose.png",
+          "path": "images/official_correspondence/sensory_tank_purpose.png"
+        },
+        {
+          "name": "tommasi_willow_awe_outcome",
+          "file": "tommasi_willow_awe_outcome.png",
+          "path": "images/official_correspondence/tommasi_willow_awe_outcome.png"
+        },
+        {
+          "name": "travel_costs",
+          "file": "travel_costs.png",
+          "path": "images/official_correspondence/travel_costs.png"
+        },
+        {
+          "name": "trench_bureau_funding",
+          "file": "trench_bureau_funding.png",
+          "path": "images/official_correspondence/trench_bureau_funding.png"
+        },
+        {
+          "name": "trench_dead_letter_approval",
+          "file": "trench_dead_letter_approval.png",
+          "path": "images/official_correspondence/trench_dead_letter_approval.png"
+        },
+        {
+          "name": "trench_official_warning",
+          "file": "trench_official_warning.png",
+          "path": "images/official_correspondence/trench_official_warning.png"
+        },
+        {
+          "name": "unacceptable_behavior_memo",
+          "file": "unacceptable_behavior_memo.png",
+          "path": "images/official_correspondence/unacceptable_behavior_memo.png"
+        },
+        {
+          "name": "unstable_area_notice",
+          "file": "unstable_area_notice.png",
+          "path": "images/official_correspondence/unstable_area_notice.png"
+        },
+        {
+          "name": "visitor_evaluations",
+          "file": "visitor_evaluations.png",
+          "path": "images/official_correspondence/visitor_evaluations.png"
+        }
+      ]
+    },
+    {
+      "id": "reports",
+      "name": "reports",
+      "count": 43,
+      "images": [
+        {
+          "name": "airplane_evaluation_order",
+          "file": "airplane_evaluation_order.png",
+          "path": "images/reports/airplane_evaluation_order.png"
+        },
+        {
+          "name": "alice_wake_interview",
+          "file": "alice_wake_interview.png",
+          "path": "images/reports/alice_wake_interview.png"
+        },
+        {
+          "name": "altered_item_behavior_changes",
+          "file": "altered_item_behavior_changes.png",
+          "path": "images/reports/altered_item_behavior_changes.png"
+        },
+        {
+          "name": "america_overnight_fatality",
+          "file": "america_overnight_fatality.png",
+          "path": "images/reports/america_overnight_fatality.png"
+        },
+        {
+          "name": "america_overnight_results",
+          "file": "america_overnight_results.png",
+          "path": "images/reports/america_overnight_results.png"
+        },
+        {
+          "name": "astralnauts_information",
+          "file": "astralnauts_information.png",
+          "path": "images/reports/astralnauts_information.png"
+        },
+        {
+          "name": "awe_rising_frequency",
+          "file": "awe_rising_frequency.png",
+          "path": "images/reports/awe_rising_frequency.png"
+        },
+        {
+          "name": "black_market",
+          "file": "black_market.png",
+          "path": "images/reports/black_market.png"
+        },
+        {
+          "name": "blessed_organization",
+          "file": "blessed_organization.png",
+          "path": "images/reports/blessed_organization.png"
+        },
+        {
+          "name": "bureau_expenditures",
+          "file": "bureau_expenditures.png",
+          "path": "images/reports/bureau_expenditures.png"
+        },
+        {
+          "name": "darling_investigation",
+          "file": "darling_investigation.png",
+          "path": "images/reports/darling_investigation.png"
+        },
+        {
+          "name": "data_breach",
+          "file": "data_breach.png",
+          "path": "images/reports/data_breach.png"
+        },
+        {
+          "name": "director_investigation",
+          "file": "director_investigation.png",
+          "path": "images/reports/director_investigation.png"
+        },
+        {
+          "name": "door_appearance",
+          "file": "door_appearance.png",
+          "path": "images/reports/door_appearance.png"
+        },
+        {
+          "name": "dr._tokui_investigation",
+          "file": "dr._tokui_investigation.png",
+          "path": "images/reports/dr._tokui_investigation.png"
+        },
+        {
+          "name": "dylan_faden_observation",
+          "file": "dylan_faden_observation.png",
+          "path": "images/reports/dylan_faden_observation.png"
+        },
+        {
+          "name": "dylan_faden_transcript",
+          "file": "dylan_faden_transcript.png",
+          "path": "images/reports/dylan_faden_transcript.png"
+        },
+        {
+          "name": "employee_incident",
+          "file": "employee_incident.png",
+          "path": "images/reports/employee_incident.png"
+        },
+        {
+          "name": "employee_misdemeanor",
+          "file": "employee_misdemeanor.png",
+          "path": "images/reports/employee_misdemeanor.png"
+        },
+        {
+          "name": "ethics_investigation",
+          "file": "ethics_investigation.png",
+          "path": "images/reports/ethics_investigation.png"
+        },
+        {
+          "name": "hartman_arrest",
+          "file": "hartman_arrest.png",
+          "path": "images/reports/hartman_arrest.png"
+        },
+        {
+          "name": "hartman_background",
+          "file": "hartman_background.png",
+          "path": "images/reports/hartman_background.png"
+        },
+        {
+          "name": "hotline_security_log",
+          "file": "hotline_security_log.png",
+          "path": "images/reports/hotline_security_log.png"
+        },
+        {
+          "name": "investigation_order",
+          "file": "investigation_order.png",
+          "path": "images/reports/investigation_order.png"
+        },
+        {
+          "name": "jesse_faden_movement_tracking",
+          "file": "jesse_faden_movement_tracking.png",
+          "path": "images/reports/jesse_faden_movement_tracking.png"
+        },
+        {
+          "name": "mold_autopsy",
+          "file": "mold_autopsy.png",
+          "path": "images/reports/mold_autopsy.png"
+        },
+        {
+          "name": "nasa_cooperation_review",
+          "file": "nasa_cooperation_review.png",
+          "path": "images/reports/nasa_cooperation_review.png"
+        },
+        {
+          "name": "p6_victim_autopsy",
+          "file": "p6_victim_autopsy.png",
+          "path": "images/reports/p6_victim_autopsy.png"
+        },
+        {
+          "name": "panopticon_methods_proposal",
+          "file": "panopticon_methods_proposal.png",
+          "path": "images/reports/panopticon_methods_proposal.png"
+        },
+        {
+          "name": "pope’s_promotion",
+          "file": "pope’s_promotion.png",
+          "path": "images/reports/pope’s_promotion.png"
+        },
+        {
+          "name": "power_cores",
+          "file": "power_cores.png",
+          "path": "images/reports/power_cores.png"
+        },
+        {
+          "name": "quarry_incident",
+          "file": "quarry_incident.png",
+          "path": "images/reports/quarry_incident.png"
+        },
+        {
+          "name": "recording_chair_procedures",
+          "file": "recording_chair_procedures.png",
+          "path": "images/reports/recording_chair_procedures.png"
+        },
+        {
+          "name": "sealed_threshold_account",
+          "file": "sealed_threshold_account.png",
+          "path": "images/reports/sealed_threshold_account.png"
+        },
+        {
+          "name": "shaded_specimen_captured",
+          "file": "shaded_specimen_captured.png",
+          "path": "images/reports/shaded_specimen_captured.png"
+        },
+        {
+          "name": "specimen_escape_assessment",
+          "file": "specimen_escape_assessment.png",
+          "path": "images/reports/specimen_escape_assessment.png"
+        },
+        {
+          "name": "talented_janitor",
+          "file": "talented_janitor.png",
+          "path": "images/reports/talented_janitor.png"
+        },
+        {
+          "name": "television_proposal",
+          "file": "television_proposal.png",
+          "path": "images/reports/television_proposal.png"
+        },
+        {
+          "name": "tennyson_report",
+          "file": "tennyson_report.png",
+          "path": "images/reports/tennyson_report.png"
+        },
+        {
+          "name": "threshold_kids_proposal",
+          "file": "threshold_kids_proposal.png",
+          "path": "images/reports/threshold_kids_proposal.png"
+        },
+        {
+          "name": "underhill_background",
+          "file": "underhill_background.png",
+          "path": "images/reports/underhill_background.png"
+        },
+        {
+          "name": "wake_evidence",
+          "file": "wake_evidence.png",
+          "path": "images/reports/wake_evidence.png"
+        },
+        {
+          "name": "willow_awe_shipping_manifest",
+          "file": "willow_awe_shipping_manifest.png",
+          "path": "images/reports/willow_awe_shipping_manifest.png"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "research",
+      "count": 48,
+      "images": [
+        {
+          "name": "astral_exhibition",
+          "file": "astral_exhibition.png",
+          "path": "images/research/astral_exhibition.png"
+        },
+        {
+          "name": "astral_plane",
+          "file": "astral_plane.png",
+          "path": "images/research/astral_plane.png"
+        },
+        {
+          "name": "astral_plane_counteressay",
+          "file": "astral_plane_counteressay.png",
+          "path": "images/research/astral_plane_counteressay.png"
+        },
+        {
+          "name": "atlas_theory",
+          "file": "atlas_theory.png",
+          "path": "images/research/atlas_theory.png"
+        },
+        {
+          "name": "black_rock",
+          "file": "black_rock.png",
+          "path": "images/research/black_rock.png"
+        },
+        {
+          "name": "black_rock_prisms",
+          "file": "black_rock_prisms.png",
+          "path": "images/research/black_rock_prisms.png"
+        },
+        {
+          "name": "cave_paintings",
+          "file": "cave_paintings.png",
+          "path": "images/research/cave_paintings.png"
+        },
+        {
+          "name": "collective_unconscious",
+          "file": "collective_unconscious.png",
+          "path": "images/research/collective_unconscious.png"
+        },
+        {
+          "name": "control_points",
+          "file": "control_points.png",
+          "path": "images/research/control_points.png"
+        },
+        {
+          "name": "foundation_etchings",
+          "file": "foundation_etchings.png",
+          "path": "images/research/foundation_etchings.png"
+        },
+        {
+          "name": "foundation_pillar",
+          "file": "foundation_pillar.png",
+          "path": "images/research/foundation_pillar.png"
+        },
+        {
+          "name": "groupthink",
+          "file": "groupthink.png",
+          "path": "images/research/groupthink.png"
+        },
+        {
+          "name": "hedron_containment",
+          "file": "hedron_containment.png",
+          "path": "images/research/hedron_containment.png"
+        },
+        {
+          "name": "history_of_the_oldest_house",
+          "file": "history_of_the_oldest_house.png",
+          "path": "images/research/history_of_the_oldest_house.png"
+        },
+        {
+          "name": "home_safe_tests",
+          "file": "home_safe_tests.png",
+          "path": "images/research/home_safe_tests.png"
+        },
+        {
+          "name": "leylines",
+          "file": "leylines.png",
+          "path": "images/research/leylines.png"
+        },
+        {
+          "name": "lucky_item_manifest",
+          "file": "lucky_item_manifest.png",
+          "path": "images/research/lucky_item_manifest.png"
+        },
+        {
+          "name": "mirror_altered_item",
+          "file": "mirror_altered_item.png",
+          "path": "images/research/mirror_altered_item.png"
+        },
+        {
+          "name": "mirror_containment",
+          "file": "mirror_containment.png",
+          "path": "images/research/mirror_containment.png"
+        },
+        {
+          "name": "mold_threshold",
+          "file": "mold_threshold.png",
+          "path": "images/research/mold_threshold.png"
+        },
+        {
+          "name": "night_springs_screenplay_pg.1",
+          "file": "night_springs_screenplay_pg.1.png",
+          "path": "images/research/night_springs_screenplay_pg.1.png"
+        },
+        {
+          "name": "night_springs_screenplay_pg.2",
+          "file": "night_springs_screenplay_pg.2.png",
+          "path": "images/research/night_springs_screenplay_pg.2.png"
+        },
+        {
+          "name": "night_springs_screenplay_pg.3",
+          "file": "night_springs_screenplay_pg.3.png",
+          "path": "images/research/night_springs_screenplay_pg.3.png"
+        },
+        {
+          "name": "night_springs_screenplay_pg.4",
+          "file": "night_springs_screenplay_pg.4.png",
+          "path": "images/research/night_springs_screenplay_pg.4.png"
+        },
+        {
+          "name": "nsc",
+          "file": "nsc.png",
+          "path": "images/research/nsc.png"
+        },
+        {
+          "name": "object_and_item_distinctions",
+          "file": "object_and_item_distinctions.png",
+          "path": "images/research/object_and_item_distinctions.png"
+        },
+        {
+          "name": "ordinary_awe_stage_1.a",
+          "file": "ordinary_awe_stage_1.a.png",
+          "path": "images/research/ordinary_awe_stage_1.a.png"
+        },
+        {
+          "name": "ordinary_awe_stage_1.b",
+          "file": "ordinary_awe_stage_1.b.png",
+          "path": "images/research/ordinary_awe_stage_1.b.png"
+        },
+        {
+          "name": "ordinary_awe_stage_2",
+          "file": "ordinary_awe_stage_2.png",
+          "path": "images/research/ordinary_awe_stage_2.png"
+        },
+        {
+          "name": "ordinary_awe_stage_3",
+          "file": "ordinary_awe_stage_3.png",
+          "path": "images/research/ordinary_awe_stage_3.png"
+        },
+        {
+          "name": "ordinary_awe_stage_4.a",
+          "file": "ordinary_awe_stage_4.a.png",
+          "path": "images/research/ordinary_awe_stage_4.a.png"
+        },
+        {
+          "name": "ordinary_awe_stage_4.b",
+          "file": "ordinary_awe_stage_4.b.png",
+          "path": "images/research/ordinary_awe_stage_4.b.png"
+        },
+        {
+          "name": "parautility",
+          "file": "parautility.png",
+          "path": "images/research/parautility.png"
+        },
+        {
+          "name": "pyramidic_geometry",
+          "file": "pyramidic_geometry.png",
+          "path": "images/research/pyramidic_geometry.png"
+        },
+        {
+          "name": "resonance_theory",
+          "file": "resonance_theory.png",
+          "path": "images/research/resonance_theory.png"
+        },
+        {
+          "name": "rituals",
+          "file": "rituals.png",
+          "path": "images/research/rituals.png"
+        },
+        {
+          "name": "shaded_hartman",
+          "file": "shaded_hartman.png",
+          "path": "images/research/shaded_hartman.png"
+        },
+        {
+          "name": "slide_projector_tests",
+          "file": "slide_projector_tests.png",
+          "path": "images/research/slide_projector_tests.png"
+        },
+        {
+          "name": "song_questionnaire",
+          "file": "song_questionnaire.png",
+          "path": "images/research/song_questionnaire.png"
+        },
+        {
+          "name": "synchronicity",
+          "file": "synchronicity.png",
+          "path": "images/research/synchronicity.png"
+        },
+        {
+          "name": "synchronicity_experiment",
+          "file": "synchronicity_experiment.png",
+          "path": "images/research/synchronicity_experiment.png"
+        },
+        {
+          "name": "technological_restrictions",
+          "file": "technological_restrictions.png",
+          "path": "images/research/technological_restrictions.png"
+        },
+        {
+          "name": "the_formation",
+          "file": "the_formation.png",
+          "path": "images/research/the_formation.png"
+        },
+        {
+          "name": "the_shadow",
+          "file": "the_shadow.png",
+          "path": "images/research/the_shadow.png"
+        },
+        {
+          "name": "threshold_utility",
+          "file": "threshold_utility.png",
+          "path": "images/research/threshold_utility.png"
+        },
+        {
+          "name": "threshold_utility_counteressay",
+          "file": "threshold_utility_counteressay.png",
+          "path": "images/research/threshold_utility_counteressay.png"
+        },
+        {
+          "name": "thresholds",
+          "file": "thresholds.png",
+          "path": "images/research/thresholds.png"
+        },
+        {
+          "name": "urban_legends",
+          "file": "urban_legends.png",
+          "path": "images/research/urban_legends.png"
+        }
+      ]
+    }
+  ]
+}
