@@ -1909,6 +1909,17 @@
     <img id="lb-img" src="" alt=""/>
     <button class="lb-nav" id="lb-next">›</button>
   </div>
+  <div id="lb-related-layout">
+    <div id="lb-related">
+      <div id="lb-related-title">Documentos relacionados:</div>
+      <div id="lb-related-grid"></div>
+    </div>
+    <div id="lb-ocr">
+      <div id="lb-ocr-title">Relacionados por OCR:</div>
+      <div id="lb-ocr-keywords"></div>
+      <div id="lb-ocr-grid"></div>
+    </div>
+  </div>
   <div id="lb-strip"></div>
 </div>
 
@@ -1920,6 +1931,17 @@ const DATA = {"generated":"2026-04-06T12:20:53.476Z","totalImages":286,"categori
 let activeCat = "__all__";
 let lbImages  = [];
 let lbIndex   = 0;
+let ocrData   = null;
+let ocrDataLoaded = false;
+
+// Load OCR data
+fetch('ocr-dictionary.json')
+  .then(r => r.json())
+  .then(d => {
+    ocrData = d;
+    ocrDataLoaded = true;
+  })
+  .catch(e => console.error('OCR data failed to load:', e));
 
 // ── SIDEBAR ────────────────────────────────────────────────────────
 document.querySelectorAll(".cat-btn").forEach(btn => {
@@ -2048,6 +2070,80 @@ function openLightbox(images, index, catName) {
   strip.querySelectorAll(".lb-thumb").forEach(th =>
     th.addEventListener("click", () => { lbIndex = +th.dataset.i; showLbImg(); })
   );
+
+  // construir related
+  const currentImg = images[index];
+  const prefix = currentImg.name.split('_')[0];
+  const related = images.filter(img => img.name.startsWith(prefix + '_') && img !== currentImg);
+  const relatedGrid = document.getElementById("lb-related-grid");
+  if (related.length > 0) {
+    relatedGrid.innerHTML = related.map(img =>
+      `<img class="lb-related-thumb" src="${img.path}" data-name="${img.name}" alt="${img.name}" loading="lazy"/>`
+    ).join("");
+    relatedGrid.querySelectorAll(".lb-related-thumb").forEach(th =>
+      th.addEventListener("click", () => {
+        const idx = images.findIndex(img => img.name === th.dataset.name);
+        if (idx !== -1) { lbIndex = idx; showLbImg(); }
+      })
+    );
+    document.getElementById("lb-related").style.display = "block";
+  } else {
+    document.getElementById("lb-related").style.display = "none";
+  }
+
+  // construir OCR related
+  const ocrKeywords = document.getElementById("lb-ocr-keywords");
+  const ocrGrid = document.getElementById("lb-ocr-grid");
+  if (ocrData && ocrData.links && ocrData.links[currentImg.path]) {
+    const relatedIds = ocrData.links[currentImg.path];
+    const relatedImages = relatedIds.map(id => {
+      // Find the image in all categories
+      for (const cat of DATA.categories) {
+        const img = cat.images.find(i => i.path === id);
+        if (img) return img;
+      }
+      return null;
+    }).filter(Boolean);
+
+    if (relatedImages.length > 0) {
+      // Get keywords for this image
+      const imgData = ocrData.images.find(i => i.id === currentImg.path);
+      const keywords = imgData ? imgData.keywords.slice(0, 10) : [];
+      ocrKeywords.innerHTML = keywords.length ? 
+        `<div>Palabras clave: ${keywords.map(k => `<span class="ocr-keyword" data-keyword="${k}">${k}</span>`).join(', ')}</div>` : '';
+
+      ocrKeywords.querySelectorAll('.ocr-keyword').forEach(span => {
+        span.addEventListener('click', () => {
+          const keyword = span.dataset.keyword;
+          // Close lightbox and search for the keyword
+          closeLightbox();
+          document.getElementById('search').value = keyword;
+          doSearch();
+        });
+      });
+
+      ocrGrid.innerHTML = relatedImages.slice(0, 10).map(img =>
+        `<img class="lb-ocr-thumb" src="${img.path}" data-path="${img.path}" alt="${img.name}" loading="lazy"/>`
+      ).join("");
+      ocrGrid.querySelectorAll(".lb-ocr-thumb").forEach(th =>
+        th.addEventListener("click", () => {
+          // Find the category and index for this image
+          for (const cat of DATA.categories) {
+            const idx = cat.images.findIndex(i => i.path === th.dataset.path);
+            if (idx !== -1) {
+              openLightbox(cat.images, idx, cat.name);
+              return;
+            }
+          }
+        })
+      );
+      document.getElementById("lb-ocr").style.display = "block";
+    } else {
+      document.getElementById("lb-ocr").style.display = "none";
+    }
+  } else {
+    document.getElementById("lb-ocr").style.display = "none";
+  }
 
   document.getElementById("lb-cat").textContent = catName;
   document.getElementById("lightbox").classList.add("open");
