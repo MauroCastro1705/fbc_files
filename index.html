@@ -1910,12 +1910,11 @@
     <button class="lb-nav" id="lb-next">›</button>
   </div>
   <div id="lb-related-layout">
-    <div id="lb-related">
-      <div id="lb-related-title">Documentos relacionados:</div>
-      <div id="lb-related-grid"></div>
-    </div>
     <div id="lb-ocr">
-      <div id="lb-ocr-title">Relacionados por OCR:</div>
+      <div id="lb-ocr-controls">
+        <div id="lb-ocr-title">Documentos relacionados:</div>
+        <button id="lb-zoom-btn" title="Zoom" aria-label="Zoom">🔍</button>
+      </div>
       <div id="lb-ocr-keywords"></div>
       <div id="lb-ocr-grid"></div>
     </div>
@@ -1929,6 +1928,7 @@ const DATA = {"generated":"2026-04-06T12:20:53.476Z","totalImages":286,"categori
 
 // ── STATE ──────────────────────────────────────────────────────────
 let activeCat = "__all__";
+let lbZoomLevel = 1;
 let lbImages  = [];
 let lbIndex   = 0;
 let ocrData   = null;
@@ -2046,6 +2046,23 @@ function showNoResults(show) {
   noResults.classList.toggle("visible", show);
 }
 
+// Helper function to check if a keyword would produce search results
+function keywordHasResults(keyword) {
+  const q = keyword.trim().toLowerCase();
+  
+  // Check if keyword matches any image name or category name
+  for (const cat of DATA.categories) {
+    const catName = cat.name.toLowerCase();
+    if (catName.includes(q)) return true;
+    
+    for (const img of cat.images) {
+      const label = img.name.toLowerCase();
+      if (label.includes(q)) return true;
+    }
+  }
+  return false;
+}
+
 // ── LIGHTBOX ───────────────────────────────────────────────────────
 document.querySelectorAll(".img-card").forEach(card => {
   const open = () => {
@@ -2071,81 +2088,14 @@ function openLightbox(images, index, catName) {
     th.addEventListener("click", () => { lbIndex = +th.dataset.i; showLbImg(); })
   );
 
-  // construir related
-  const currentImg = images[index];
-  const prefix = currentImg.name.split('_')[0];
-  const related = images.filter(img => img.name.startsWith(prefix + '_') && img !== currentImg);
-  const relatedGrid = document.getElementById("lb-related-grid");
-  if (related.length > 0) {
-    relatedGrid.innerHTML = related.map(img =>
-      `<img class="lb-related-thumb" src="${img.path}" data-name="${img.name}" alt="${img.name}" loading="lazy"/>`
-    ).join("");
-    relatedGrid.querySelectorAll(".lb-related-thumb").forEach(th =>
-      th.addEventListener("click", () => {
-        const idx = images.findIndex(img => img.name === th.dataset.name);
-        if (idx !== -1) { lbIndex = idx; showLbImg(); }
-      })
-    );
-    document.getElementById("lb-related").style.display = "block";
-  } else {
-    document.getElementById("lb-related").style.display = "none";
-  }
-
-  // construir OCR related
-  const ocrKeywords = document.getElementById("lb-ocr-keywords");
-  const ocrGrid = document.getElementById("lb-ocr-grid");
-  if (ocrData && ocrData.links && ocrData.links[currentImg.path]) {
-    const relatedIds = ocrData.links[currentImg.path];
-    const relatedImages = relatedIds.map(id => {
-      // Find the image in all categories
-      for (const cat of DATA.categories) {
-        const img = cat.images.find(i => i.path === id);
-        if (img) return img;
-      }
-      return null;
-    }).filter(Boolean);
-
-    if (relatedImages.length > 0) {
-      // Get keywords for this image
-      const imgData = ocrData.images.find(i => i.id === currentImg.path);
-      const keywords = imgData ? imgData.keywords.slice(0, 10) : [];
-      ocrKeywords.innerHTML = keywords.length ? 
-        `<div>Palabras clave: ${keywords.map(k => `<span class="ocr-keyword" data-keyword="${k}">${k}</span>`).join(', ')}</div>` : '';
-
-      ocrKeywords.querySelectorAll('.ocr-keyword').forEach(span => {
-        span.addEventListener('click', () => {
-          const keyword = span.dataset.keyword;
-          // Close lightbox and search for the keyword
-          closeLightbox();
-          document.getElementById('search').value = keyword;
-          doSearch();
-        });
-      });
-
-      ocrGrid.innerHTML = relatedImages.slice(0, 10).map(img =>
-        `<img class="lb-ocr-thumb" src="${img.path}" data-path="${img.path}" alt="${img.name}" loading="lazy"/>`
-      ).join("");
-      ocrGrid.querySelectorAll(".lb-ocr-thumb").forEach(th =>
-        th.addEventListener("click", () => {
-          // Find the category and index for this image
-          for (const cat of DATA.categories) {
-            const idx = cat.images.findIndex(i => i.path === th.dataset.path);
-            if (idx !== -1) {
-              openLightbox(cat.images, idx, cat.name);
-              return;
-            }
-          }
-        })
-      );
-      document.getElementById("lb-ocr").style.display = "block";
-    } else {
-      document.getElementById("lb-ocr").style.display = "none";
-    }
-  } else {
-    document.getElementById("lb-ocr").style.display = "none";
-  }
-
   document.getElementById("lb-cat").textContent = catName;
+  
+  // Reset zoom
+  lbZoomLevel = 1;
+  const img = document.getElementById("lb-img");
+  img.style.transform = "scale(1)";
+  img.classList.remove("zoomed");
+  
   document.getElementById("lightbox").classList.add("open");
   document.body.style.overflow = "hidden";
   showLbImg();
@@ -2166,22 +2116,103 @@ function showLbImg() {
     th.classList.toggle("active", i === lbIndex));
   document.querySelector(".lb-thumb.active")
     ?.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+
+  updateLbOcr(img);
 }
 
-function lbMove(d) {
-  lbIndex = (lbIndex + d + lbImages.length) % lbImages.length;
+function lbMove(delta) {
+  if (!lbImages || !lbImages.length) return;
+  lbIndex = (lbIndex + delta + lbImages.length) % lbImages.length;
   showLbImg();
+}
+
+function updateLbOcr(currentImg) {
+  const ocrKeywords = document.getElementById("lb-ocr-keywords");
+  const ocrGrid = document.getElementById("lb-ocr-grid");
+
+  if (ocrData && ocrData.links && ocrData.links[currentImg.path]) {
+    const relatedIds = ocrData.links[currentImg.path];
+    const relatedImages = relatedIds.map(id => {
+      for (const cat of DATA.categories) {
+        const img = cat.images.find(i => i.path === id);
+        if (img) return img;
+      }
+      return null;
+    }).filter(Boolean);
+
+    if (relatedImages.length > 0) {
+      const imgData = ocrData.images.find(i => i.id === currentImg.path);
+      let keywords = imgData ? imgData.keywords.slice(0, 10) : [];
+      keywords = keywords.filter(k => keywordHasResults(k));
+
+      ocrKeywords.innerHTML = keywords.length ?
+        `<div>Palabras clave: ${keywords.map(k => `<span class="ocr-keyword" data-keyword="${k}">${k}</span>`).join(', ')}</div>` : '';
+
+      ocrKeywords.querySelectorAll('.ocr-keyword').forEach(span => {
+        span.addEventListener('click', () => {
+          const keyword = span.dataset.keyword;
+          closeLightbox();
+          document.getElementById('search').value = keyword;
+          doSearch();
+        });
+      });
+
+      ocrGrid.innerHTML = relatedImages.slice(0, 10).map(img =>
+        `<img class="lb-ocr-thumb" src="${img.path}" data-path="${img.path}" alt="${img.name}" loading="lazy"/>`
+      ).join("");
+      ocrGrid.querySelectorAll(".lb-ocr-thumb").forEach(th =>
+        th.addEventListener("click", () => {
+          for (const cat of DATA.categories) {
+            const idx = cat.images.findIndex(i => i.path === th.dataset.path);
+            if (idx !== -1) {
+              openLightbox(cat.images, idx, cat.name);
+              return;
+            }
+          }
+        })
+      );
+      document.getElementById("lb-ocr").style.display = "block";
+      return;
+    }
+  }
+
+  ocrKeywords.innerHTML = '';
+  ocrGrid.innerHTML = '';
+  document.getElementById("lb-ocr").style.display = "none";
 }
 
 document.getElementById("lb-close").addEventListener("click", closeLightbox);
 document.getElementById("lb-prev").addEventListener("click", () => lbMove(-1));
 document.getElementById("lb-next").addEventListener("click", () => lbMove(+1));
+document.getElementById("lb-zoom-btn").addEventListener("click", () => {
+  const img = document.getElementById("lb-img");
+  if (lbZoomLevel === 1) {
+    lbZoomLevel = 2;
+    img.style.transform = `scale(${lbZoomLevel})`;
+    img.classList.add("zoomed");
+  } else {
+    lbZoomLevel = 1;
+    img.style.transform = "scale(1)";
+    img.classList.remove("zoomed");
+  }
+});
+document.getElementById("lb-img").addEventListener("click", () => {
+  const btn = document.getElementById("lb-zoom-btn");
+  btn.click();
+});
 document.getElementById("lightbox").addEventListener("click", e => {
   if (e.target === document.getElementById("lightbox")) closeLightbox();
 });
 document.addEventListener("keydown", e => {
   if (!document.getElementById("lightbox").classList.contains("open")) return;
-  if (e.key === "Escape")     closeLightbox();
+  if (e.key === "Escape") {
+    // Reset zoom on Escape
+    if (lbZoomLevel !== 1) {
+      document.getElementById("lb-zoom-btn").click();
+    } else {
+      closeLightbox();
+    }
+  }
   if (e.key === "ArrowLeft")  lbMove(-1);
   if (e.key === "ArrowRight") lbMove(+1);
 });
