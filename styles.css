@@ -889,7 +889,7 @@ body.home-page #main::before {
 #footer {
   background: var(--bg2);
   border-top: 1px solid var(--border);
-  padding: 20px;
+  padding: 12px;
   text-align: center;
 }
 
@@ -918,6 +918,20 @@ body.home-page #main::before {
   margin: 4px 0;
 }
 
+.footer-version {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.version {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* Mobile footer */
 @media (max-width: 520px) {
   .footer-content {
@@ -927,6 +941,10 @@ body.home-page #main::before {
   
   .footer-info {
     text-align: center;
+  }
+
+  .footer-version {
+    margin-left: 0;
   }
 }
 
