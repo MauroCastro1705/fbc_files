@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/official_correspondence/cafeteria_concerns.png",
+  "extractedText": "Director Trench,\n\nAs head chef, | need to express my concern about rumors I've\nbeen hearing regarding mold appearing near some of my kitchens. |\nam alerting you that any food handled, prepared, or consumed in\nthe vicinity of mold can be contaminated and unsafe for ingestion.\nIf | can verify these reports, then | will need to close multiple\ncafeterias. | realize this would be an inconvenience to many, but as\na caterer, | pride myself in keeping a pristine environment for food\npreparation and service.\n\nSincerely,\n\nJ. Pullman, Head Chef of The Golden Chow Catering Company",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}

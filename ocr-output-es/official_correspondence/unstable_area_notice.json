@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/official_correspondence/unstable_area_notice.png",
+  "extractedText": "FEDERAL BUREAU OF CONTROL %\\)QEAU op\nPLEASE BE AWARE! SN\nDue to recent fluctuations in the nearest S ‘?iaf? W ’8\nControl Point, this area’s stability has =\\ A ) [\nbeen downgraded to Yellow. 6,,&% j‘?g\n\nby N S\nReference Chart: STates of S\nGreen — Stable.\nYellow — Low possibility of unanticipated building shifts.\nOrange — High likelihood of unanticipated building shifts.\nRed - Frequent unanticipated building shifts.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "OFICINA FEDERAL DE CONTROL %\\)QEAU op\n¡POR FAVOR TENGA EN CUENTA! SN\nDebido a las recientes fluctuaciones en el S '?iaf? W '8\nPunto de control, la estabilidad de esta área tiene =\\ A ) [\nha sido degradado a Amarillo. 6,,&% j‘?g\n\npor N.S.\nCuadro de referencia: Estados de S\nVerde: estable.\nAmarillo: baja posibilidad de cambios de construcción imprevistos.\nNaranja: alta probabilidad de cambios de construcción imprevistos.\nRojo: cambios de construcción frecuentes e imprevistos.",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:53:46.177Z"
+}

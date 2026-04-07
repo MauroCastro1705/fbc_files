@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/reports/airplane_evaluation_order.png",
+  "extractedText": "ALTERED EXAMINATION REQUEST\nAIRPLANE WRECKAGE\n\nSUMMARY:\nThe airplane in question has been brought in from a private airfield\nlocated in the town of _, Cincinnati. It is suspected to\nbe connected to the _ AWE (see case file\n_ for details) and is being evaluated for altered status.\nThe plane is currently being stored in the Transit Corridor in the\nContainment Sector, brought there through the New York subway\ntunnel, special access _ (for more information on\ntunnel _ and links to urban legends centered on ghost\nstations, abandoned tracks, and _ see file 4-12-4521).\nThe plane’s black box is currently being evaluated for\nI B - initial readings have\nbeen taken by a research team, though no altered status has yet\nbeen detected.\nRefer to file 9-12-8371 for full report.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}

@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/dead_letters/foot_gossip.png",
+  "extractedText": "Hello,\n\nMy feet gossip at night and now | have to wear shoes to bed.\nSincerely,\n\nMe",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "Hola,\n\nMis pies chismean en las noches y ahora | Tienes que usar zapatos para ir a la cama.\nSinceramente,\n\nYo",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:50:28.882Z"
+}

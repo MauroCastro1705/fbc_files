@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/reports/data_breach.png",
+  "extractedText": "SYSTEMS SECURITY EVALUATION OREAU ¢\nG=——0\nCONFIRMED DATA BREACH ST 04,\nSUMMARY: Gl *i,?.f’ 5%\n[ ‘] i i) :,‘ =\nLast month, our onsite server ‘% ‘\\ag!:: y' d\"\nexperienced an intrusion by unauthorized ’,}0 ‘- ‘:83)\nusers. After a thorough investigation, it STaTEs OF §\nwas confirmed that the users only\naccessed a video file, which contained portions of various Dr.\nDarling presentations. Investigators were able to track the users\nthrough their IP addresses. The following are the confirmed\nidentities of these users.\n- Patrick Streutjens\n- Rubens Nogueira\n- Arto Kolumaki\n- Christopher Mills-Bowling\n- Jaakko Saarinen\nThese individuals are in breach of Bureau Code 91 and have been\nplaced under surveillance by our external investigation team.\nFurther action is pending.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "EVALUACIÓN DE SEGURIDAD DE SISTEMAS OREAU ¢\nG=——0\nVIOLACIÓN DE DATOS CONFIRMADA ST 04,\nRESUMEN: Gl *i,?.f’ 5%\n['] i i):,' =\nEl mes pasado, nuestro servidor en el sitio ‘% ‘\\ag!:: y' d\"\nexperimentó una intrusión no autorizada ’,}0 ‘- ‘:83)\nusuarios. Después de una investigación exhaustiva, ESTADO DE §\nSe confirmó que los usuarios sólo\naccedió a un archivo de video, que contenía partes de varios videos del Dr.\nQueridas presentaciones. Los investigadores pudieron rastrear a los usuarios.\na través de sus direcciones IP. Los siguientes son los confirmados\nidentidades de estos usuarios.\n-Patrick Streutjens\n-Rubens Nogueira\n-Arto Kolumaki\n- Christopher Mills-Bowling\n-Jaakko Saarinen\nEstas personas infringen el Código de Oficina 91 y han sido\npuesto bajo vigilancia por nuestro equipo de investigación externo.\nQuedan pendientes más acciones.",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:54:09.899Z"
+}

@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/dead_letters/foot_gossip.png",
+  "extractedText": "Hello,\n\nMy feet gossip at night and now | have to wear shoes to bed.\nSincerely,\n\nMe",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}

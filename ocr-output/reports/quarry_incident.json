@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/reports/quarry_incident.png",
+  "extractedText": "INCIDENT REPORT\n\nRE: QUARRY OPERATIONS\nSUMMARY:\nDuring my weekly safety inspection to the Quarry Threshold, |\ndiscovered the entire crew in a state of _ The whole\nteam was _, aligned and staring in a uniform direction;\nthe City in the distance. Despite my most vocal efforts to gain their\nattention, they remained _for more than _\nminutes until | had to resort to literally _\nAfterwards, they were dazed and could not provide any rationale\nfor their behavior or any specific memories of engaging in it.\nMy official recommendation for any crew working in a Threshold\narea is to either shorten the length of their shifts or to carry out\nmandatory psychological evaluations on a weekly basis — or\npreferably both.\nAnd maybe we should order another expedition to the City.\nRefer to file 5-58-3096 for full report.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}

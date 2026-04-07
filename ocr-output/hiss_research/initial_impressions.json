@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/hiss_research/initial_impressions.png",
+  "extractedText": "ANALYSIS OF HISS THREAT: PART |\n--CONFIDENTIAL--\n\nSUMMARY:\nInitial encounters with the entity known as the Hiss have revealed\nvarious behavioral facts. Most notably, the Hiss is able to invade or\ncorrupt Control Points, Altered ltems, and even humans, radically\nchanging their behavior. Curiously, any person wearing one of the\nwearable HRA devices that Dr. Darling has been distributing over\nthe past weeks was not affected by this corruption.\nThe only known exception to this fact is the new Director, Jesse\nFaden, who possesses an inherent immunity to the Hiss. This could\nindicate that she has already been corrupted, but her behavior is so\nin contrast to that of the other Hiss that | have dismissed the\ntheory.\nMy final observation comes from Ms. Faden herself. She is able to\n“cleanse” material and organisms of the Hiss corruption. We\ntested this ability on a Hiss corrupted entity, but unfortunately the\nprocess seems to kill the host. Perhaps the host's physiology\nbecomes reliant on the Hiss? More work to be done.\nRefer to file _for full report.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}

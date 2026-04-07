@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/non-official_correspondence/sticky_note_complaint.png",
+  "extractedText": "FEDERAL BUREAU OF CONTROL %\\“{EAU op\n= > C\nTo Whom it May Concern, e 7= O\\\nIn case you are not aware, something S ‘?iaf? W ’8\ncaused a sticky note in my office to =\\ A ) [\nduplicate. My office is unusable now. %’)‘% fq)d’\n4y SIS D\n1 will be working from home until this is STates of S\nresolved. You can reach me on my cell or\nhome phone.\nSincerely,\nJ. Bozer, Vice Chief of Staff",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "OFICINA FEDERAL DE CONTROL %\\“{EAU op\n= > C\nA quien corresponda, e 7= O\\\nPor si no lo sabes, algo S ‘?iaf? W '8\nprovocó que una nota adhesiva en mi oficina dijera =\\ A ) [\nduplicar. Mi oficina está inutilizable ahora. %')'% fq)d'\n4 años SIS D\n1 trabajaré desde casa hasta que llegue el estado de S.\nresuelto. Puedes contactarme a mi celular o\nteléfono de casa.\nSinceramente,\nJ. Bozer, Vicejefe de Gabinete",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:52:19.817Z"
+}

@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/reports/willow_awe_shipping_manifest.png",
+  "extractedText": "SHIPPING MANIFEST\nWILLOW AWE\n\nINVENTORY LIST OF RECOVERED MATERIAL(S):\n- A hollow sphere (stone-like material)\n- Vitrified soil, _ pieces of various sizes and colors\n- Animal carcass (possibly canine)\n- Rusted metal bucket\n- Leather wallet\n- Aged shotgun cartridge\nAll materials to go to the Investigations Sector for further analysis.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "MANIFIESTO DE ENVÍO\nSOMBRERO DEL SAUCE\n\nLISTA DE INVENTARIO DE MATERIAL(S) RECUPERADO(S):\n- Una esfera hueca (material parecido a una piedra)\n- Tierra vitrificada, _ trozos de varios tamaños y colores.\n- Cadáveres de animales (posiblemente caninos)\n- Cubo de metal oxidado.\n- Cartera de piel\n- Cartucho de escopeta envejecido.\nTodos los materiales pasarán al Sector de Investigaciones para su posterior análisis.",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:55:11.432Z"
+}

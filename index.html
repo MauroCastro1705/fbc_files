@@ -1925,6 +1925,7 @@
       <div id="lb-ocr-controls">
         <div id="lb-ocr-title">Documentos relacionados:</div>
         <div style="display: flex; gap: 8px;">
+          <button id="lb-text-btn" title="Ver texto extraído" aria-label="Ver texto extraído">💬</button>
           <button id="lb-zoom-btn" title="Zoom" aria-label="Zoom">🔍</button>
           <button id="lb-minimize-btn" title="Minimizar" aria-label="Minimizar">▼</button>
         </div>
@@ -1934,6 +1935,26 @@
     </div>
   </div>
   <div id="lb-strip"></div>
+</div>
+
+<div id="ocrModal" class="ocr-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="ocrModalTitle">
+  <div class="ocr-modal-backdrop" data-close="true"></div>
+  <div class="ocr-modal-panel">
+    <div class="ocr-modal-header">
+      <div>
+        <div id="ocrModalTitle" class="ocr-modal-title">Texto extraído</div>
+        <div id="ocrModalSubtitle" class="ocr-modal-subtitle"></div>
+      </div>
+      <div class="ocr-modal-actions">
+        <button id="ocrModalToggleLang" type="button" aria-label="Cambiar a español">🇦🇷 ES</button>
+        <button id="ocrModalClose" type="button" aria-label="Cerrar texto">✕</button>
+      </div>
+    </div>
+    <div class="ocr-modal-body">
+      <div id="ocrModalLoading" class="ocr-modal-loading">Cargando texto…</div>
+      <pre id="ocrModalText" class="ocr-modal-text"></pre>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -1947,6 +1968,9 @@ let lbImages  = [];
 let lbIndex   = 0;
 let ocrData   = null;
 let ocrDataLoaded = false;
+let currentOcrJson = null;
+let currentOcrLang = "en";
+let currentOcrImg = null;
 
 // Load OCR data
 fetch('ocr-dictionary.json')
@@ -2139,6 +2163,152 @@ function showLbImg() {
   updateLbOcr(img);
 }
 
+function getOcrJsonUrl(path) {
+  return path.replace(/^images\//, "ocr-output/").replace(/\.png$/, "") + ".json";
+}
+
+function getOcrJsonUrlEs(path) {
+  return path.replace(/^images\//, "ocr-output-es/").replace(/\.png$/, "") + ".json";
+}
+
+function showOcrTextModal(img) {
+  const modal = document.getElementById("ocrModal");
+  const title = document.getElementById("ocrModalTitle");
+  const subtitle = document.getElementById("ocrModalSubtitle");
+  const loader = document.getElementById("ocrModalLoading");
+  const text = document.getElementById("ocrModalText");
+  const toggle = document.getElementById("ocrModalToggleLang");
+
+  currentOcrJson = null;
+  currentOcrLang = "en";
+  currentOcrImg = img;
+  currentOcrEnJson = null;
+  currentOcrEsJson = null;
+  currentOcrAnimated = false; // Track if animation has been shown
+  toggle.style.display = "none";
+  toggle.textContent = "ES 🇦🇷";
+
+  title.textContent = `Texto extraído — ${img.name}`;
+  subtitle.textContent = img.path;
+  loader.style.display = "block";
+  text.textContent = "";
+  text.classList.remove("typing");
+  modal.classList.add("visible");
+  document.body.style.overflow = "hidden";
+
+  // Load English (original) text
+  fetch(getOcrJsonUrl(img.path))
+    .then(response => {
+      if (!response.ok) throw new Error("Archivo JSON no encontrado");
+      return response.json();
+    })
+    .then(data => {
+      currentOcrJson = data;
+      currentOcrEnJson = data;
+      toggle.style.display = "inline-flex";
+      displayOcrText(data.extractedText, text, toggle);
+    })
+    .catch(error => {
+      loader.style.display = "none";
+      text.textContent = `No se pudo cargar el texto: ${error.message || error}`;
+    });
+}
+
+function updateOcrModalText() {
+  const text = document.getElementById("ocrModalText");
+  const toggle = document.getElementById("ocrModalToggleLang");
+  const loader = document.getElementById("ocrModalLoading");
+
+  if (!currentOcrImg) return;
+
+  // Check if we already have the data cached
+  if (currentOcrLang === "en" && currentOcrEnJson) {
+    displayOcrText(currentOcrEnJson.extractedText, text, toggle);
+    return;
+  }
+
+  if (currentOcrLang === "es" && currentOcrEsJson) {
+    displayOcrText(currentOcrEsJson.translatedText, text, toggle);
+    return;
+  }
+
+  // Fetch the data if not cached
+  const url = currentOcrLang === "es" ? getOcrJsonUrlEs(currentOcrImg.path) : getOcrJsonUrl(currentOcrImg.path);
+
+  loader.style.display = "block";
+  text.textContent = "";
+  text.classList.remove("typing");
+
+  fetch(url)
+    .then(response => {
+      if (!response.ok) throw new Error("Archivo no encontrado");
+      return response.json();
+    })
+    .then(data => {
+      if (currentOcrLang === "es") {
+        currentOcrEsJson = data;
+      } else {
+        currentOcrEnJson = data;
+      }
+      const sourceText = currentOcrLang === "es" ? data.translatedText : data.extractedText;
+      displayOcrText(sourceText, text, toggle);
+    })
+    .catch(error => {
+      loader.style.display = "none";
+      text.textContent = `No se pudo cargar el texto: ${error.message || error}`;
+    });
+}
+
+function displayOcrText(sourceText, textEl, toggleEl) {
+  const loader = document.getElementById("ocrModalLoading");
+  loader.style.display = "none";
+
+  toggleEl.textContent = currentOcrLang === "en" ? "ES" : "EN";
+  toggleEl.setAttribute("aria-label", currentOcrLang === "en" ? "Cambiar a español" : "Cambiar a inglés");
+
+  if (!sourceText || !sourceText.trim()) {
+    textEl.textContent = "No se encontró texto extraído para esta imagen.";
+    return;
+  }
+
+  // Only use typewriter animation once when modal first opens, then direct replacement
+  if (!currentOcrAnimated) {
+    currentOcrAnimated = true;
+    animateText(sourceText.trim(), textEl);
+  } else {
+    textEl.textContent = sourceText.trim();
+    textEl.classList.remove("typing");
+  }
+}
+
+function closeOcrTextModal() {
+  const modal = document.getElementById("ocrModal");
+  modal.classList.remove("visible");
+  if (!document.getElementById("lightbox").classList.contains("open")) {
+    document.body.style.overflow = "";
+  }
+}
+
+function animateText(content, target) {
+  target.textContent = "";
+  target.classList.add("typing");
+  let index = 0;
+
+  function step() {
+    if (index >= content.length) {
+      target.classList.remove("typing");
+      return;
+    }
+
+    const char = content[index++];
+    target.textContent += char;
+    const delay = char === "\n" ? 12 : 3;
+    setTimeout(step, delay);
+  }
+
+  step();
+}
+
 function lbMove(delta) {
   if (!lbImages || !lbImages.length) return;
   lbIndex = (lbIndex + delta + lbImages.length) % lbImages.length;
@@ -2201,6 +2371,20 @@ function updateLbOcr(currentImg) {
 }
 
 document.getElementById("lb-close").addEventListener("click", closeLightbox);
+document.getElementById("lb-text-btn").addEventListener("click", () => {
+  showOcrTextModal(lbImages[lbIndex]);
+});
+document.getElementById("ocrModalClose").addEventListener("click", closeOcrTextModal);
+document.getElementById("ocrModalToggleLang").addEventListener("click", () => {
+  if (!currentOcrJson) return;
+  currentOcrLang = currentOcrLang === "en" ? "es" : "en";
+  updateOcrModalText();
+});
+document.querySelector(".ocr-modal-backdrop").addEventListener("click", closeOcrTextModal);
+document.addEventListener("keydown", e => {
+  if (!document.getElementById("ocrModal").classList.contains("visible")) return;
+  if (e.key === "Escape") closeOcrTextModal();
+});
 document.getElementById("lb-prev").addEventListener("click", () => lbMove(-1));
 document.getElementById("lb-next").addEventListener("click", () => lbMove(+1));
 document.getElementById("lb-zoom-btn").addEventListener("click", () => {

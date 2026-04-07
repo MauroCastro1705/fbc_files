@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/reports/specimen_escape_assessment.png",
+  "extractedText": "OFFICIAL FINDINGS REPORT\nRE: INCIDENT #A-49\n--INTERNAL / CONFIDENTIAL --\nSUMMARY:\nThe purpose of internal investigation X-039-7 is to examine the\ncontainment failure of specimen SI-1 that resulted in the deaths of\n. agents.\nAn inspection report of the containment equipment three days\nearlier showed no faults. Investigators suspect human error to be\nthe cause, yet no department has provided any evidence to\nsupport this.\nTechnicians were able to recover the researcher’s notes on the\nspecimen from the internal network. On the - of -, the\nspecimen began displaying a sharp increase in aggressive\n_. Cross-referencing that date with various logs found\nonly two events inconsistent with the sector’s daily routine. 1) The\nair filters were changed, and 2) an hour prior to the incident, a\ncivilian named Alice - entered the sector regarding an\nunrelated investigation (see interview #65-F-124).\nGiven their connection to the same AWE case, it is likely that Mrs.\n-'s presence is relevant to the specimen’s escape and to\nthe _ Investigation is ongoing.\nRefer to file 6-23-0721 for full report.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}

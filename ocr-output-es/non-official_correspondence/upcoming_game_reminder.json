@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/non-official_correspondence/upcoming_game_reminder.png",
+  "extractedText": "Next game is Wednesday at 8, usual spot\n\nHazzard — owes me $20\n\nArish — still on a fucking winning streak (someone please figure out\nhow he'’s cheating)\n\nThomson —suspended for a game because of that shady dealing\nincident\n\nGuy - 1.O.U. $60\n\n| brought beers last time so it's Hepstonstall's turn\n\n- Remus",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "El próximo partido es el miércoles a las 8, horario habitual.\n\nHazzard: me debe 20 dólares\n\nArish: todavía en una jodida racha ganadora (que alguien, por favor, averigüe)\ncómo está haciendo trampa)\n\nThomson: suspendido por un juego debido a ese trato turbio\nincidente\n\nChico - 1.O.U. $60\n\n| Traje cervezas la última vez, así que es el turno de Hepstonstall.\n\n-Remo",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:52:29.545Z"
+}

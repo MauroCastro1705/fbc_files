@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/case_files_altered_world_events/emergency_call_suplement.png",
+  "extractedText": "n/a (AWE-18)\n\nDETAILS:\n\n(transcript of a call to the California state emergency services)\nDispatcher: 911, what is your emergency?\n\nVoice: Hello... Hello. I'm here. Can you hear me?\n\nD: | can hear you, ma’am. Where are you?\n\nVoice: I'm, um, inside the wires. I'm lost.\n\nD: Ma’am, have you been drinking tonight?\n\nVoice: | feel like I'm stretching through the wire. Towards you.\nDon’t hang up. | might go if you hang up.\n\nD: Go where, ma’am?\n\nV: Go. Gone. Away.\n\nD: OK, and can you describe your surroundings-\n\n(unknown noise)\n\nD: Ma'am? Hello, ma'am?\n\nNOTE: Dispatcher attempted to call the number back, but it was\nno longer in service.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "n/a (AWE-18)\n\nDETALLES:\n\n(transcripción de una llamada a los servicios de emergencia del estado de California)\nDespachador: 911, ¿cuál es su emergencia?\n\nVoz: Hola... Hola. Estoy aquí. ¿Puedes oírme?\n\nre: | Puedo oírla, señora. ¿Dónde estás?\n\nVoz: Estoy, um, dentro de los cables. Estoy perdido.\n\nD: Señora, ¿ha estado bebiendo esta noche?\n\nVoz: | Siento como si me estuviera estirando a través del alambre. Hacia ti.\nNo cuelgues. | Podría desaparecer si cuelgas.\n\nD: ¿Ir a dónde, señora?\n\nV: Ve. Desaparecido. Lejos.\n\nD: Bueno, ¿puedes describir tu entorno?\n\n(ruido desconocido)\n\nD: ¿Señora? Hola señora?\n\nNOTA: El despachador intentó devolver la llamada al número, pero fue\nya no está en servicio.",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:49:43.867Z"
+}

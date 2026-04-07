@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/dead_letters/fake_planes.png",
+  "extractedText": "Dear New York Tribune,\n\nAirplanes aren't real. | figured out how they do it.\n\nThe windows are TV screens. The whole thing moves on big tracks\nlike a rollercoaster that moves through underground tunnels in the\nEarth. Airports are more like train stations.\n\nThey do this because the sky is full of monsters that they don’t\nwant us to know about. The planes we see in the sky are the\nmonsters. The government made the Earth-trains look like the\nmonsters so they could lie to us better.\n\nDon't contact me.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "Estimado Tribuno de Nueva York:\n\nLos aviones no son reales. | descubrió cómo lo hacen.\n\nLas ventanas son pantallas de televisión. Todo se mueve sobre grandes pistas.\ncomo una montaña rusa que se mueve a través de túneles subterráneos en el\nTierra. Los aeropuertos se parecen más a las estaciones de tren.\n\nHacen esto porque el cielo está lleno de monstruos que no conocen.\nquieres que sepamos. Los aviones que vemos en el cielo son los\nmonstruos. El gobierno hizo que los trenes terrestres parecieran\nmonstruos para poder mentirnos mejor.\n\nNo me contactes.",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:50:27.111Z"
+}

@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/reports/willow_awe_shipping_manifest.png",
+  "extractedText": "SHIPPING MANIFEST\nWILLOW AWE\n\nINVENTORY LIST OF RECOVERED MATERIAL(S):\n- A hollow sphere (stone-like material)\n- Vitrified soil, _ pieces of various sizes and colors\n- Animal carcass (possibly canine)\n- Rusted metal bucket\n- Leather wallet\n- Aged shotgun cartridge\nAll materials to go to the Investigations Sector for further analysis.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}

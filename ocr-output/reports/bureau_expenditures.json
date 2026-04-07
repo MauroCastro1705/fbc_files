@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/reports/bureau_expenditures.png",
+  "extractedText": "EXPENDITURE SUMMARY\n\nEXECUTIVE SECTOR, Q2\nMajor:\nStaffing, Surveillance, _, Data Center Initiative,\nConstruction, [N, I\nMinor:\nOffice Equipment, Janitorial Costs, _, Mold Removal,\nHQ Livability Costs\n(For cost breakdown spreadsheet, see pg. 5. For five-year\ncomparison chart, see pg. 9)",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}

@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/reports/hotline_security_log.png",
+  "extractedText": "HOTLINE SECURITY LOG\n\nALL VISITORS MUST CHECK IN!\n\n8/19/2019 — 2:45 pm — Director Trench\n8/26/2019 — 12:13 pm — Director Trench\n8/31/2019 — 11:09 pm - Bill Everett (custodian)\n9/02/2019 — 2:45 pm — Director Trench\n9/09/2019 — 2:45 pm — Director Trench\n9/14/2019 — 10:57 pm — Bill Everett (custodian)\n9/16/2019 — 2:45 pm — Director Trench\n9/23/2019 — 2:45 pm — Director Trench\n9/28/2019 — 9:13 am — Director Trench\n9/28/2019 - 10:59 pm - Bill Everett (custodian)\n10/01/2019 — 3:34 am — Director Trench\n10/12/2019 — 11:08 pm — Bill Everett (custodian)\n10/26/2019 — 11:11 pm — Carol Bishop (custodian)",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "REGISTRO DE SEGURIDAD DE LA LÍNEA DIRECTA\n\n¡TODOS LOS VISITANTES DEBEN REGISTRARSE!\n\n19/8/2019 — 2:45 pm — Director Trench\n26/8/2019 — 12:13 p.m. — Directora Trench\n31/8/2019 — 11:09 pm - Bill Everett (custodio)\n02/09/2019 — 2:45 pm — Director Trench\n09/09/2019 — 2:45 pm — Director Trench\n14/9/2019 - 10:57 pm - Bill Everett (custodio)\n16/09/2019 — 2:45 pm — Director Trench\n23/9/2019 - 2:45 pm - Director Trench\n28/09/2019 — 9:13 am — Director Trench\n28/09/2019 - 22:59 - Bill Everett (custodio)\n01/10/2019 — 3:34 am — Directora Trench\n12/10/2019 — 11:08 pm — Bill Everett (custodio)\n26/10/2019 - 11:11 pm - Carol Bishop (custodia)",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:54:31.815Z"
+}

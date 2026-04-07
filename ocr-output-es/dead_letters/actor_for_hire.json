@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/dead_letters/actor_for_hire.png",
+  "extractedText": "Dearest Hollywood,\n\nHave you ever wished you had an actor who could do it all? Who\ncould be a man or woman, an adult or child, a dolphin or a Boston\nterrier? Well, today is your lucky day.\n\nMy name is Garreth Clemens and | am the world's greatest actor.\nNot only do | have years of stage experience, but | am an\naccomplished shapeshifter. Whether you need a misbehaving cat,\nferocious wolfman, swashbuckling pirate, or debonair southern\nbelle, I'm your man.\n\nOram I?\n\n| will be arriving in town on May 11, 1971 and will be available for\nmeetings and auditions beginning on the 13th.\n\nSee you in the movies!\n\nG. Clemens",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "Querido Hollywood,\n\n¿Alguna vez has deseado tener un actor que pudiera hacerlo todo? quien\npodría ser un hombre o una mujer, un adulto o un niño, un delfín o un Boston\nterrier? Bueno, hoy es tu día de suerte.\n\nMi nombre es Garreth Clemens y | Soy el mejor actor del mundo.\nNo sólo hacer | tengo años de experiencia en el escenario, pero | soy un\nconsumado cambiaformas. Si necesitas un gato que se porta mal,\nhombre lobo feroz, pirata de capa y espada o elegante sureño\nBella, soy tu hombre.\n\n¿O soy yo?\n\n| Llegará a la ciudad el 11 de mayo de 1971 y estará disponible para\nreuniones y audiciones a partir del día 13.\n\n¡Nos vemos en el cine!\n\nG. Clemente",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:50:16.653Z"
+}

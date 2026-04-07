@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/reports/airplane_evaluation_order.png",
+  "extractedText": "ALTERED EXAMINATION REQUEST\nAIRPLANE WRECKAGE\n\nSUMMARY:\nThe airplane in question has been brought in from a private airfield\nlocated in the town of _, Cincinnati. It is suspected to\nbe connected to the _ AWE (see case file\n_ for details) and is being evaluated for altered status.\nThe plane is currently being stored in the Transit Corridor in the\nContainment Sector, brought there through the New York subway\ntunnel, special access _ (for more information on\ntunnel _ and links to urban legends centered on ghost\nstations, abandoned tracks, and _ see file 4-12-4521).\nThe plane’s black box is currently being evaluated for\nI B - initial readings have\nbeen taken by a research team, though no altered status has yet\nbeen detected.\nRefer to file 9-12-8371 for full report.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "SOLICITUD DE EXAMEN ALTERADA\nRESTOS DE AVIÓN\n\nRESUMEN:\nEl avión en cuestión procede de un aeródromo privado.\nubicado en la localidad de _, Cincinnati. Se sospecha que\nestar conectado al _ AWE (ver expediente\n_ para más detalles) y está siendo evaluado para detectar cambios en su estado.\nEl avión se encuentra actualmente almacenado en el Corredor de Tránsito en el\nSector de Contención, llevado hasta allí a través del metro de Nueva York\ntúnel, acceso especial _ (para más información sobre\ntúnel _ y enlaces a leyendas urbanas centradas en fantasmas\nestaciones, vías abandonadas, y _ ver expediente 4-12-4521).\nActualmente se está evaluando la caja negra del avión.\nI B - las lecturas iniciales tienen\nha sido tomada por un equipo de investigación, aunque aún no se ha modificado su estado\nsido detectado.\nConsulte el archivo 9-12-8371 para obtener el informe completo.",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:53:49.970Z"
+}

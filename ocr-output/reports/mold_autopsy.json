@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/reports/mold_autopsy.png",
+  "extractedText": "AUTOPSY REPORT\n\nsusiecT: I\nSUMMARY:\nThe deceased was a -year—old _ with no\nsignificant past medical history. The subject was brought in after\nbeing discovered in the Active Threshold, in an early state of decay\nthat is characteristically fungal-based in its appearance.\nDuring autopsy, the cadaver's pleural cavities were revealed to be\nentirely filled by the fungus known as the Mold, to an extent that\nmedical staff were forced to put on decontamination suits. The\nprocedure was also hindered by anomalies such as the deceased'’s\nhigh body temperature and undulating torso muscles presumably,\nbut not provably, caused by trapped gases. Routine samples, as\nwell as tissue samples requested by Dr. Underhill, were\nsuccessfully extracted, however their rapid retrogression outside of\nthe host body needs to be noted.\nCause of death: Mold ingestion.\nRefer to file 5-94-2716 for full report.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}

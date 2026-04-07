@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/reports/quarry_incident.png",
+  "extractedText": "INCIDENT REPORT\n\nRE: QUARRY OPERATIONS\nSUMMARY:\nDuring my weekly safety inspection to the Quarry Threshold, |\ndiscovered the entire crew in a state of _ The whole\nteam was _, aligned and staring in a uniform direction;\nthe City in the distance. Despite my most vocal efforts to gain their\nattention, they remained _for more than _\nminutes until | had to resort to literally _\nAfterwards, they were dazed and could not provide any rationale\nfor their behavior or any specific memories of engaging in it.\nMy official recommendation for any crew working in a Threshold\narea is to either shorten the length of their shifts or to carry out\nmandatory psychological evaluations on a weekly basis — or\npreferably both.\nAnd maybe we should order another expedition to the City.\nRefer to file 5-58-3096 for full report.",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "INFORME DE INCIDENTE\n\nASUNTO: OPERACIONES DE CANTERAS\nRESUMEN:\nDurante mi inspección de seguridad semanal en el umbral de la cantera, |\ndescubrió a toda la tripulación en un estado de _ Todo\nel equipo estaba _, alineado y mirando en una dirección uniforme;\nla ciudad a lo lejos. A pesar de mis esfuerzos más expresivos por ganar su\natención, permanecieron _por más de_\nminutos hasta | Tuve que recurrir literalmente a _\nDespués, quedaron aturdidos y no pudieron dar ninguna explicación.\npor su comportamiento o cualquier recuerdo específico de participar en él.\nMi recomendación oficial para cualquier equipo que trabaje en un Umbral.\nárea es acortar la duración de sus turnos o llevar a cabo\nevaluaciones psicológicas obligatorias semanalmente, o\npreferiblemente ambos.\nY tal vez deberíamos ordenar otra expedición a la ciudad.\nConsulte el archivo 5-58-3096 para obtener el informe completo.",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:54:47.893Z"
+}

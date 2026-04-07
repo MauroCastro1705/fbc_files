@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/non-official_correspondence/janitor_complaint.png",
+  "extractedText": "FEDERAL BUREAU OF CONTROL OREAU ¢\n=\nHas anyone else seen that janitor $7 S, N\\\nSR Y AL\nmopping up around here? Isn't this is a 8 ﬁ;i’j:f’_: -]\nrestricted access area? Who gave him = ‘] ‘Alﬂll‘j: 2\nission to come in here? AR < s -\npermiss (\"I;F ?;)J\nAnd how the fuck did he get through the & g S\nATES OF\nMaze?\n- Dr. Tan",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "OFICINA FEDERAL DE CONTROL OREAU ¢\n=\n¿Alguien más ha visto a ese conserje $7 S, N\\\nSR Y AL\nlimpiando por aquí? ¿No es este un 8 ﬁ;i’j:f’_: -]\nzona de acceso restringido? Quien le dio =’]’Alﬂll‘j:2\n¿Misión para venir aquí? RA < s -\npermitir (\"I;F ?;)J\n¿Y cómo carajo pasó por el &g S?\nATES DE\n¿Laberinto?\n- Dr. Tan",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:51:50.262Z"
+}

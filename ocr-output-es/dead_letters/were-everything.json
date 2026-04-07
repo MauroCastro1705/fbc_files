@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/dead_letters/were-everything.png",
+  "extractedText": "Dear Science,\n\nThere's a person in my pet salamander. He has human eyes. Why\ndoesn't anyone else see him?\n\n| think it’s like werewolves but with every animal. Weredogs,\nwerecats, wereotters, werebutterflies, were-everything. There are\npeople inside and they can't get out. They're stuck in the animal\nbody. It's not ALL animals, but it can be ANY animal. My parents\ndon't believe me.\n\nMaybe this has happened before? | thought you would know.\nSincerely,\n\nJohn Lomaine",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "Querida ciencia,\n\nHay una persona en mi salamandra mascota. Tiene ojos humanos. ¿Por qué?\n¿Nadie más lo ve?\n\n| Creo que es como los hombres lobo pero con todos los animales. hombres perros,\nHombres gato, hombres nutria, hombres mariposas, eran-todo. hay\nHay gente dentro y no pueden salir. Están atrapados en el animal.\ncuerpo. No son TODOS los animales, pero puede ser CUALQUIER animal. mis padres\nno me creas.\n\n¿Quizás esto haya sucedido antes? | Pensé que lo sabrías.\nSinceramente,\n\nJuan Lomaine",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:50:47.134Z"
+}

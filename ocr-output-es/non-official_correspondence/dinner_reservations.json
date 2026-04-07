@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/non-official_correspondence/dinner_reservations.png",
+  "extractedText": "FEDERAL BUREAU OF CONTROL REAU\nN Op\n=\n\nDinner reservations at 7 pm at Chez ST O’L\n\nWK T R\\ A\nAmbré & :_i’a!f_:é\nWife will meet you there - Don't be late! A\\ AR )\n\nNP\n\nFlowers are ready for you at lobby ,'}o s ‘5\"3)\nreception STaTEs OF §\nRemember: She is turning 46",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "OFICINA FEDERAL DE CONTROL REAU\nNo operación\n=\n\nReservas para cenar a las 19:00 horas en Chez ST O’L\n\nWK T R\\ A\nAmbré & :_i’a!f_:é\nLa esposa te recibirá allí. ¡No llegues tarde! A\\AR)\n\nnotario público\n\nLas flores están listas para usted en el lobby,'}o s ‘5\"3)\nESTADOS DE RECEPCIÓN §\nRecuerda: Ella cumple 46 años.",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:51:45.000Z"
+}

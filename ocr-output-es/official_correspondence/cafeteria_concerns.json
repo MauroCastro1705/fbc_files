@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/official_correspondence/cafeteria_concerns.png",
+  "extractedText": "Director Trench,\n\nAs head chef, | need to express my concern about rumors I've\nbeen hearing regarding mold appearing near some of my kitchens. |\nam alerting you that any food handled, prepared, or consumed in\nthe vicinity of mold can be contaminated and unsafe for ingestion.\nIf | can verify these reports, then | will need to close multiple\ncafeterias. | realize this would be an inconvenience to many, but as\na caterer, | pride myself in keeping a pristine environment for food\npreparation and service.\n\nSincerely,\n\nJ. Pullman, Head Chef of The Golden Chow Catering Company",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "Directora Trinchera,\n\nComo jefe de cocina, | Necesito expresar mi preocupación por los rumores que he\nHe oído hablar de la aparición de moho cerca de algunas de mis cocinas. |\nLe advierto que cualquier alimento manipulado, preparado o consumido en\nlas proximidades del moho pueden estar contaminadas y ser peligrosas para la ingestión.\nSi | puede verificar estos informes, entonces | tendrá que cerrar varios\ncafeterías. | Me doy cuenta de que esto sería un inconveniente para muchos, pero como\nun proveedor de catering, | Me enorgullezco de mantener un entorno prístino para la alimentación.\npreparación y servicio.\n\nSinceramente,\n\nJ. Pullman, jefe de cocina de The Golden Chow Catering Company",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:52:46.738Z"
+}

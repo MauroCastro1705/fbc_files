@@ -1,0 +1,10 @@
+{
+  "imagePath": "images/dead_letters/dead_presidents.png",
+  "extractedText": "To Whom it May Concern,\n\n| am being contacted by the past Presidents of the United States\nof America. They appear as spirit guides, giving me their wisdom.\nJohn Adams keeps saying | need to fix America, but | can't really\nunderstand him. They all have a lot of opinions.\n\nPeople tell me I'm imagining it but Theodore Roosevelt showed me\nhow to fix my lawnmower and | don't know a thing about\nlawnmowers. Explain that!\n\n| have great dead men telling me about the past and the present. If\nyou'd like to use my abilities to help run the government, please let\nme know. | know the White House could use me.\n\nYours in earnest,\n\nJames Bartholomew",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng",
+  "translatedText": "A quien corresponda,\n\n| Estoy siendo contactado por los últimos presidentes de los Estados Unidos.\nde América. Aparecen como guías espirituales y me brindan su sabiduría.\nJohn Adams sigue diciendo | Necesito arreglar a Estados Unidos, pero | realmente no puedo\nentenderlo. Todos tienen muchas opiniones.\n\nLa gente me dice que me lo estoy imaginando pero Theodore Roosevelt me lo mostró.\ncómo arreglar mi cortadora de césped y | no sé nada sobre\ncortadoras de césped. ¡Explica eso!\n\n| Tengo grandes muertos hablándome del pasado y del presente. si\nSi le gustaría utilizar mis habilidades para ayudar a administrar el gobierno, por favor déjelo.\nYo lo sé. | Sé que la Casa Blanca podría utilizarme.\n\nAtentamente,\n\nJames Bartolomé",
+  "translationEngine": "translatte",
+  "translationDate": "2026-04-07T17:50:24.411Z"
+}

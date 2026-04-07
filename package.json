@@ -1,0 +1,15 @@
+{
+  "name": "fbc-ocr",
+  "version": "1.0.0",
+  "description": "OCR extraction for FBC image archive",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "ocr": "node ocr-extract.js",
+    "ocr-translate": "node ocr-translate.js"
+  },
+  "dependencies": {
+    "tesseract.js": "^4.1.1",
+    "translatte": "^3.0.1"
+  }
+}

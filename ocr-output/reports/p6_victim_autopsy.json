@@ -1,0 +1,7 @@
+{
+  "imagePath": "images/reports/p6_victim_autopsy.png",
+  "extractedText": "CASE 45-HQ-121\n\nCASE SUMMARY:\n\nAgent killed during _ involving --\ncode name P6.\n\nAUTOPSY FINDINGS:\n\nI. Blunt force injuries of the head and neck\n\nIl. Extensive trauma of the abdominal region:\n\na. Lacerations and contusions of the upper and lower torso\n\nb. Fracture of the spinal cord between the L1 and L2 vertebrae\nc. Avulsion fracture of the 3rd through 10th ribs, left and right\n\nlll. Blunt force injuries of the extremities:\n\na. Abrasions, lacerations, and contusions of the extremities\n\nb. Dislocation of left and right elbow\n\nc. Dislocation of left and right knee\n\nCONCLUSION:\n\nAfter examination, it was determined that the cause of death was\ninternal bleeding that occurred when the _ was\ncontorted through his —",
+  "error": null,
+  "engine": "tesseract.js",
+  "language": "eng"
+}
