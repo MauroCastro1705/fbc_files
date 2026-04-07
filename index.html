@@ -11,7 +11,7 @@
 <body>
 
 <div id="topbar">
-  <a href="home.html"><img src="fbc_logo.png" alt="FBC files" class="logo"/></a>
+  <a href="home.html" class="logo-link"><img src="fbc_logo.png" alt="FBC files" class="logo"/></a>
   <div id="search-wrap">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
@@ -28,47 +28,58 @@
   <nav id="sidebar">
     <div class="sidebar-label">Categorías</div>
     <button class="cat-btn active" data-id="__all__">
+      <span class="cat-icon">📚</span>
       <span class="cat-name">Todas</span>
       <span class="cat-count">286</span>
     </button>
     
         <button class="cat-btn" data-id="astral_research">
+          <span class="cat-icon">🌌</span>
           <span class="cat-name">astral_research</span>
           <span class="cat-count">3</span>
         </button>
         <button class="cat-btn" data-id="case_files_altered_items">
+          <span class="cat-icon">📦</span>
           <span class="cat-name">case_files_altered_items</span>
           <span class="cat-count">51</span>
         </button>
         <button class="cat-btn" data-id="case_files_altered_world_events">
+          <span class="cat-icon">🌍</span>
           <span class="cat-name">case_files_altered_world_events</span>
           <span class="cat-count">24</span>
         </button>
         <button class="cat-btn" data-id="case_files_objects_of_power">
+          <span class="cat-icon">⚡</span>
           <span class="cat-name">case_files_objects_of_power</span>
           <span class="cat-count">10</span>
         </button>
         <button class="cat-btn" data-id="dead_letters">
+          <span class="cat-icon">💌</span>
           <span class="cat-name">dead_letters</span>
           <span class="cat-count">17</span>
         </button>
         <button class="cat-btn" data-id="hiss_research">
+          <span class="cat-icon">🔊</span>
           <span class="cat-name">hiss_research</span>
           <span class="cat-count">19</span>
         </button>
         <button class="cat-btn" data-id="non-official_correspondence">
+          <span class="cat-icon">📨</span>
           <span class="cat-name">non-official_correspondence</span>
           <span class="cat-count">34</span>
         </button>
         <button class="cat-btn" data-id="official_correspondence">
+          <span class="cat-icon">📋</span>
           <span class="cat-name">official_correspondence</span>
           <span class="cat-count">37</span>
         </button>
         <button class="cat-btn" data-id="reports">
+          <span class="cat-icon">📄</span>
           <span class="cat-name">reports</span>
           <span class="cat-count">43</span>
         </button>
         <button class="cat-btn" data-id="research">
+          <span class="cat-icon">🔬</span>
           <span class="cat-name">research</span>
           <span class="cat-count">48</span>
         </button>
@@ -1913,7 +1924,10 @@
     <div id="lb-ocr">
       <div id="lb-ocr-controls">
         <div id="lb-ocr-title">Documentos relacionados:</div>
-        <button id="lb-zoom-btn" title="Zoom" aria-label="Zoom">🔍</button>
+        <div style="display: flex; gap: 8px;">
+          <button id="lb-zoom-btn" title="Zoom" aria-label="Zoom">🔍</button>
+          <button id="lb-minimize-btn" title="Minimizar" aria-label="Minimizar">▼</button>
+        </div>
       </div>
       <div id="lb-ocr-keywords"></div>
       <div id="lb-ocr-grid"></div>
@@ -2096,6 +2110,11 @@ function openLightbox(images, index, catName) {
   img.style.transform = "scale(1)";
   img.classList.remove("zoomed");
   
+  // Start with OCR minimized
+  const ocr = document.getElementById("lb-ocr");
+  ocr.classList.add("minimized");
+  document.getElementById("lb-minimize-btn").textContent = "▲";
+  
   document.getElementById("lightbox").classList.add("open");
   document.body.style.overflow = "hidden";
   showLbImg();
@@ -2195,6 +2214,12 @@ document.getElementById("lb-zoom-btn").addEventListener("click", () => {
     img.style.transform = "scale(1)";
     img.classList.remove("zoomed");
   }
+});
+document.getElementById("lb-minimize-btn").addEventListener("click", () => {
+  const ocr = document.getElementById("lb-ocr");
+  const btn = document.getElementById("lb-minimize-btn");
+  ocr.classList.toggle("minimized");
+  btn.textContent = ocr.classList.contains("minimized") ? "▲" : "▼";
 });
 document.getElementById("lb-img").addEventListener("click", () => {
   const btn = document.getElementById("lb-zoom-btn");
