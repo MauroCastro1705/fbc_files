@@ -2271,14 +2271,9 @@ function displayOcrText(sourceText, textEl, toggleEl) {
     return;
   }
 
-  // Only use typewriter animation once when modal first opens, then direct replacement
-  if (!currentOcrAnimated) {
-    currentOcrAnimated = true;
-    animateText(sourceText.trim(), textEl);
-  } else {
-    textEl.textContent = sourceText.trim();
-    textEl.classList.remove("typing");
-  }
+  // Always show text immediately without typewriter animation
+  textEl.textContent = sourceText.trim();
+  textEl.classList.remove("typing");
 }
 
 function closeOcrTextModal() {

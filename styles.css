@@ -942,8 +942,9 @@ body.home-page #main::before {
 
 .ocr-modal-body {
   padding: 18px 22px 22px;
-  overflow: auto;
-  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+  max-height: calc(100vh - 160px);
+  flex: 1;
 }
 
 .ocr-modal-loading {
@@ -968,8 +969,22 @@ body.home-page #main::before {
 }
 
 @media (max-width: 700px) {
+  .ocr-modal {
+    padding: 16px;
+  }
+  
   .ocr-modal-panel {
-    width: min(100%, 100% - 32px);
+    width: min(100%, 100% - 16px);
+    max-height: calc(100vh - 32px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ocr-modal-body {
+    max-height: none;
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
