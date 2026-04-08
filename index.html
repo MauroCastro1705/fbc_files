@@ -1951,7 +1951,7 @@ document.addEventListener('DOMContentLoaded', checkAuth);
       <div id="lb-cat">—</div>
     </div>
     <div id="lb-counter">0 / 0</div>
-    <button id="lb-favorite-btn" title="Marcar como favorito" style="font-size: 20px; line-height: 1; padding: 0 6px; color: inherit;">☆</button>
+    <button id="lb-favorite-btn" title="Marcar como favorito" class="fav-btn">Favorito</button>
     <button id="lb-close" title="Cerrar (Esc)">✕</button>
   </div>
   <div id="lb-body">
@@ -2262,7 +2262,7 @@ function showLbImg() {
   
   // Update favorite button state
   const favBtn = document.getElementById("lb-favorite-btn");
-  favBtn.textContent = isFavorite(img.path) ? "★" : "☆";
+  favBtn.textContent = isFavorite(img.path) ? "★ Favorito" : "Favorito";
 
   updateLbOcr(img);
 }
@@ -2473,7 +2473,7 @@ function updateLbOcr(currentImg) {
 document.getElementById("lb-favorite-btn").addEventListener("click", () => {
   const img = lbImages[lbIndex];
   const wasAdded = toggleFavorite(img.path, img.name, lbCatName);
-  document.getElementById("lb-favorite-btn").textContent = wasAdded ? "★" : "☆";
+  document.getElementById("lb-favorite-btn").textContent = wasAdded ? "★ Favorito" : "Favorito";
 });
 
 document.getElementById("lb-close").addEventListener("click", closeLightbox);
