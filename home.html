@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Archivos clasificados del Federal Bureau of Control. Investigación, contención y estudio de fenómenos paranormales y objetos alterados."/>
+<meta name="theme-color" content="#a90210"/>
 <title>FBC - Federal Bureau of Control</title>
+<link rel="icon" type="image/png" href="fbc_logo_icon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css"/>
@@ -19,7 +22,12 @@
     <input id="search" type="search" placeholder="buscar..." autocomplete="off" spellcheck="false"/>
   </div>
   <div class="topbar-right">
-    <a href="index.html" class="nav-link">Archivos FBC</a>
+    <button id="user-info" style="display: none; background: var(--bg3); border: 1px solid var(--border); border-radius: 4px; padding: 4px 10px; color: var(--text2); font-family: var(--font-mono); font-size: 11px; cursor: pointer; margin-right: 8px; display: inline-flex; align-items: center; gap: 6px;" onclick="window.location.href='profile.html'">
+      <img src="user_icon.png" style="width: 14px; height: 14px; vertical-align: middle;" alt=""/>
+      <span id="user-name"></span> | <span id="user-level"></span>
+    </button>
+    <button id="logout-btn" style="display: none; background: var(--bg3); border: 1px solid var(--border); border-radius: 4px; padding: 4px 10px; color: var(--text2); font-family: var(--font-mono); font-size: 11px; cursor: pointer;" onclick="handleLogout()">Salir</button>
+    <a href="index.html" class="nav-link" title="Acceder a base de datos de archivos clasificados">Archivos FBC</a>
   </div>
 </div>
 
@@ -62,10 +70,43 @@
       <p>Address: 123 Mystery Lane, Oldest House, NY 10001</p>
     </div>
     <div class="footer-version">
-      <span class="version">v1.0.5</span>
+      <span class="version">v1.0.6</span>
     </div>
   </div>
 </footer>
+
+<script>
+function getLevelName(level) {
+  const levels = {
+    1: 'Agente',
+    2: 'Investigador',
+    3: 'Supervisor',
+    4: 'Director',
+    5: 'Administrador'
+  };
+  return levels[level] || 'Agente';
+}
+
+function checkAuth() {
+  const auth = sessionStorage.getItem('fbc_auth');
+  if (!auth) {
+    window.location.href = 'login.html';
+  } else {
+    const user = JSON.parse(auth);
+    document.getElementById('user-info').style.display = 'inline-flex';
+    document.getElementById('user-name').textContent = user.username;
+    document.getElementById('user-level').textContent = getLevelName(user.level) + ' - Nivel ' + user.level;
+    document.getElementById('logout-btn').style.display = 'inline-block';
+  }
+}
+
+function handleLogout() {
+  sessionStorage.removeItem('fbc_auth');
+  window.location.href = 'login.html';
+}
+
+document.addEventListener('DOMContentLoaded', checkAuth);
+</script>
 
 </body>
 </html>
