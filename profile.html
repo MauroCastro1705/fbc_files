@@ -367,6 +367,228 @@ html {
     font-size: 10px;
     color: var(--text3);
 }
+
+/* ── RESPONSIVE: Tablet and smaller ── */
+@media (max-width: 768px) {
+    #layout {
+        padding: 20px 16px;
+    }
+
+    .profile-card {
+        padding: 24px;
+    }
+
+    /* Stack 3 columns into 2 columns */
+    .profile-3col-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    /* Make favorites column span full width */
+    .profile-col:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* ── RESPONSIVE: Mobile (matches project breakpoint at 520px) ── */
+@media (max-width: 520px) {
+    #layout {
+        padding: 12px 8px;
+    }
+
+    .profile-card {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    /* Stack everything in single column */
+    .profile-3col-section {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .profile-col:last-child {
+        grid-column: auto;
+    }
+
+    /* Smaller profile header */
+    .profile-header {
+        gap: 12px;
+        margin-bottom: 20px;
+        padding-bottom: 16px;
+    }
+
+    .profile-avatar {
+        width: 56px;
+        height: 56px;
+        font-size: 22px;
+    }
+
+    .profile-info h1 {
+        font-size: 18px;
+    }
+
+    .profile-rank {
+        font-size: 12px;
+    }
+
+    /* Smaller XP section */
+    .xp-section {
+        margin-bottom: 20px;
+    }
+
+    .xp-label {
+        font-size: 10px;
+    }
+
+    .xp-bar-container {
+        height: 10px;
+    }
+
+    /* Section titles */
+    .permissions-section h2 {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    /* Permission items */
+    .permission-item {
+        gap: 8px;
+        padding: 8px 0;
+    }
+
+    .permission-name {
+        font-size: 11px;
+    }
+
+    .permission-desc {
+        font-size: 10px;
+    }
+
+    /* Buttons */
+    .back-btn {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+    .code-btn {
+        font-size: 11px;
+        padding: 10px 12px;
+        min-height: 44px;
+    }
+
+    /* Import input */
+    .import-input {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* Favorite items */
+    .fav-link {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .fav-name {
+        font-size: 11px;
+    }
+
+    .fav-cat {
+        font-size: 9px;
+    }
+
+    /* Code area */
+    .code-area {
+        font-size: 10px;
+        padding: 12px;
+        margin-top: 16px;
+    }
+
+    /* Topbar adjustments */
+    .topbar-right {
+        gap: 4px;
+    }
+
+    .topbar-right .back-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}
+
+/* ── RESPONSIVE: Very small screens ── */
+@media (max-width: 360px) {
+    #layout {
+        padding: 8px 4px;
+    }
+
+    .profile-card {
+        padding: 12px;
+    }
+
+    .profile-avatar {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .profile-info h1 {
+        font-size: 16px;
+    }
+
+    .profile-rank {
+        font-size: 11px;
+    }
+
+    .topbar-right .back-btn {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+}
+
+/* Collapsable sections - ONLY mobile */
+@media (max-width: 520px) {
+    .collapsable-mobile .section-toggle {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        user-select: none;
+    }
+
+    .collapsable-mobile .section-toggle::after {
+        content: "▶";
+        font-size: 10px;
+        transition: transform 0.3s ease;
+        color: var(--text3);
+    }
+
+    .collapsable-mobile.expanded .section-toggle::after {
+        transform: rotate(90deg);
+    }
+
+    .collapsable-mobile .section-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .collapsable-mobile.expanded .section-content {
+        max-height: 1000px;
+    }
+}
+
+/* Desktop - always expanded */
+@media (min-width: 521px) {
+    .collapsable-mobile .section-toggle::after {
+        display: none;
+    }
+
+    .collapsable-mobile .section-content {
+        max-height: none !important;
+        overflow: visible;
+    }
+}
 </style>
 </head>
 <body>
@@ -406,12 +628,7 @@ html {
         </div>
 
         <div class="profile-3col-section">
-            <div class="profile-col">
-                <div class="permissions-section">
-                    <h2>Permisos de acceso</h2>
-                    <div id="permissions-list"></div>
-                </div>
-            </div>
+
             <div class="profile-col">
                 <div class="permissions-section">
                     <h2>Herramientas</h2>
@@ -435,12 +652,48 @@ html {
                     </div>
                 </div>
             </div>
+            <div class="profile-col">
+                <div class="permissions-section collapsable-mobile">
+                    <h2 class="section-toggle">Permisos de acceso</h2>
+                    <div class="section-content" id="permissions-list"></div>
+                </div>
+            </div>
         </div>
 
     </div>
 
 </div>
 
+<script>
+// Collapsable sections for mobile
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.collapsable-mobile .section-toggle').forEach(toggle => {
+        const section = toggle.parentElement;
+        
+        // Start COLLAPSED by default on mobile, expanded on desktop
+        if (window.innerWidth <= 520) {
+            section.classList.remove('expanded');
+        } else {
+            section.classList.add('expanded');
+        }
+
+        toggle.addEventListener('click', () => {
+            if (window.innerWidth <= 520) {
+                section.classList.toggle('expanded');
+            }
+        });
+    });
+});
+
+// Update state on window resize
+window.addEventListener('resize', () => {
+    document.querySelectorAll('.collapsable-mobile').forEach(section => {
+        if (window.innerWidth > 520) {
+            section.classList.add('expanded');
+        }
+    });
+});
+</script>
 <script src="profile.js"></script>
 
 </body>

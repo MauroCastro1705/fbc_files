@@ -8,6 +8,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css"/>
+<style>
+/* FIX: Mobile categories expand */
+@media (max-width: 520px) {
+  .cat-section.expanded .img-grid {
+    max-height: 10000px !important;
+  }
+
+  .cat-section-title {
+    touch-action: manipulation;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+</style>
 <script>
 function getLevelName(level) {
   const levels = {
@@ -1960,7 +1976,7 @@ document.addEventListener('DOMContentLoaded', checkAuth);
     <button class="lb-nav" id="lb-next">›</button>
   </div>
   <div id="lb-related-layout">
-    <div id="lb-ocr">
+      <div id="lb-ocr" style="display:block !important; visibility: visible !important;">
       <div id="lb-ocr-controls">
         <div id="lb-ocr-title">Documentos relacionados:</div>
         <div style="display: flex; gap: 8px;">
@@ -2068,14 +2084,18 @@ let currentOcrJson = null;
 let currentOcrLang = "en";
 let currentOcrImg = null;
 
-// Load OCR data
-fetch('ocr-dictionary.json')
-  .then(r => r.json())
-  .then(d => {
-    ocrData = d;
-    ocrDataLoaded = true;
-  })
-  .catch(e => console.error('OCR data failed to load:', e));
+// Load OCR data - with file protocol detection
+if (window.location.protocol !== 'file:') {
+  fetch('ocr-dictionary.json')
+    .then(r => r.json())
+    .then(d => {
+      ocrData = d;
+      ocrDataLoaded = true;
+    })
+    .catch(e => console.warn('OCR data not available (normal when opening locally):', e.message));
+} else {
+  console.log('ℹ️ OCR disabled: running locally via file:// protocol. Use a web server for full functionality.');
+}
 
 // ── SIDEBAR ────────────────────────────────────────────────────────
 document.querySelectorAll(".cat-btn").forEach(btn => {
@@ -2099,11 +2119,17 @@ function isMobile() {
   return window.innerWidth <= 520;
 }
 
-document.querySelectorAll(".cat-section-title").forEach(title => {
-  title.addEventListener("click", () => {
-    if (isMobile()) {
-      title.closest(".cat-section").classList.toggle("expanded");
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll(".cat-section-title").forEach(title => {
+    const toggleExpand = () => {
+      if (isMobile()) {
+        const section = title.closest(".cat-section");
+        section.classList.toggle("expanded");
+      }
+    };
+    
+    title.addEventListener("click", toggleExpand);
+    title.addEventListener("touchend", toggleExpand, { passive: true });
   });
 });
 
@@ -2231,10 +2257,10 @@ function openLightbox(images, index, catName) {
   img.style.transform = "scale(1)";
   img.classList.remove("zoomed");
   
-  // Start with OCR minimized
+  // Default state: OCR panel fully visible
   const ocr = document.getElementById("lb-ocr");
-  ocr.classList.add("minimized");
-  document.getElementById("lb-minimize-btn").textContent = "▲";
+  ocr.classList.remove("minimized");
+  document.getElementById("lb-minimize-btn").textContent = "▼";
   
   document.getElementById("lightbox").classList.add("open");
   document.body.style.overflow = "hidden";
@@ -2464,9 +2490,9 @@ function updateLbOcr(currentImg) {
     }
   }
 
-  ocrKeywords.innerHTML = '';
+  ocrKeywords.innerHTML = '<div style="color: var(--text3); font-size: 11px;">Cargando documentos relacionados...</div>';
   ocrGrid.innerHTML = '';
-  document.getElementById("lb-ocr").style.display = "none";
+  document.getElementById("lb-ocr").style.display = "block";
 }
 
 // Favorite button handler
