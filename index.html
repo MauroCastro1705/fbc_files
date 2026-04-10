@@ -54,7 +54,32 @@ function handleLogout() {
   window.location.href = 'login.html';
 }
 
-document.addEventListener('DOMContentLoaded', checkAuth);
+// Mobile category expand/collapse functionality
+function initMobileCategories() {
+  const categoryTitles = document.querySelectorAll('.cat-section-title');
+  
+  categoryTitles.forEach(title => {
+    title.addEventListener('click', function() {
+      const section = this.closest('.cat-section');
+      const isExpanded = section.classList.contains('expanded');
+      
+      // Collapse all sections first
+      document.querySelectorAll('.cat-section').forEach(s => {
+        s.classList.remove('expanded');
+      });
+      
+      // Expand the clicked section if it wasn't expanded
+      if (!isExpanded) {
+        section.classList.add('expanded');
+      }
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  checkAuth();
+  initMobileCategories();
+});
 </script>
 </head>
 <body>
