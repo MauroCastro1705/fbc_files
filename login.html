@@ -154,6 +154,114 @@ body::before {
 .hidden {
     display: none;
 }
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text3);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: color var(--tr), border-color var(--tr);
+}
+
+.tab-btn:hover {
+    color: var(--text);
+}
+
+.tab-btn.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.import-textarea {
+    width: 100%;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color var(--tr), box-shadow var(--tr);
+    resize: vertical;
+    min-height: 120px;
+}
+
+.import-textarea::placeholder {
+    color: var(--text3);
+}
+
+.import-textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.import-hint {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text3);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.import-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.import-buttons button {
+    flex: 1;
+}
+
+.clear-btn {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background var(--tr), transform var(--tr);
+}
+
+.clear-btn:hover {
+    background: var(--border);
+    transform: translateY(-1px);
+}
+
+.clear-btn:active {
+    transform: translateY(0);
+}
+
+.import-success {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: #4ade80;
+    margin-top: 6px;
+    display: none;
+}
+
+.import-success.visible {
+    display: block;
+}
 </style>
 </head>
 <body>
@@ -161,6 +269,12 @@ body::before {
 <div class="login-container">
     <div class="login-box">
         <img src="fbc_logo.png" alt="FBC" class="login-logo"/>
+        
+        <div class="tab-buttons">
+            <button class="tab-btn active" id="tab-login" onclick="showLogin()">Acceso</button>
+            <button class="tab-btn" id="tab-register" onclick="showRegister()">Registrarse</button>
+            <button class="tab-btn" id="tab-import" onclick="showImport()">Importar</button>
+        </div>
         
         <div id="login-form">
             <div class="login-title">Acceso al Sistema</div>
@@ -203,6 +317,24 @@ body::before {
             
             <div class="switch-form">
                 ¿Ya tiene cuenta? <a onclick="showLogin()">Ingresar</a>
+            </div>
+        </div>
+        
+        <div id="import-form" class="hidden">
+            <div class="login-title">Importar Cuenta</div>
+            
+            <div class="import-hint">Pegue aquí el código de exportación de su cuenta</div>
+            
+            <div class="form-group">
+                <textarea class="import-textarea" id="import-code" placeholder="Pegue el código de exportación (base64)..."></textarea>
+            </div>
+            
+            <div class="form-error" id="import-error"></div>
+            <div class="import-success" id="import-success"></div>
+            
+            <div class="import-buttons">
+                <button class="login-btn" onclick="handleImport()">Importar Cuenta</button>
+                <button class="clear-btn" onclick="clearImportForm()">Limpiar</button>
             </div>
         </div>
     </div>
@@ -321,15 +453,40 @@ async function handleRegister() {
 function showLogin() {
     document.getElementById('login-form').classList.remove('hidden');
     document.getElementById('register-form').classList.add('hidden');
+    document.getElementById('import-form').classList.add('hidden');
     document.getElementById('login-error').classList.remove('visible');
     document.getElementById('reg-error').classList.remove('visible');
+    document.getElementById('import-error').classList.remove('visible');
+    
+    document.getElementById('tab-login').classList.add('active');
+    document.getElementById('tab-register').classList.remove('active');
+    document.getElementById('tab-import').classList.remove('active');
 }
 
 function showRegister() {
     document.getElementById('login-form').classList.add('hidden');
     document.getElementById('register-form').classList.remove('hidden');
+    document.getElementById('import-form').classList.add('hidden');
     document.getElementById('login-error').classList.remove('visible');
     document.getElementById('reg-error').classList.remove('visible');
+    document.getElementById('import-error').classList.remove('visible');
+    
+    document.getElementById('tab-login').classList.remove('active');
+    document.getElementById('tab-register').classList.add('active');
+    document.getElementById('tab-import').classList.remove('active');
+}
+
+function showImport() {
+    document.getElementById('login-form').classList.add('hidden');
+    document.getElementById('register-form').classList.add('hidden');
+    document.getElementById('import-form').classList.remove('hidden');
+    document.getElementById('login-error').classList.remove('visible');
+    document.getElementById('reg-error').classList.remove('visible');
+    document.getElementById('import-error').classList.remove('visible');
+    
+    document.getElementById('tab-login').classList.remove('active');
+    document.getElementById('tab-register').classList.remove('active');
+    document.getElementById('tab-import').classList.add('active');
 }
 
 function checkAuth() {
@@ -360,6 +517,124 @@ checkAuth();
 document.getElementById('login-password').addEventListener('keypress', e => {
     if (e.key === 'Enter') handleLogin();
 });
+
+// Import user data functions
+function decodeExportCode(code) {
+    try {
+        const cleaned = code.trim();
+        if (!cleaned) {
+            throw new Error('El código está vacío');
+        }
+        
+        const decoded = atob(cleaned);
+        const data = JSON.parse(decoded);
+        
+        if (!data.u || data.l === undefined) {
+            throw new Error('Formato de código inválido: datos requeridos faltantes');
+        }
+        
+        return {
+            username: data.u,
+            level: data.l,
+            xp: data.x || 0,
+            favorites: data.f || [],
+            viewedImages: data.v || []
+        };
+    } catch (e) {
+        if (e.message.includes('datos requeridos')) return null;
+        throw new Error('Error al decodificar: El código no es válido');
+    }
+}
+
+function importUserData(importedUser) {
+    let users = getStoredUsers();
+    
+    // Find existing user with same username
+    const existingIndex = users.findIndex(u => u.username === importedUser.username);
+    
+    // Create new user object with imported data and preserved password from existing or default
+    const newUserData = {
+        username: importedUser.username,
+        password: existingIndex >= 0 ? users[existingIndex].password : '', // Keep existing password or empty
+        level: importedUser.level,
+        xp: importedUser.xp,
+        createdAt: existingIndex >= 0 ? users[existingIndex].createdAt : Date.now(),
+        viewedImages: importedUser.viewedImages || [],
+        favorites: importedUser.favorites || []
+    };
+    
+    if (existingIndex >= 0) {
+        // Overwrite existing user
+        users[existingIndex] = newUserData;
+    } else {
+        // Add new user
+        users.push(newUserData);
+    }
+    
+    localStorage.setItem('fbc_users', JSON.stringify(users));
+    return newUserData;
+}
+
+function autoLoginUser(user) {
+    sessionStorage.setItem('fbc_auth', JSON.stringify({
+        username: user.username,
+        level: user.level,
+        xp: user.xp || 0,
+        loggedAt: Date.now()
+    }));
+}
+
+async function handleImport() {
+    const code = document.getElementById('import-code').value;
+    const errorEl = document.getElementById('import-error');
+    const successEl = document.getElementById('import-success');
+    const importBtn = event.target;
+    
+    errorEl.classList.remove('visible');
+    successEl.classList.remove('visible');
+    
+    if (!code.trim()) {
+        errorEl.textContent = 'Por favor pegue el código de exportación';
+        errorEl.classList.add('visible');
+        return;
+    }
+    
+    try {
+        const importedUser = decodeExportCode(code);
+        if (!importedUser) {
+            errorEl.textContent = 'El código no contiene datos válidos de usuario';
+            errorEl.classList.add('visible');
+            return;
+        }
+        
+        // Import and store the user
+        const savedUser = importUserData(importedUser);
+        
+        // Show success message
+        successEl.textContent = `✓ Cuenta importada exitosamente: ${savedUser.username}`;
+        successEl.classList.add('visible');
+        
+        // Auto-login after brief delay
+        importBtn.disabled = true;
+        importBtn.textContent = 'Importando...';
+        
+        setTimeout(() => {
+            autoLoginUser(savedUser);
+            window.location.href = 'home.html';
+        }, 1000);
+        
+    } catch (error) {
+        errorEl.textContent = error.message || 'Error desconocido al importar';
+        errorEl.classList.add('visible');
+    }
+}
+
+function clearImportForm() {
+    document.getElementById('import-code').value = '';
+    document.getElementById('import-error').classList.remove('visible');
+    document.getElementById('import-success').classList.remove('visible');
+    document.getElementById('import-code').focus();
+}
 </script>
 
 </body>

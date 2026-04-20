@@ -104,6 +104,8 @@ body {
   align-items: center; 
   gap: 16px;
   padding: 0 20px; 
+  padding-bottom: 10px;
+  padding-top: 10px;
   flex-shrink: 0;
 }
 
